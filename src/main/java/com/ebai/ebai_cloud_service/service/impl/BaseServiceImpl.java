@@ -17,7 +17,6 @@ public class BaseServiceImpl implements BaseService {
     @Autowired
     UserInfoRepository userInfoRepository;
 
-
     @Override
     public void insert() {
 

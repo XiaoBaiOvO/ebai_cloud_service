@@ -4,21 +4,21 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.ebai.ebai_cloud_service.common.util.DateTool;
 import com.ebai.ebai_cloud_service.common.util.Network;
+import com.ebai.ebai_cloud_service.mapper.ClassScheduleRepository;
 import com.ebai.ebai_cloud_service.model.dto.MailRequest;
 import com.ebai.ebai_cloud_service.service.MailService;
-import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.time.LocalDate;
+import java.math.BigInteger;
+import java.time.*;
 import java.util.Date;
 import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
 
 import static java.util.concurrent.TimeUnit.DAYS;
-import static java.util.concurrent.TimeUnit.MILLISECONDS;
 
 @Service
 @Slf4j
@@ -30,12 +30,15 @@ public class MailServiceImpl implements MailService {
     @Resource
     DateTool dateTool;
 
+    @Resource
+    ClassScheduleRepository classScheduleRepository;
+
     private static final String weatherRequest = "https://api.map.baidu.com/weather/v1/?district_id=310120&data_type=all&ak=Tco6gfz2hZFqtoXGIzoQavlz49dLCtOS";
 
-    private static final LocalDate loveDay = LocalDate.of(2021, 8, 16);
+    private static final LocalDateTime loveDay = LocalDateTime.of(2021, 8, 16, 0, 0, 0);
 
     @Override
-    public String SendDailyMail() {
+    public String sendDailyMail() {
 
         JSONObject weather = network.getHttp(weatherRequest);
 
@@ -52,14 +55,13 @@ public class MailServiceImpl implements MailService {
         String todayTextNight = todayForecastsResult.get("text_night").toString();
         LocalDate today = dateTool.todayLocalDate();
 
-        long passDays = today.toEpochDay()-loveDay.toEpochDay();
         String weatherChangeNotes = (Objects.equals(nowText, todayTextDay) && Objects.equals(todayTextDay, todayTextNight)) ? "" :
                 ((Objects.equals(nowText, todayTextDay) && !Objects.equals(todayTextDay, todayTextNight)) ? "下午可能" + todayTextDay + "转" + todayTextNight :
                         ((!Objects.equals(nowText, todayTextDay) && Objects.equals(todayTextDay, todayTextNight)) ? "上午可能" + nowText + "转" + todayTextDay :
                                 "上午可能" + nowText + "转" + todayTextDay + "，下午可能" + todayTextDay + "转" + todayTextNight));
         String weatherChangeMsg = ((weatherChangeNotes.equals("") ? "" : "<div style=\"padding-top: 10px\">" + weatherChangeNotes + "</div>\n"));
 
-        String title = "小白の每日问候 - 爱你的第" + passDays + "天";
+        String title = "小白の每日问候 - 爱你的第" + Duration.between(loveDay, LocalDateTime.now()).toDays() + "天";
         String message = "" +
                 "<div style=\"width: 100%; background-color: antiquewhite;font-size: 30px;font-family: '楷体',serif;padding: 20px 0\">\n" +
                 "  <div style=\"font-weight: bold;text-align: center;color: #d79ad0;font-size: 30px;\">\n" +
@@ -112,22 +114,26 @@ public class MailServiceImpl implements MailService {
     @Override
     public void startAutoDailyMail() {
         log.info("启动定时邮件任务 =>");
-        Date now = new Date();
-        Date today = dateTool.todayDate();
-        if (now.getHours() >= 6) {
-            today.setDate(now.getDate() + 1);
+        LocalDate date;
+        LocalTime time = LocalTime.now();
+        if (time.getHour() < 6) {
+            date = LocalDate.now();
+        } else {
+            date = LocalDate.now().plusDays(BigInteger.ONE.longValue());
         }
-        long delay = today.getTime() - now.getTime();
-        log.info("<= {}分钟后第一次发送", MILLISECONDS.toMinutes(delay));
+        LocalDateTime firstDateTime = LocalDateTime.of(date, LocalTime.of(6, 0));
+        Date firstDate = Date.from(firstDateTime.atZone(ZoneId.systemDefault()).toInstant());
+        log.info("=> {} 第一次发送", firstDate);
         TimerTask task = new TimerTask() {
-            @SneakyThrows
-            @Override
             public void run() {
-                SendDailyMail();
+                log.info("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
+                log.info("定时任务触发：Service == > SendDailyMail");
+                log.info("------------------ Service  Log ------------------");
+                sendDailyMail();
             }
         };
         Timer timer = new Timer();
-        timer.schedule(task, delay, DAYS.toMillis(1));
+        timer.schedule(task, firstDate, DAYS.toMillis(BigInteger.ONE.longValue()));
     }
 
 }

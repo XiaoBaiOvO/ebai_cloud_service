@@ -6,5 +6,4 @@ public interface BaseService {
 
     String user();
 
-
 }

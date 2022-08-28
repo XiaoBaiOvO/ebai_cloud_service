@@ -1,18 +1,13 @@
 package com.ebai.ebai_cloud_service.controller;
 
-import com.ebai.ebai_cloud_service.common.util.Network;
-import com.ebai.ebai_cloud_service.model.dto.MailRequest;
 import com.ebai.ebai_cloud_service.service.BaseService;
 import com.ebai.ebai_cloud_service.service.MailService;
-import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
-import javax.mail.Session;
-import javax.mail.Transport;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
@@ -20,7 +15,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
-import java.util.*;
 
 @Slf4j
 @RestController
@@ -73,7 +67,7 @@ public class BaseController {
 
     @GetMapping(value = "/email")
     public String email() {
-        return mailService.SendDailyMail();
+        return mailService.sendDailyMail();
     }
 
     @GetMapping(value = "/startAutoDailyMail")

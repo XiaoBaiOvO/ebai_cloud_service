@@ -6,7 +6,6 @@ import com.ebai.ebai_cloud_service.model.dto.MailRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import javax.mail.Address;
 import javax.mail.Message;
 import javax.mail.Session;
 import javax.mail.Transport;
@@ -17,8 +16,9 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.util.Objects;
 import java.util.Properties;
 
 @Service
@@ -55,10 +55,10 @@ public class NetworkUtil implements Network {
             bufferedReader.close();
             httpURLConnection.disconnect();
             JSONObject result = JSONObject.parseObject(String.valueOf(stringBuffer));
-            log.info("<= 接收成功");
+            log.info("=> 接收成功");
             return result;
         } catch (Exception e) {
-            log.warn("<= 接收失败");
+            log.warn("=> 接收失败");
             log.warn(String.valueOf(e));
             return null;
         }
@@ -116,12 +116,54 @@ public class NetworkUtil implements Network {
             mimeMessage.setContent(message,"text/html;charset=UTF-8");
             transport.sendMessage(mimeMessage,mimeMessage.getAllRecipients());
             transport.close();
-            log.info("<= 发送成功");
+            log.info("=> 发送成功");
             return true;
         } catch (Exception e) {
-            log.warn("<= 发送失败");
+            log.warn("=> 发送失败");
             log.warn(String.valueOf(e));
             return false;
         }
+    }
+
+    private static String localIp;
+    private static LocalDateTime startDate;
+
+    public void initServiceLocalIp() {
+        NetworkUtil networkUtil = new NetworkUtil();
+        JSONObject result = networkUtil.getHttp("https://forge.speedtest.cn/api/location/info");
+        localIp = result.get("ip").toString();
+        startDate = LocalDateTime.now();
+        log.info("=> 服务启动成功");
+        log.info("=> 本地IP地址: " + localIp);
+        MailRequest mail = new MailRequest();
+        mail.setTitle("服务器启动成功");
+        mail.setMessage("当前IP地址: " + localIp);
+        mail.setSender("小白云");
+        mail.setRecipient("Administrator");
+        mail.setRecipientAccount("2643372457@qq.com");
+//            sendMail(mail);
+        mail.setRecipientAccount("2081414628@qq.com");
+        sendMail(mail);
+    }
+
+    public void checkServiceLocalIp() {
+        NetworkUtil networkUtil = new NetworkUtil();
+        JSONObject result = networkUtil.getHttp("https://forge.speedtest.cn/api/location/info");
+        String ip = result.get("ip").toString();
+        if (!Objects.equals(ip, localIp)) {
+            log.warn("本地IP发生变化: {} ==> {}", localIp, ip);
+            MailRequest mail = new MailRequest();
+            mail.setTitle("服务器IP地址变更");
+            mail.setMessage("服务器IP变更: <br>" + localIp + " ==> " + ip);
+            mail.setSender("小白云");
+            mail.setRecipient("Administrator");
+            mail.setRecipientAccount("2643372457@qq.com");
+//            sendMail(mail);
+            mail.setRecipientAccount("2081414628@qq.com");
+            sendMail(mail);
+            localIp = ip;
+        }
+        String runningTime = Duration.between(startDate, LocalDateTime.now()).toString().substring(2);
+        log.info("=> 本地IP地址: {} => 累计运行时长: {}", ip, runningTime);
     }
 }
