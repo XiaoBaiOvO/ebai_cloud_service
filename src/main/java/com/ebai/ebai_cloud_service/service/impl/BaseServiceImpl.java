@@ -1,7 +1,7 @@
 package com.ebai.ebai_cloud_service.service.impl;
 
-import com.ebai.ebai_cloud_service.mapper.UserDetailRepository;
-import com.ebai.ebai_cloud_service.mapper.entity.UserDetailEntity;
+import com.ebai.ebai_cloud_service.mapper.UserInfoRepository;
+import com.ebai.ebai_cloud_service.mapper.entity.UserInfoEntity;
 import com.ebai.ebai_cloud_service.model.vo.TestVo;
 import com.ebai.ebai_cloud_service.service.BaseService;
 import lombok.extern.slf4j.Slf4j;
@@ -15,7 +15,7 @@ import java.util.Date;
 public class BaseServiceImpl implements BaseService {
 
     @Autowired
-    UserDetailRepository userDetailRepository;
+    UserInfoRepository userInfoRepository;
 
 
     @Override
@@ -23,15 +23,14 @@ public class BaseServiceImpl implements BaseService {
 
         log.info("insert service");
 
-//        UserDetailEntity entity = new UserDetailEntity();
-//
-//        entity.setUserName("aaa");
-//        entity.setCreateDate(new Date());
+        UserInfoEntity entity = UserInfoEntity.builder()
+                .userName("xiaobai")
+                .password("123")
+                .createDate(new Date())
+                .build();
+        userInfoRepository.save(entity);
 
-        UserDetailEntity entity = UserDetailEntity.builder().userName("aaa").createDate(new Date()).build();
-        userDetailRepository.save(entity);
-
-
+        System.out.println(userInfoRepository.findAll());
     }
 
 

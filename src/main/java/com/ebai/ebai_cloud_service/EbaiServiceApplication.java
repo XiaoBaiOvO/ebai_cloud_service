@@ -22,7 +22,7 @@ public class EbaiServiceApplication {
 			@Override
 			public void run() {
 				try {
-//					FilterUtils.heartService();
+//					HeartFilter.heartService();
 				} catch (Exception e) {
 					log.warn(e.toString());
 				}
