@@ -96,21 +96,17 @@ public class MailServiceImpl implements MailService {
                 "</div>" +
                 "";
 
-//        "    <div style=\"padding-top: 10px\">" + weatherChangeMsg + "</div>\n" +
-
         MailRequest mail = new MailRequest();
         mail.setTitle(title);
         mail.setMessage(message);
         mail.setSender("HYC大聪明");
         mail.setRecipient("HMQ小宝贝");
-
         mail.setRecipientAccount("2643372457@qq.com");
-//        Boolean result1 = network.sendMail(mail);
+        Boolean result1 = network.sendMail(mail);
         mail.setRecipientAccount("2081414628@qq.com");
         Boolean result2 = network.sendMail(mail);
 
-//        return (result1 && result2) ? "发送成功" : ((result1 ? null : "Task1 ") + (result1 ? null : "Task2 ") + "发送失败");
-        return null;
+        return (result1 && result2) ? "发送成功" : ((result1 ? null : "Task1 ") + (result1 ? null : "Task2 ") + "发送失败");
     }
 
     @Override
