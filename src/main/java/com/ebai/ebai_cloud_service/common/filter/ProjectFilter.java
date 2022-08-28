@@ -22,5 +22,4 @@ public class ProjectFilter implements Filter {
         filterChain.doFilter(servletRequest, servletResponse);
     }
 
-
 }

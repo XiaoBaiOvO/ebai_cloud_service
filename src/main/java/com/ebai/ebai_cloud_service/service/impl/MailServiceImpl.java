@@ -5,6 +5,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.ebai.ebai_cloud_service.common.util.DateTool;
 import com.ebai.ebai_cloud_service.common.util.Network;
 import com.ebai.ebai_cloud_service.mapper.ClassScheduleRepository;
+import com.ebai.ebai_cloud_service.mapper.entity.ClassScheduleEntity;
 import com.ebai.ebai_cloud_service.model.dto.MailRequest;
 import com.ebai.ebai_cloud_service.service.MailService;
 import lombok.extern.slf4j.Slf4j;
@@ -13,10 +14,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.math.BigInteger;
 import java.time.*;
-import java.util.Date;
-import java.util.Objects;
-import java.util.Timer;
-import java.util.TimerTask;
+import java.util.*;
 
 import static java.util.concurrent.TimeUnit.DAYS;
 
@@ -61,6 +59,34 @@ public class MailServiceImpl implements MailService {
                                 "上午可能" + nowText + "转" + todayTextDay + "，下午可能" + todayTextDay + "转" + todayTextNight));
         String weatherChangeMsg = ((weatherChangeNotes.equals("") ? "" : "<div style=\"padding-top: 10px\">" + weatherChangeNotes + "</div>\n"));
 
+        List<ClassScheduleEntity> classSchedule = classScheduleRepository.findAllByDateOrderByOrder(todayWeek);
+        StringBuilder classScheduleMsg = new StringBuilder("<div style=\"padding-top: 10px\">今天没有课程安排，注意休息哦。</div>\n");
+        if (!classSchedule.isEmpty()) {
+            classScheduleMsg.append("" +
+                    "    <div style=\"padding: 10px 0\">今日课程表：</div>\n" +
+                    "    <div>\n" +
+                    "      <table style=\"font-size: 30px; text-align: center;border: 1px solid;border-collapse: collapse; table-layout: fixed; color: #9aa2d7\">\n" +
+                    "        <tr>\n" +
+                    "          <th style=\"border: 2px solid #9aa2d7; font-weight: bold\">时间</th>\n" +
+                    "          <th style=\"border: 2px solid #9aa2d7; font-weight: bold\">课程</th>\n" +
+                    "          <th style=\"border: 2px solid #9aa2d7; font-weight: bold\">教室</th>\n" +
+                    "        </tr>\n");
+            for (ClassScheduleEntity classes : classSchedule) {
+                System.out.println(classes.getCauses());
+                classScheduleMsg.append("" +
+                        "        <tr>\n" +
+                        "          <td style=\"border: 2px solid #9aa2d7\">" + classes.getTime() + "</td>\n" +
+                        "          <td style=\"border: 2px solid #9aa2d7\">" + classes.getCauses() + "</td>\n" +
+                        "          <td style=\"border: 2px solid #9aa2d7\">" + classes.getClassroom() + "</td>\n" +
+                        "        </tr>\n");
+            }
+            classScheduleMsg.append("" +
+                    "      </table>\n" +
+                    "    </div>\n");
+
+        }
+
+
         String title = "小白の每日问候 - 爱你的第" + Duration.between(loveDay, LocalDateTime.now()).toDays() + "天";
         String message = "" +
                 "<div style=\"width: 100%; background-color: antiquewhite;font-size: 30px;font-family: '楷体',serif;padding: 20px 0\">\n" +
@@ -71,27 +97,7 @@ public class MailServiceImpl implements MailService {
                 "  <div style=\"color: #9aa2d7;margin-left: 20px\">\n" +
                 "    <div style=\"padding-top: 10px\">早上好！今天是" + today.getMonthValue() + "月" + today.getDayOfMonth() + "日 " + todayWeek + "</div>\n" +
                 "    <div style=\"padding-top: 10px\">今早上海天气：" + nowText + " " + nowTemp + "℃</div>\n" +
-                "    <div style=\"padding-top: 10px\">最高气温：" + todayHighTemp + "℃ 最低气温：" + todayLowTemp + "℃</div>\n" + weatherChangeMsg +
-                "    <div style=\"padding: 10px 0\">今日课程表：</div>\n" +
-                "    <div>\n" +
-                "      <table style=\"font-size: 30px; text-align: center;border: 1px solid;border-collapse: collapse; table-layout: fixed; color: #9aa2d7\">\n" +
-                "        <tr>\n" +
-                "          <th style=\"border: 2px solid #9aa2d7; font-weight: bold\">时间</th>\n" +
-                "          <th style=\"border: 2px solid #9aa2d7; font-weight: bold\">课程</th>\n" +
-                "          <th style=\"border: 2px solid #9aa2d7; font-weight: bold\">教室</th>\n" +
-                "        </tr>\n" +
-                "        <tr>\n" +
-                "          <td style=\"border: 2px solid #9aa2d7\">9:45-11:30</td>\n" +
-                "          <td style=\"border: 2px solid #9aa2d7\">高等数学</td>\n" +
-                "          <td style=\"border: 2px solid #9aa2d7\">4号楼A215</td>\n" +
-                "        </tr>\n" +
-                "        <tr>\n" +
-                "          <td style=\"border: 2px solid #9aa2d7\">18:00-19:40</td>\n" +
-                "          <td style=\"border: 2px solid #9aa2d7\">大学英语</td>\n" +
-                "          <td style=\"border: 2px solid #9aa2d7\">4号楼A215</td>\n" +
-                "        </tr>\n" +
-                "      </table>\n" +
-                "    </div>\n" +
+                "    <div style=\"padding-top: 10px\">最高气温：" + todayHighTemp + "℃ 最低气温：" + todayLowTemp + "℃</div>\n" + weatherChangeMsg + classScheduleMsg +
                 "    <div style=\"padding: 10px 0\">距HYC前来探监还有：好多好多天</div>\n" +
                 "    <img src=\"https://img.72qq.com/file/202103/02/7fcba33957.jpg\" alt=\"\" style=\"width: 200px\">\n" +
                 "  </div>\n" +
@@ -113,6 +119,12 @@ public class MailServiceImpl implements MailService {
 
     @Override
     public void startAutoDailyMail(Integer timeSet) {
+
+        List<ClassScheduleEntity> ClassSchedule = classScheduleRepository.findAllByDateOrderByOrder("星期一");
+        for (ClassScheduleEntity classes : ClassSchedule) {
+            System.out.println(classes.getCauses());
+        }
+
         log.info("启动定时邮件任务 =>");
         LocalDate date = LocalDate.now();
         LocalTime time = LocalTime.now();

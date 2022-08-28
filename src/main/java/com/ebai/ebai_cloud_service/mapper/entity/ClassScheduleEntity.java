@@ -15,6 +15,8 @@ public class ClassScheduleEntity {
 
     private String time;
 
+    private String order;
+
     private String teacher;
 
     private String status;

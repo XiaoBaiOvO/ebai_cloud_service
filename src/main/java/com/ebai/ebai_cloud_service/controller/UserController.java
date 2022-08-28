@@ -35,9 +35,6 @@ public class UserController {
         return true;
     }
 
-
-
-
     @GetMapping(value = "/getMenuList")
     public List<RouterVo> getMenuList() {
         log.info("Get Menu List");
