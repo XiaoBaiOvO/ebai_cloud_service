@@ -62,7 +62,7 @@ public class MailServiceImpl implements MailService {
         List<ClassScheduleEntity> classSchedule = classScheduleRepository.findAllByDateOrderByOrder(todayWeek);
         StringBuilder classScheduleMsg = new StringBuilder("<div style=\"padding-top: 10px\">今天没有课程安排，注意休息哦。</div>\n");
         if (!classSchedule.isEmpty()) {
-            classScheduleMsg.append("" +
+            classScheduleMsg = new StringBuilder("" +
                     "    <div style=\"padding: 10px 0\">今日课程表：</div>\n" +
                     "    <div>\n" +
                     "      <table style=\"font-size: 30px; text-align: center;border: 1px solid;border-collapse: collapse; table-layout: fixed; color: #9aa2d7\">\n" +
@@ -83,7 +83,6 @@ public class MailServiceImpl implements MailService {
             classScheduleMsg.append("" +
                     "      </table>\n" +
                     "    </div>\n");
-
         }
 
 
@@ -100,6 +99,7 @@ public class MailServiceImpl implements MailService {
                 "    <div style=\"padding-top: 10px\">最高气温：" + todayHighTemp + "℃ 最低气温：" + todayLowTemp + "℃</div>\n" + weatherChangeMsg + classScheduleMsg +
                 "    <div style=\"padding: 10px 0\">距HYC前来探监还有：好多好多天</div>\n" +
                 "    <img src=\"https://img.72qq.com/file/202103/02/7fcba33957.jpg\" alt=\"\" style=\"width: 200px\">\n" +
+                "    <div><table style=\"table-layout: fixed;\"></table></div>\n" +
                 "  </div>\n" +
                 "</div>" +
                 "";
@@ -119,12 +119,6 @@ public class MailServiceImpl implements MailService {
 
     @Override
     public void startAutoDailyMail(Integer timeSet) {
-
-        List<ClassScheduleEntity> ClassSchedule = classScheduleRepository.findAllByDateOrderByOrder("星期一");
-        for (ClassScheduleEntity classes : ClassSchedule) {
-            System.out.println(classes.getCauses());
-        }
-
         log.info("启动定时邮件任务 =>");
         LocalDate date = LocalDate.now();
         LocalTime time = LocalTime.now();
