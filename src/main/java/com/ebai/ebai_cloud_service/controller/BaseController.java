@@ -72,6 +72,6 @@ public class BaseController {
 
     @GetMapping(value = "/startAutoDailyMail")
     public void startAutoDailyMail() {
-        mailService.startAutoDailyMail();
+        mailService.startAutoDailyMail(6);
     }
 }

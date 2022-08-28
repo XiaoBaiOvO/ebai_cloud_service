@@ -112,16 +112,14 @@ public class MailServiceImpl implements MailService {
     }
 
     @Override
-    public void startAutoDailyMail() {
+    public void startAutoDailyMail(Integer timeSet) {
         log.info("启动定时邮件任务 =>");
-        LocalDate date;
+        LocalDate date = LocalDate.now();
         LocalTime time = LocalTime.now();
-        if (time.getHour() < 6) {
-            date = LocalDate.now();
-        } else {
+        if (time.getHour() >= timeSet) {
             date = LocalDate.now().plusDays(BigInteger.ONE.longValue());
         }
-        LocalDateTime firstDateTime = LocalDateTime.of(date, LocalTime.of(6, 0));
+        LocalDateTime firstDateTime = LocalDateTime.of(date, LocalTime.of(timeSet, 0));
         Date firstDate = Date.from(firstDateTime.atZone(ZoneId.systemDefault()).toInstant());
         log.info("=> {} 第一次发送", firstDate);
         TimerTask task = new TimerTask() {
