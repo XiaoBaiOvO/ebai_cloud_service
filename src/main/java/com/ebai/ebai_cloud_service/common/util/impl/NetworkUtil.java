@@ -18,8 +18,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.time.Duration;
 import java.time.LocalDateTime;
-import java.util.Objects;
-import java.util.Properties;
+import java.util.*;
 
 @Service
 @Slf4j
@@ -27,7 +26,30 @@ public class NetworkUtil implements Network {
 
     @Override
     public Boolean sendMail(MailRequest mail) {
-        return sendByQQMail(mail.getTitle(), mail.getMessage(), mail.getSender(), mail.getRecipient(), mail.getRecipientAccount());
+        log.info("邮件发送 => {}", mail.getRecipientAccount());
+        try {
+            List<InternetAddress> addressList = new ArrayList<>();
+            addressList.add(new InternetAddress(mail.getRecipientAccount(), mail.getRecipient(), "UTF-8"));
+            InternetAddress[] address = addressList.toArray(new InternetAddress[0]);
+            return sendByQQMail(mail.getTitle(), mail.getMessage(), mail.getSender(), address);
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    @Override
+    public Boolean sendMail(List<MailRequest> mailList) {
+        try {
+            List<InternetAddress> addressList = new ArrayList<>();
+            for (MailRequest mail : mailList) {
+                log.info("邮件发送 => {}", mail.getRecipientAccount());
+                addressList.add(new InternetAddress(mail.getRecipientAccount(), mail.getRecipient(), "UTF-8"));
+            }
+            InternetAddress[] address = addressList.toArray(new InternetAddress[0]);
+            return sendByQQMail(mailList.get(0).getTitle(), mailList.get(0).getMessage(), mailList.get(0).getSender(), address);
+        } catch (Exception e) {
+            return false;
+        }
     }
 
     @Override
@@ -90,8 +112,8 @@ public class NetworkUtil implements Network {
 
     private static final String senderAccountPassword = "zeztsvvtmtymdheh";
 
-    private Boolean sendByQQMail(String title, String message, String sender, String Recipient, String RecipientAccount) {
-        log.info("邮件发送 => {}", RecipientAccount);
+    private Boolean sendByQQMail(String title, String message, String sender, InternetAddress[] internetAddresses) {
+        log.info("邮件发送 => {}", Arrays.toString(internetAddresses));
         try {
             Properties properties = new Properties();
             properties.setProperty("mail.host","smtp.qq.com");
@@ -103,15 +125,7 @@ public class NetworkUtil implements Network {
             transport.connect("smtp.qq.com",senderAccount,senderAccountPassword);
             MimeMessage mimeMessage = new MimeMessage(session);
             mimeMessage.setFrom(new InternetAddress(senderAccount, sender, "UTF-8"));
-
-//            List<InternetAddress> adds = new ArrayList<>();
-//            InternetAddress internetAddress = new InternetAddress(RecipientAccount, Recipient, "UTF-8");
-//            adds.add(internetAddress);
-//            adds.add(internetAddress);
-//            InternetAddress[] address =adds.toArray(new InternetAddress[0]);
-//            mimeMessage.setRecipients(Message.RecipientType.TO,address);
-
-            mimeMessage.setRecipient(Message.RecipientType.TO,new InternetAddress(RecipientAccount, Recipient, "UTF-8"));
+            mimeMessage.setRecipients(Message.RecipientType.TO,internetAddresses);
             mimeMessage.setSubject(title);
             mimeMessage.setContent(message,"text/html;charset=UTF-8");
             transport.sendMessage(mimeMessage,mimeMessage.getAllRecipients());
@@ -157,8 +171,6 @@ public class NetworkUtil implements Network {
             mail.setMessage("服务器IP变更: <br>" + localIp + " ==> " + ip);
             mail.setSender("小白云");
             mail.setRecipient("Administrator");
-            mail.setRecipientAccount("2643372457@qq.com");
-//            sendMail(mail);
             mail.setRecipientAccount("2081414628@qq.com");
             sendMail(mail);
             localIp = ip;

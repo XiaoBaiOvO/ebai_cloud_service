@@ -12,37 +12,30 @@ import static java.util.concurrent.TimeUnit.MINUTES;
 public class InitUtil {
 
     public static void init() {
-        log.info("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
-        log.info("----- Ebai Cloud Service Is Initializing ... -----");
-        TimerTask initTask = new TimerTask() {
-            public void run() {
-                startAutoDailyMail();
-            }
-        };
-        initTask.run();
+        startInit();
 
         TimerTask heartTask = new TimerTask() {
             public void run() {
-                log.info("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
-                log.info("-------- Ebai Cloud Service Is Running .. --------");
-                checkServiceLocalIp();
+                heartService();
             }
         };
         Timer timer = new Timer();
-        timer.schedule(heartTask, 100, MINUTES.toMillis(BigInteger.TEN.longValue()));
+        timer.schedule(heartTask, MINUTES.toMillis(BigInteger.ONE.longValue()), MINUTES.toMillis(BigInteger.TEN.longValue()));
 //        timer.schedule(heartTask, 100, 2000);
         log.info("------------ Completed initialization ------------");
     }
 
-    private static void startAutoDailyMail() {
+    private static void startInit() {
+        log.info("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
+        log.info("----- Ebai Cloud Service Is Initializing ... -----");
         NetworkUtil networkUtil = new NetworkUtil();
         networkUtil.initServiceLocalIp();
-//        MailServiceImpl MailServiceImpl = new MailServiceImpl();
-//        MailServiceImpl.startAutoDailyMail();
         networkUtil.getHttp("http://localhost:9000/startAutoDailyMail");
     }
 
-    private static void checkServiceLocalIp() {
+    private static void heartService() {
+        log.info("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
+        log.info("-------- Ebai Cloud Service Is Running .. --------");
         NetworkUtil networkUtil = new NetworkUtil();
         networkUtil.checkServiceLocalIp();
     }

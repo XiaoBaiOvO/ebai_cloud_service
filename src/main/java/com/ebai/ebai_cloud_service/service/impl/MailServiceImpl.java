@@ -60,7 +60,7 @@ public class MailServiceImpl implements MailService {
         String weatherChangeMsg = ((weatherChangeNotes.equals("") ? "" : "<div style=\"padding-top: 10px\">" + weatherChangeNotes + "</div>\n"));
 
         List<ClassScheduleEntity> classSchedule = classScheduleRepository.findAllByDateOrderByOrder(todayWeek);
-        StringBuilder classScheduleMsg = new StringBuilder("<div style=\"padding-top: 10px\">今天没有课程安排，注意休息哦。</div>\n");
+        StringBuilder classScheduleMsg = new StringBuilder("<div style=\"padding-top: 10px\">今天没有课程安排，注意休息哦</div>\n");
         if (!classSchedule.isEmpty()) {
             classScheduleMsg = new StringBuilder("" +
                     "    <div style=\"padding: 10px 0\">今日课程表：</div>\n" +
@@ -85,7 +85,6 @@ public class MailServiceImpl implements MailService {
                     "    </div>\n");
         }
 
-
         String title = "小白の每日问候 - 爱你的第" + Duration.between(loveDay, LocalDateTime.now()).toDays() + "天";
         String message = "" +
                 "<div style=\"width: 100%; background-color: antiquewhite;font-size: 30px;font-family: '楷体',serif;padding: 20px 0\">\n" +
@@ -104,17 +103,23 @@ public class MailServiceImpl implements MailService {
                 "</div>" +
                 "";
 
-        MailRequest mail = new MailRequest();
-        mail.setTitle(title);
-        mail.setMessage(message);
-        mail.setSender("HYC大聪明");
-        mail.setRecipient("HMQ小宝贝");
-        mail.setRecipientAccount("2643372457@qq.com");
-        Boolean result1 = network.sendMail(mail);
-        mail.setRecipientAccount("2081414628@qq.com");
-        Boolean result2 = network.sendMail(mail);
+        List<MailRequest> mailList = new ArrayList<>();
+        MailRequest mail1 = new MailRequest();
+        mail1.setTitle(title);
+        mail1.setMessage(message);
+        mail1.setSender("HYC大聪明");
+        mail1.setRecipient("HMQ小宝贝");
+        mail1.setRecipientAccount("2643372457@qq.com");
+        mailList.add(mail1);
+        MailRequest mail2 = new MailRequest();
+        mail2.setTitle(title);
+        mail2.setMessage(message);
+        mail2.setSender("HYC大聪明");
+        mail2.setRecipient("HMQ小宝贝");
+        mail2.setRecipientAccount("2081414628@qq.com");
+        mailList.add(mail2);
 
-        return (result1 && result2) ? "发送成功" : ((result1 ? null : "Task1 ") + (result1 ? null : "Task2 ") + "发送失败");
+        return network.sendMail(mailList) ? "发送成功" : "发送失败";
     }
 
     @Override
