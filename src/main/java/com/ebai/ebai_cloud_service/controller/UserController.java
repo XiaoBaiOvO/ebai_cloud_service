@@ -1,5 +1,8 @@
 package com.ebai.ebai_cloud_service.controller;
 
+import com.ebai.ebai_cloud_service.controller.request.LoginAccountRequest;
+import com.ebai.ebai_cloud_service.controller.response.CurrentUserResponse;
+import com.ebai.ebai_cloud_service.controller.response.LoginAccountResponse;
 import com.ebai.ebai_cloud_service.model.vo.RouterVo;
 import com.ebai.ebai_cloud_service.model.vo.UserInfoVo;
 import com.ebai.ebai_cloud_service.service.UserService;
@@ -9,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 @Slf4j
 @RestController
@@ -18,8 +22,31 @@ public class UserController {
     @Resource
     UserService userService;
 
+    @PostMapping (value = "/api/login/account")
+    public LoginAccountResponse loginAccount(@RequestBody LoginAccountRequest request) {
+        log.info(request.toString());
+        if (Objects.equals(request.getType(), "account")) {
+            return LoginAccountResponse.builder().status("ok").username(request.getUsername()).build();
+        } else {
+            return LoginAccountResponse.builder().status("ok").username(request.getMobile()).build();
+        }
+    }
+
+    @GetMapping (value = "/api/currentUser")
+    public CurrentUserResponse currentUser () {
+        log.info("currentUser");
+        return null;
+    }
+
+
+
+    @PostMapping (value = "/api/test")
+    public String testLogin() {
+        return "Success Login";
+    }
+
     @PostMapping (value = "/login")
-    public String login(@RequestBody UserInfoVo userInfoVo) {
+    public String loginAccount(@RequestBody UserInfoVo userInfoVo) {
         return userService.login(userInfoVo);
     }
 
@@ -27,7 +54,6 @@ public class UserController {
     public Boolean register(@RequestBody UserInfoVo userInfoVo) {
         return userService.register(userInfoVo);
     }
-
 
     @PostMapping (value = "/loggedCheck")
     public Boolean loggedCheck() {

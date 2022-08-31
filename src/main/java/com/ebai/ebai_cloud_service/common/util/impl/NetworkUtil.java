@@ -18,7 +18,10 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.time.Duration;
 import java.time.LocalDateTime;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+import java.util.Properties;
 
 @Service
 @Slf4j
@@ -113,7 +116,7 @@ public class NetworkUtil implements Network {
     private static final String senderAccountPassword = "zeztsvvtmtymdheh";
 
     private Boolean sendByQQMail(String title, String message, String sender, InternetAddress[] internetAddresses) {
-        log.info("邮件发送 => {}", Arrays.toString(internetAddresses));
+        log.info("=> 发送中 ...");
         try {
             Properties properties = new Properties();
             properties.setProperty("mail.host","smtp.qq.com");
