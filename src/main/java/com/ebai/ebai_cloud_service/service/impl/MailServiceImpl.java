@@ -31,7 +31,7 @@ public class MailServiceImpl implements MailService {
     @Resource
     ClassScheduleRepository classScheduleRepository;
 
-    private static final String weatherRequest = "https://api.map.baidu.com/weather/v1/?district_id=310120&data_type=all&ak=Tco6gfz2hZFqtoXGIzoQavlz49dLCtOS";
+    private static final String weatherRequest = "https://api.map.baidu.com/weather/v1/?district_id=" + 310120 + "&data_type=all&ak=Tco6gfz2hZFqtoXGIzoQavlz49dLCtOS";
 
     private static final LocalDateTime loveDay = LocalDateTime.of(2021, 8, 16, 0, 0, 0);
 
