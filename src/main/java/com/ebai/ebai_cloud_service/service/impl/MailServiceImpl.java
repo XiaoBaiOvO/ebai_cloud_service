@@ -31,7 +31,7 @@ public class MailServiceImpl implements MailService {
     @Resource
     ClassScheduleRepository classScheduleRepository;
 
-    private static final String weatherRequest = "https://api.map.baidu.com/weather/v1/?district_id=" + 310120 + "&data_type=all&ak=Tco6gfz2hZFqtoXGIzoQavlz49dLCtOS";
+    private static final String weatherRequest = "https://api.map.baidu.com/weather/v1/?district_id=" + 310115 + "&data_type=all&ak=Tco6gfz2hZFqtoXGIzoQavlz49dLCtOS";
 
     private static final LocalDateTime loveDay = LocalDateTime.of(2021, 8, 16, 0, 0, 0);
 
@@ -94,7 +94,7 @@ public class MailServiceImpl implements MailService {
                 "  </div>\n" +
                 "  <div style=\"color: #9aa2d7;margin-left: 20px\">\n" +
                 "    <div style=\"padding-top: 10px\">早上好！今天是" + today.getMonthValue() + "月" + today.getDayOfMonth() + "日 " + todayWeek + "</div>\n" +
-                "    <div style=\"padding-top: 10px\">今早上海天气：" + nowText + " " + nowTemp + "℃</div>\n" +
+                "    <div style=\"padding-top: 10px\">今早浦东天气：" + nowText + " " + nowTemp + "℃</div>\n" +
                 "    <div style=\"padding-top: 10px\">最高气温：" + todayHighTemp + "℃ 最低气温：" + todayLowTemp + "℃</div>\n" + weatherChangeMsg + classScheduleMsg +
                 "    <div style=\"padding: 10px 0\">距HYC前来探监还有：好多好多天</div>\n" +
                 "    <img src=\"https://img.72qq.com/file/202103/02/7fcba33957.jpg\" alt=\"\" style=\"width: 200px\">\n" +

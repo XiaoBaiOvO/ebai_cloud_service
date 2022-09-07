@@ -1,6 +1,5 @@
 package com.ebai.ebai_cloud_service.controller;
 
-import com.ebai.ebai_cloud_service.service.BaseService;
 import com.ebai.ebai_cloud_service.service.MailService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -20,18 +19,8 @@ import java.nio.file.Files;
 @RestController
 @CrossOrigin
 public class BaseController {
-
-    @Resource
-    BaseService baseService;
-
     @Resource
     MailService mailService;
-
-    @GetMapping(value = "/test")
-    public String test() {
-        log.info("test success");
-        return "success";
-    }
 
     @GetMapping(value = "/download")
     public void download(HttpServletRequest request, HttpServletResponse response) {
@@ -53,16 +42,6 @@ public class BaseController {
         } catch (Exception e) {
             System.out.println("失败");
         }
-
-    }
-
-    @GetMapping(value = "/insert")
-    public String insert() {
-        log.info("insert");
-
-        baseService.insert();
-
-        return "Success !";
     }
 
     @GetMapping(value = "/email")

@@ -9,4 +9,6 @@ public interface ClassScheduleRepository  extends MongoRepository<ClassScheduleE
 
     List<ClassScheduleEntity> findAllByDateOrderByOrder(String date);
 
+    List<ClassScheduleEntity> findByDateIn(String date);
+
 }
