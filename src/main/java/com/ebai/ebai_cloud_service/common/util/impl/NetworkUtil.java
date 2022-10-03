@@ -4,6 +4,14 @@ import com.alibaba.fastjson.JSONObject;
 import com.ebai.ebai_cloud_service.common.util.Network;
 import com.ebai.ebai_cloud_service.model.dto.MailRequest;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.http.HttpEntity;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.config.RequestConfig;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
 import org.springframework.stereotype.Service;
 
 import javax.mail.Message;
@@ -13,6 +21,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import javax.servlet.http.HttpServletRequest;
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -116,7 +125,6 @@ public class NetworkUtil implements Network {
     private static final String senderAccountPassword = "zeztsvvtmtymdheh";
 
     private Boolean sendByQQMail(String title, String message, String sender, InternetAddress[] internetAddresses) {
-        log.info("=> 发送中 ...");
         try {
             Properties properties = new Properties();
             properties.setProperty("mail.host","smtp.qq.com");
@@ -147,7 +155,9 @@ public class NetworkUtil implements Network {
 
     public void initServiceLocalIp() {
         NetworkUtil networkUtil = new NetworkUtil();
-        JSONObject result = networkUtil.getHttp("https://forge.speedtest.cn/api/location/info");
+//        JSONObject result = networkUtil.getHttp("https://forge.speedtest.cn/api/location/info");
+//        JSONObject result = (JSONObject) networkUtil.getHttp("https://api-v3.speedtest.cn/ip").get("data");
+        JSONObject result = (JSONObject) networkUtil.doGet("https://api-v3.speedtest.cn/ip").get("data");
         localIp = result.get("ip").toString();
         startDate = LocalDateTime.now();
         log.info("=> 服务启动成功");
@@ -181,4 +191,54 @@ public class NetworkUtil implements Network {
         String runningTime = Duration.between(startDate, LocalDateTime.now()).toString().substring(2);
         log.info("=> 本地IP地址: {} => 累计运行时长: {}", ip, runningTime);
     }
+
+    private JSONObject doGet(String url) {
+        CloseableHttpClient httpClient = null;
+        CloseableHttpResponse response = null;
+        JSONObject result = new JSONObject();
+        try {
+            // 通过址默认配置创建一个httpClient实例
+            httpClient = HttpClients.createDefault();
+            // 创建httpGet远程连接实例
+            HttpGet httpGet = new HttpGet(url);
+            // 设置请求头信息，鉴权
+            httpGet.setHeader("Authorization", "Bearer da3efcbf-0845-4fe3-8aba-ee040be542c0");
+            // 设置配置请求参数
+            RequestConfig requestConfig = RequestConfig.custom().setConnectTimeout(35000)// 连接主机服务超时时间
+                    .setConnectionRequestTimeout(35000)// 请求超时时间
+                    .setSocketTimeout(60000)// 数据读取超时时间
+                    .build();
+            // 为httpGet实例设置配置
+            httpGet.setConfig(requestConfig);
+            // 执行get请求得到返回对象
+            response = httpClient.execute(httpGet);
+            // 通过返回对象获取返回数据
+            HttpEntity entity = response.getEntity();
+            // 通过EntityUtils中的toString方法将结果转换为字符串
+            result = JSONObject.parseObject(EntityUtils.toString(entity));
+            log.info(result.get("data").toString());
+        } catch (ClientProtocolException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            // 关闭资源
+            if (null != response) {
+                try {
+                    response.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (null != httpClient) {
+                try {
+                    httpClient.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return result;
+    }
+
 }

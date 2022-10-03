@@ -5,7 +5,9 @@ import com.alibaba.fastjson.JSONObject;
 import com.ebai.ebai_cloud_service.common.util.DateTool;
 import com.ebai.ebai_cloud_service.common.util.Network;
 import com.ebai.ebai_cloud_service.mapper.ClassScheduleRepository;
+import com.ebai.ebai_cloud_service.mapper.ServiceConfigRepository;
 import com.ebai.ebai_cloud_service.mapper.entity.ClassScheduleEntity;
+import com.ebai.ebai_cloud_service.mapper.entity.ServiceConfigEntity;
 import com.ebai.ebai_cloud_service.model.dto.MailRequest;
 import com.ebai.ebai_cloud_service.service.MailService;
 import lombok.extern.slf4j.Slf4j;
@@ -31,9 +33,11 @@ public class MailServiceImpl implements MailService {
     @Resource
     ClassScheduleRepository classScheduleRepository;
 
-    private static final String weatherRequest = "https://api.map.baidu.com/weather/v1/?district_id=" + 310115 + "&data_type=all&ak=Tco6gfz2hZFqtoXGIzoQavlz49dLCtOS";
+    @Resource
+    ServiceConfigRepository serviceConfigRepository;
 
-    private static final LocalDateTime loveDay = LocalDateTime.of(2021, 8, 16, 0, 0, 0);
+    private static final String weatherRequest = "https://api.map.baidu.com/weather/v1/?district_id=" + 310120 + "&data_type=all&ak=Tco6gfz2hZFqtoXGIzoQavlz49dLCtOS";
+    //    private static final String weatherRequest = "https://api.map.baidu.com/weather/v1/?district_id=" + 310115 + "&data_type=all&ak=Tco6gfz2hZFqtoXGIzoQavlz49dLCtOS";
 
     @Override
     public String sendDailyMail() {
@@ -58,14 +62,14 @@ public class MailServiceImpl implements MailService {
                         ((!Objects.equals(nowText, todayTextDay) && Objects.equals(todayTextDay, todayTextNight)) ? "上午可能" + nowText + "转" + todayTextDay :
                                 "上午可能" + nowText + "转" + todayTextDay + "，下午可能" + todayTextDay + "转" + todayTextNight));
         String weatherChangeMsg = ((weatherChangeNotes.equals("") ? "" : "<div style=\"padding-top: 10px\">" + weatherChangeNotes + "</div>\n"));
-
+//        课程表
         List<ClassScheduleEntity> classSchedule = classScheduleRepository.findAllByDateOrderByOrder(todayWeek);
         StringBuilder classScheduleMsg = new StringBuilder("<div style=\"padding-top: 10px\">今天没有课程安排，注意休息哦</div>\n");
         if (!classSchedule.isEmpty()) {
             classScheduleMsg = new StringBuilder("" +
                     "    <div style=\"padding: 10px 0\">今日课程表：</div>\n" +
                     "    <div>\n" +
-                    "      <table style=\"font-size: 30px; text-align: center;border: 1px solid;border-collapse: collapse; table-layout: fixed; color: #9aa2d7\">\n" +
+                    "      <table style=\"text-align: center;border: 1px solid;border-collapse: collapse; table-layout: fixed; color: #9aa2d7\">\n" +
                     "        <tr>\n" +
                     "          <th style=\"border: 2px solid #9aa2d7; font-weight: bold\">时间</th>\n" +
                     "          <th style=\"border: 2px solid #9aa2d7; font-weight: bold\">课程</th>\n" +
@@ -75,28 +79,47 @@ public class MailServiceImpl implements MailService {
                 System.out.println(classes.getCauses());
                 classScheduleMsg.append("" +
                         "        <tr>\n" +
-                        "          <td style=\"border: 2px solid #9aa2d7\">" + classes.getTime() + "</td>\n" +
-                        "          <td style=\"border: 2px solid #9aa2d7\">" + classes.getCauses() + "</td>\n" +
-                        "          <td style=\"border: 2px solid #9aa2d7\">" + classes.getClassroom() + "</td>\n" +
+                        "          <td style=\"border: 2px solid #9aa2d7\">").append(classes.getTime()).append("</td>\n" +
+                        "          <td style=\"border: 2px solid #9aa2d7\">").append(classes.getCauses()).append("</td>\n" +
+                        "          <td style=\"border: 2px solid #9aa2d7\">").append(classes.getClassroom()).append("</td>\n" +
                         "        </tr>\n");
             }
             classScheduleMsg.append("" +
                     "      </table>\n" +
                     "    </div>\n");
         }
+//        日期
+        List<ServiceConfigEntity> visitedDayList = serviceConfigRepository.findAllByName("visitDay");
+        String dayToVisit = "很多很多";
+        for (ServiceConfigEntity visitedDayEntity : visitedDayList) {
+            String value = visitedDayEntity.getValue();
+            LocalDateTime loveDay = visitedDayEntity.getDate();
+            if (Objects.equals(value, "true")) {
+                long day = Duration.between(LocalDateTime.now(), loveDay).toDays();
+                dayToVisit = String.valueOf(day);
+                if (day <= 0) {
+                    dayToVisit = "今";
+                    visitedDayEntity.setValue("false");
+                    serviceConfigRepository.save(visitedDayEntity);
+                }
+            }
+        }
+        LocalDateTime loveDay = serviceConfigRepository.findTopByName("loveDay").getDate();
+        long lovedDay = Duration.between(loveDay, LocalDateTime.now()).toDays();
 
-        String title = "小白の每日问候 - 爱你的第" + Duration.between(loveDay, LocalDateTime.now()).toDays() + "天";
+//        邮件内容
+        String title = "小白の每日问候 - 爱你的第" + lovedDay + "天";
         String message = "" +
-                "<div style=\"width: 100%; background-color: antiquewhite;font-size: 30px;font-family: '楷体',serif;padding: 20px 0\">\n" +
+                "<div style=\"width: 100%; background-color: antiquewhite;font-size: 20px;font-family: '楷体',serif;padding: 20px 0\">\n" +
                 "  <div style=\"font-weight: bold;text-align: center;color: #d79ad0;font-size: 30px;\">\n" +
                 "    <Strong>心梗砖家 tickled you ❤ ~</Strong>\n" +
                 "    <hr>\n" +
                 "  </div>\n" +
                 "  <div style=\"color: #9aa2d7;margin-left: 20px\">\n" +
                 "    <div style=\"padding-top: 10px\">早上好！今天是" + today.getMonthValue() + "月" + today.getDayOfMonth() + "日 " + todayWeek + "</div>\n" +
-                "    <div style=\"padding-top: 10px\">今早浦东天气：" + nowText + " " + nowTemp + "℃</div>\n" +
+                "    <div style=\"padding-top: 10px\">今早奉贤天气：" + nowText + " " + nowTemp + "℃</div>\n" +
                 "    <div style=\"padding-top: 10px\">最高气温：" + todayHighTemp + "℃ 最低气温：" + todayLowTemp + "℃</div>\n" + weatherChangeMsg + classScheduleMsg +
-                "    <div style=\"padding: 10px 0\">距HYC前来探监还有：好多好多天</div>\n" +
+                "    <div style=\"padding: 10px 0\">距HYC前来探监还有：" + dayToVisit + "天</div>\n" +
                 "    <img src=\"https://img.72qq.com/file/202103/02/7fcba33957.jpg\" alt=\"\" style=\"width: 200px\">\n" +
                 "    <div><table style=\"table-layout: fixed;\"></table></div>\n" +
                 "  </div>\n" +

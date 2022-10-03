@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -66,6 +67,22 @@ public class CommentController {
         return getCommentListFromDb();
     }
 
+    @PostMapping (value = "/api/comment/add")
+    public String commentAdd (@RequestBody CommentActionRequest request) {
+        log.info("commentAdd");
+        CommentDataEntity comment = CommentDataEntity.builder()
+                .author(request.getName())
+                .avatar(request.getAvatar())
+                .content(request.getContent())
+                .datetime(LocalDateTime.now())
+                .likes(new ArrayList<>())
+                .dislikes(new ArrayList<>())
+                .reply(new ArrayList<>())
+                .build();
+        commentDataRepository.save(comment);
+        return "success";
+    }
+
     @PostMapping (value = "/api/comment/reply")
     public List<CommentDataEntity> commentReply (@RequestBody CommentActionRequest request) {
         log.info("commentReply");
@@ -90,7 +107,7 @@ public class CommentController {
     private List<CommentDataEntity> getCommentListFromDb () {
 //        String a = UUID.randomUUID().toString().replaceAll("-", "");
 //        log.info(a);
-        List<CommentDataEntity> result = commentDataRepository.findAll();
+        List<CommentDataEntity> result = commentDataRepository.findAllByOrderByDatetimeDesc();
         for (CommentDataEntity entity : result) {
 //            Collections.reverse(entity.getReply());
         }
