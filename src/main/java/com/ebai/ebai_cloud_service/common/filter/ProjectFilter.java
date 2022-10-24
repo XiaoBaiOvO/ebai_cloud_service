@@ -13,6 +13,9 @@ public class ProjectFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+
+
+
         log.info("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         String userName = (String) request.getSession().getAttribute("userName");
@@ -23,3 +26,5 @@ public class ProjectFilter implements Filter {
     }
 
 }
+
+

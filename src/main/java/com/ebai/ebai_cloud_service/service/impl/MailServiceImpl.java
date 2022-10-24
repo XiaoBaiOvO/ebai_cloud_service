@@ -42,7 +42,7 @@ public class MailServiceImpl implements MailService {
     @Override
     public String sendDailyMail() {
 
-        JSONObject weather = network.getHttp(weatherRequest);
+        JSONObject weather = network.httpGetClient(weatherRequest);
 
         JSONObject weatherResult = JSONObject.parseObject(weather.getString("result"));
         JSONObject nowResult = JSONObject.parseObject(weatherResult.getString("now"));

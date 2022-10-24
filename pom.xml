@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ebai</groupId>
-	<artifactId>ebai_service</artifactId>
+	<artifactId>ebai_cloud_service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ebai_service</name>
 	<description>ebai_service</description>

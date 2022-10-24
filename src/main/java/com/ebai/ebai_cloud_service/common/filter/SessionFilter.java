@@ -19,7 +19,7 @@ public class SessionFilter implements Filter {
         HttpServletResponse response = (HttpServletResponse) servletResponse;
 
         HttpSession session = request.getSession();
-        String userName = (String) session.getAttribute("userName");
+        String userName = (String) session.getAttribute("username");
         Date currentDate = new Date();
         long sessionExistTime = currentDate.getTime() - session.getCreationTime();
         long sessionLastActiveTime = currentDate.getTime() - session.getLastAccessedTime();

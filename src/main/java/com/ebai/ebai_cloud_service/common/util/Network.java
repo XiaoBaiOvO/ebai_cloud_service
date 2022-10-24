@@ -8,11 +8,16 @@ import java.util.List;
 
 public interface Network {
 
-    JSONObject getHttp(String urlString);
-
     Boolean sendMail(MailRequest mail);
     Boolean sendMail(List<MailRequest> mailList);
 
+    JSONObject httpGetClient(String url, Boolean retry);
+
+    JSONObject httpGetClient(String url, Integer delay);
+
+    JSONObject httpGetClient(String url, Boolean retry, Integer delay);
+
     String getIp(HttpServletRequest httpServletRequest);
 
+    JSONObject httpGetClient(String url);
 }

@@ -1,5 +1,6 @@
 package com.ebai.ebai_cloud_service.controller;
 
+import com.ebai.ebai_cloud_service.common.util.impl.NetworkUtil;
 import com.ebai.ebai_cloud_service.mapper.ClassScheduleRepository;
 import com.ebai.ebai_cloud_service.mapper.entity.ClassScheduleEntity;
 import com.ebai.ebai_cloud_service.service.BaseService;
@@ -24,6 +25,8 @@ public class TestController {
     @Resource
     BaseService baseService;
 
+    @Resource
+    NetworkUtil networkUtil;
 
     @GetMapping(value = "/test")
     public String test() {
