@@ -32,10 +32,6 @@ public class InitUtil {
     private static void startInit() {
         log.info("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
         log.info("----- Ebai Cloud Service Is Initializing ... -----");
-        String weatherRequest = "https://api.map.baidu.com/weather/v1/?district_id=" + 310120 + "&data_type=all&ak=Tco6gfz2hZFqtoXGIzoQavlz49dLCtOS";
-        NetworkUtil networkUtil = new NetworkUtil();
-        JSONObject weather = networkUtil.httpGetClient(weatherRequest);
-        System.out.println(weather.toString());
         InitUtil initUtil = new InitUtil();
         initUtil.initServiceLocalIp();
         initUtil.startAutoDailyMail();
@@ -64,9 +60,9 @@ public class InitUtil {
         mail.setMessage("当前IP地址: " + localIp);
         mail.setSender("小白云");
         mail.setRecipient("Administrator");
-        mail.setRecipientAccount("2643372457@qq.com");
-        networkUtil.sendMail(mail);
         mail.setRecipientAccount("2081414628@qq.com");
+        networkUtil.sendMail(mail);
+        mail.setRecipientAccount("2643372457@qq.com");
         networkUtil.sendMail(mail);
     }
 

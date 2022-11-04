@@ -1,0 +1,465 @@
+00:00:12.000 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:00:12.001 [INFO ] ProjectFilter - 请求拦截：URL == > /
+00:00:13.069 [WARN ] NetworkUtil - Get Location Exception
+00:00:13.069 [INFO ] ProjectFilter - 网络信息：IP == > 205.210.31.140 (Unknown)
+00:00:13.069 [INFO ] ProjectFilter - 设备信息：User-Agent == > Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com
+00:00:13.070 [INFO ] SessionFilter - session userName => null , sessionExistTime => 1 (0分钟) , sessionLastActiveTime => 1 (0分钟) 
+00:00:13.070 [INFO ] SessionFilter - session初始化
+00:00:13.070 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+00:00:43.460 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:00:43.460 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+00:00:46.585 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 31M6.252S
+00:10:43.467 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:10:43.467 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+00:10:46.572 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 41M6.239S
+00:20:43.480 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:20:43.480 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+00:20:46.593 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 51M6.259S
+00:30:43.486 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:30:43.486 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+00:30:46.604 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1H1M6.271S
+00:40:43.495 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:40:43.495 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+00:40:46.606 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1H11M6.272S
+00:50:43.499 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:50:43.499 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+00:50:46.604 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1H21M6.271S
+01:00:43.500 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:00:43.500 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+01:00:46.585 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1H31M6.252S
+01:10:43.503 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:10:43.503 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+01:10:46.626 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1H41M6.293S
+01:20:43.509 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:20:43.509 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+01:20:46.600 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1H51M6.267S
+01:30:43.510 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:30:43.510 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+01:30:46.605 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 2H1M6.272S
+01:40:43.513 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:40:43.513 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+01:40:46.614 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 2H11M6.281S
+01:50:43.523 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:50:43.523 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+01:50:46.615 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 2H21M6.282S
+02:00:43.534 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:00:43.534 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+02:00:46.627 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 2H31M6.294S
+02:10:43.548 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:10:43.548 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+02:10:46.640 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 2H41M6.307S
+02:20:43.563 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:20:43.563 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+02:20:46.661 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 2H51M6.328S
+02:30:43.574 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:30:43.574 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+02:30:46.667 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 3H1M6.333S
+02:40:43.583 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:40:43.583 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+02:40:46.696 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 3H11M6.363S
+02:50:43.594 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:50:43.594 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+02:50:46.683 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 3H21M6.35S
+02:53:43.281 [INFO ] EbaiServiceApplication - Starting EbaiServiceApplication using Java 1.8.0_332 on DESKTOP-3KUCMR1 with PID 1492 (D:\projects\# java\ebai_cloud_service\target\classes started by yunch in D:\projects\# java\ebai_cloud_service)
+02:53:43.283 [INFO ] EbaiServiceApplication - No active profile set, falling back to 1 default profile: "default"
+02:53:43.920 [INFO ] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+02:53:43.965 [INFO ] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 5 MongoDB repository interfaces.
+02:53:44.313 [INFO ] TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
+02:53:44.319 [INFO ] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+02:53:44.319 [INFO ] StandardService - Starting service [Tomcat]
+02:53:44.319 [INFO ] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+02:53:44.407 [INFO ] [/] - Initializing Spring embedded WebApplicationContext
+02:53:44.407 [INFO ] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1095 ms
+02:53:44.554 [INFO ] client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./1.8.0_332-b08"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='xiaobai', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@4beeb0e]}, clusterSettings={hosts=[192.168.1.5:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+02:53:44.567 [INFO ] connection - Opened connection [connectionId{localValue:1, serverValue:1170}] to 192.168.1.5:27017
+02:53:44.567 [INFO ] connection - Opened connection [connectionId{localValue:2, serverValue:1171}] to 192.168.1.5:27017
+02:53:44.567 [INFO ] cluster - Monitor thread successfully connected to server with description ServerDescription{address=192.168.1.5:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=19705500}
+02:53:44.976 [INFO ] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+02:53:45.062 [INFO ] Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+02:53:45.075 [INFO ] TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
+02:53:45.081 [INFO ] EbaiServiceApplication - Started EbaiServiceApplication in 2.104 seconds (JVM running for 2.868)
+02:53:45.083 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:53:45.083 [INFO ] InitUtil - ----- Ebai Cloud Service Is Initializing ... -----
+02:53:47.793 [INFO ] InitUtil - => 服务启动成功
+02:53:47.793 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54
+02:53:47.793 [INFO ] NetworkUtil - 邮件发送 => 2081414628@qq.com
+02:53:48.788 [INFO ] NetworkUtil - => 发送成功
+02:53:49.834 [INFO ] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+02:53:49.834 [INFO ] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+02:53:49.835 [INFO ] DispatcherServlet - Completed initialization in 1 ms
+02:53:49.838 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:53:49.838 [INFO ] ProjectFilter - 请求拦截：URL == > /startAutoDailyMail
+02:53:50.917 [WARN ] NetworkUtil - Get Location Exception
+02:53:50.917 [INFO ] ProjectFilter - 网络信息：IP == > 127.0.0.1 (Unknown)
+02:53:50.917 [INFO ] ProjectFilter - 设备信息：User-Agent == > Apache-HttpClient/4.5.13 (Java/1.8.0_332)
+02:53:50.920 [INFO ] SessionFilter - session userName => null , sessionExistTime => 1 (0分钟) , sessionLastActiveTime => 1 (0分钟) 
+02:53:50.920 [INFO ] SessionFilter - session初始化
+02:53:50.920 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+02:53:50.929 [INFO ] MailServiceImpl - 启动定时邮件任务 =>
+02:53:50.930 [INFO ] MailServiceImpl - => Sat Nov 05 06:00:00 CST 2022 第一次发送
+02:53:50.942 [INFO ] SessionFilter - after2
+02:53:50.942 [INFO ] ProjectFilter - after1
+02:53:50.944 [INFO ] InitUtil - ------------ Completed initialization ------------
+02:54:14.662 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:54:14.662 [INFO ] ProjectFilter - 请求拦截：URL == > /
+02:54:15.740 [WARN ] NetworkUtil - Get Location Exception
+02:54:15.740 [INFO ] ProjectFilter - 网络信息：IP == > 192.168.1.4 (Unknown)
+02:54:15.740 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+02:54:15.740 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+02:54:15.740 [INFO ] SessionFilter - session初始化
+02:54:15.740 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+02:54:15.758 [INFO ] SessionFilter - after2
+02:54:15.758 [INFO ] ProjectFilter - after1
+02:54:15.766 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:54:15.766 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:54:15.766 [INFO ] ProjectFilter - 请求拦截：URL == > /umi.78612259.css
+02:54:15.766 [INFO ] ProjectFilter - 请求拦截：URL == > /umi.ccf52186.js
+02:54:16.830 [WARN ] NetworkUtil - Get Location Exception
+02:54:16.830 [INFO ] ProjectFilter - 网络信息：IP == > 192.168.1.4 (Unknown)
+02:54:16.830 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+02:54:16.831 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+02:54:16.831 [INFO ] SessionFilter - session初始化
+02:54:16.831 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+02:54:16.834 [WARN ] NetworkUtil - Get Location Exception
+02:54:16.834 [INFO ] ProjectFilter - 网络信息：IP == > 192.168.1.4 (Unknown)
+02:54:16.834 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+02:54:16.834 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+02:54:16.834 [INFO ] SessionFilter - session初始化
+02:54:16.834 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+02:54:16.853 [INFO ] SessionFilter - after2
+02:54:16.853 [INFO ] ProjectFilter - after1
+02:54:17.093 [INFO ] SessionFilter - after2
+02:54:17.094 [INFO ] ProjectFilter - after1
+02:54:17.254 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:54:17.254 [INFO ] ProjectFilter - 请求拦截：URL == > /api/user/currentUser
+02:54:17.262 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:54:17.263 [INFO ] ProjectFilter - 请求拦截：URL == > /favicon.ico
+02:54:18.324 [WARN ] NetworkUtil - Get Location Exception
+02:54:18.324 [INFO ] ProjectFilter - 网络信息：IP == > 192.168.1.4 (Unknown)
+02:54:18.324 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+02:54:18.324 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+02:54:18.324 [INFO ] SessionFilter - session初始化
+02:54:18.324 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+02:54:18.331 [INFO ] UserController - Check Current User => Session Id: AB666B2AE0562AB7A56BB687CB0DA94D
+02:54:18.335 [WARN ] NetworkUtil - Get Location Exception
+02:54:18.335 [INFO ] ProjectFilter - 网络信息：IP == > 192.168.1.4 (Unknown)
+02:54:18.335 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+02:54:18.336 [INFO ] SessionFilter - session userName => null , sessionExistTime => 1 (0分钟) , sessionLastActiveTime => 1 (0分钟) 
+02:54:18.336 [INFO ] SessionFilter - session初始化
+02:54:18.336 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+02:54:18.357 [INFO ] SessionFilter - after2
+02:54:18.357 [INFO ] ProjectFilter - after1
+02:54:18.370 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:54:18.370 [INFO ] ProjectFilter - 请求拦截：URL == > /390.f906b2e8.async.js
+02:54:18.382 [INFO ] SessionFilter - after2
+02:54:18.382 [INFO ] ProjectFilter - after1
+02:54:19.456 [WARN ] NetworkUtil - Get Location Exception
+02:54:19.456 [INFO ] ProjectFilter - 网络信息：IP == > 192.168.1.4 (Unknown)
+02:54:19.456 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+02:54:19.456 [INFO ] SessionFilter - session userName => null , sessionExistTime => 1126 (0分钟) , sessionLastActiveTime => 1099 (0分钟) 
+02:54:19.456 [INFO ] SessionFilter - session初始化
+02:54:19.456 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+02:54:19.464 [INFO ] SessionFilter - after2
+02:54:19.464 [INFO ] ProjectFilter - after1
+02:54:19.467 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:54:19.467 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:54:19.467 [INFO ] ProjectFilter - 请求拦截：URL == > /318.d52449df.chunk.css
+02:54:19.468 [INFO ] ProjectFilter - 请求拦截：URL == > /715.ac2181ed.async.js
+02:54:19.468 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:54:19.468 [INFO ] ProjectFilter - 请求拦截：URL == > /318.af52869e.async.js
+02:54:20.531 [WARN ] NetworkUtil - Get Location Exception
+02:54:20.531 [INFO ] ProjectFilter - 网络信息：IP == > 192.168.1.4 (Unknown)
+02:54:20.531 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+02:54:20.531 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+02:54:20.531 [INFO ] SessionFilter - session初始化
+02:54:20.531 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+02:54:20.532 [WARN ] NetworkUtil - Get Location Exception
+02:54:20.532 [INFO ] ProjectFilter - 网络信息：IP == > 192.168.1.4 (Unknown)
+02:54:20.532 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+02:54:20.532 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+02:54:20.532 [INFO ] SessionFilter - session初始化
+02:54:20.532 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+02:54:20.536 [WARN ] NetworkUtil - Get Location Exception
+02:54:20.536 [INFO ] ProjectFilter - 网络信息：IP == > 192.168.1.4 (Unknown)
+02:54:20.536 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+02:54:20.536 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+02:54:20.536 [INFO ] SessionFilter - session初始化
+02:54:20.536 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+02:54:20.541 [INFO ] SessionFilter - after2
+02:54:20.541 [INFO ] ProjectFilter - after1
+02:54:20.543 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:54:20.543 [INFO ] ProjectFilter - 请求拦截：URL == > /p__User__Login__index.cab240b2.chunk.css
+02:54:20.553 [INFO ] SessionFilter - after2
+02:54:20.553 [INFO ] ProjectFilter - after1
+02:54:20.556 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:54:20.556 [INFO ] ProjectFilter - 请求拦截：URL == > /p__User__Login__index.16d328a2.async.js
+02:54:20.627 [INFO ] SessionFilter - after2
+02:54:20.627 [INFO ] ProjectFilter - after1
+02:54:21.616 [WARN ] NetworkUtil - Get Location Exception
+02:54:21.616 [INFO ] ProjectFilter - 网络信息：IP == > 192.168.1.4 (Unknown)
+02:54:21.616 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+02:54:21.616 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+02:54:21.616 [INFO ] SessionFilter - session初始化
+02:54:21.617 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+02:54:21.622 [INFO ] SessionFilter - after2
+02:54:21.622 [INFO ] ProjectFilter - after1
+02:54:21.625 [WARN ] NetworkUtil - Get Location Exception
+02:54:21.625 [INFO ] ProjectFilter - 网络信息：IP == > 192.168.1.4 (Unknown)
+02:54:21.625 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+02:54:21.625 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+02:54:21.625 [INFO ] SessionFilter - session初始化
+02:54:21.625 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+02:54:21.643 [INFO ] SessionFilter - after2
+02:54:21.643 [INFO ] ProjectFilter - after1
+02:54:21.732 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:54:21.732 [INFO ] ProjectFilter - 请求拦截：URL == > /logo.png
+02:54:22.802 [WARN ] NetworkUtil - Get Location Exception
+02:54:22.802 [INFO ] ProjectFilter - 网络信息：IP == > 192.168.1.4 (Unknown)
+02:54:22.802 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+02:54:22.802 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+02:54:22.802 [INFO ] SessionFilter - session初始化
+02:54:22.802 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+02:54:22.809 [INFO ] SessionFilter - after2
+02:54:22.810 [INFO ] ProjectFilter - after1
+02:54:50.952 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:54:50.952 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+02:54:54.050 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1M6.257S
+02:56:33.351 [INFO ] EbaiServiceApplication - Starting EbaiServiceApplication using Java 1.8.0_332 on DESKTOP-3KUCMR1 with PID 13624 (D:\projects\# java\ebai_cloud_service\target\classes started by yunch in D:\projects\# java\ebai_cloud_service)
+02:56:33.353 [INFO ] EbaiServiceApplication - No active profile set, falling back to 1 default profile: "default"
+02:56:33.761 [INFO ] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+02:56:33.804 [INFO ] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 5 MongoDB repository interfaces.
+02:56:34.178 [INFO ] TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
+02:56:34.184 [INFO ] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+02:56:34.184 [INFO ] StandardService - Starting service [Tomcat]
+02:56:34.184 [INFO ] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+02:56:34.250 [INFO ] [/] - Initializing Spring embedded WebApplicationContext
+02:56:34.250 [INFO ] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 864 ms
+02:56:34.408 [INFO ] client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./1.8.0_332-b08"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='xiaobai', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@6e8a9c30]}, clusterSettings={hosts=[192.168.1.5:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+02:56:34.420 [INFO ] connection - Opened connection [connectionId{localValue:1, serverValue:1172}] to 192.168.1.5:27017
+02:56:34.420 [INFO ] connection - Opened connection [connectionId{localValue:2, serverValue:1173}] to 192.168.1.5:27017
+02:56:34.420 [INFO ] cluster - Monitor thread successfully connected to server with description ServerDescription{address=192.168.1.5:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=18566100}
+02:56:34.847 [INFO ] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+02:56:34.934 [INFO ] Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+02:56:34.947 [INFO ] TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
+02:56:34.953 [INFO ] EbaiServiceApplication - Started EbaiServiceApplication in 1.916 seconds (JVM running for 2.571)
+02:56:34.955 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:56:34.955 [INFO ] InitUtil - ----- Ebai Cloud Service Is Initializing ... -----
+02:56:36.310 [INFO ] InitUtil - => 服务启动成功
+02:56:36.310 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54
+02:56:36.310 [INFO ] NetworkUtil - 邮件发送 => 2081414628@qq.com
+02:56:37.151 [INFO ] NetworkUtil - => 发送成功
+02:56:38.193 [INFO ] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+02:56:38.194 [INFO ] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+02:56:38.194 [INFO ] DispatcherServlet - Completed initialization in 0 ms
+02:56:38.197 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:56:38.197 [INFO ] ProjectFilter - 请求拦截：URL == > /startAutoDailyMail
+02:56:39.277 [WARN ] NetworkUtil - Get Location Exception
+02:56:39.277 [INFO ] ProjectFilter - 网络信息：IP == > 127.0.0.1 (Unknown)
+02:56:39.277 [INFO ] ProjectFilter - 设备信息：User-Agent == > Apache-HttpClient/4.5.13 (Java/1.8.0_332)
+02:56:39.280 [INFO ] SessionFilter - session userName => null , sessionExistTime => 2 (0分钟) , sessionLastActiveTime => 2 (0分钟) 
+02:56:39.280 [INFO ] SessionFilter - session初始化
+02:56:39.280 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+02:56:39.290 [INFO ] MailServiceImpl - 启动定时邮件任务 =>
+02:56:39.290 [INFO ] MailServiceImpl - => Sat Nov 05 06:00:00 CST 2022 第一次发送
+02:56:39.303 [INFO ] ProjectFilter - ---------------- Request Completed ----------------
+02:56:39.305 [INFO ] InitUtil - ------------ Completed initialization ------------
+02:57:17.350 [INFO ] EbaiServiceApplication - Starting EbaiServiceApplication using Java 1.8.0_332 on DESKTOP-3KUCMR1 with PID 14028 (D:\projects\# java\ebai_cloud_service\target\classes started by yunch in D:\projects\# java\ebai_cloud_service)
+02:57:17.352 [INFO ] EbaiServiceApplication - No active profile set, falling back to 1 default profile: "default"
+02:57:17.733 [INFO ] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+02:57:17.774 [INFO ] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 5 MongoDB repository interfaces.
+02:57:18.114 [INFO ] TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
+02:57:18.120 [INFO ] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+02:57:18.120 [INFO ] StandardService - Starting service [Tomcat]
+02:57:18.120 [INFO ] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+02:57:18.183 [INFO ] [/] - Initializing Spring embedded WebApplicationContext
+02:57:18.183 [INFO ] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 802 ms
+02:57:18.333 [INFO ] client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./1.8.0_332-b08"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='xiaobai', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@7fd69dd]}, clusterSettings={hosts=[192.168.1.5:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+02:57:18.348 [INFO ] connection - Opened connection [connectionId{localValue:1, serverValue:1174}] to 192.168.1.5:27017
+02:57:18.348 [INFO ] connection - Opened connection [connectionId{localValue:2, serverValue:1175}] to 192.168.1.5:27017
+02:57:18.349 [INFO ] cluster - Monitor thread successfully connected to server with description ServerDescription{address=192.168.1.5:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=22900400}
+02:57:18.751 [INFO ] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+02:57:18.838 [INFO ] Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+02:57:18.851 [INFO ] TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
+02:57:18.857 [INFO ] EbaiServiceApplication - Started EbaiServiceApplication in 1.809 seconds (JVM running for 2.457)
+02:57:18.858 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:57:18.859 [INFO ] InitUtil - ----- Ebai Cloud Service Is Initializing ... -----
+02:57:20.217 [INFO ] InitUtil - => 服务启动成功
+02:57:20.217 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54
+02:57:20.217 [INFO ] NetworkUtil - 邮件发送 => 2081414628@qq.com
+02:57:21.124 [INFO ] NetworkUtil - => 发送成功
+02:57:22.160 [INFO ] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+02:57:22.160 [INFO ] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+02:57:22.161 [INFO ] DispatcherServlet - Completed initialization in 1 ms
+02:57:22.164 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:57:22.164 [INFO ] ProjectFilter - 请求拦截：URL == > /startAutoDailyMail
+02:57:23.246 [WARN ] NetworkUtil - Get Location Exception
+02:57:23.246 [INFO ] ProjectFilter - 网络信息：IP == > 127.0.0.1 (Unknown)
+02:57:23.246 [INFO ] ProjectFilter - 设备信息：User-Agent == > Apache-HttpClient/4.5.13 (Java/1.8.0_332)
+02:57:23.248 [INFO ] SessionFilter - session userName => null , sessionExistTime => 1 (0分钟) , sessionLastActiveTime => 1 (0分钟) 
+02:57:23.249 [INFO ] SessionFilter - session初始化
+02:57:23.249 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+02:57:23.258 [INFO ] MailServiceImpl - 启动定时邮件任务 =>
+02:57:23.258 [INFO ] MailServiceImpl - => Sat Nov 05 06:00:00 CST 2022 第一次发送
+02:57:23.271 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+02:57:23.273 [INFO ] InitUtil - ------------ Completed initialization ------------
+02:57:30.185 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:57:30.185 [INFO ] ProjectFilter - 请求拦截：URL == > /api/user/currentUser
+02:57:31.257 [WARN ] NetworkUtil - Get Location Exception
+02:57:31.258 [INFO ] ProjectFilter - 网络信息：IP == > 192.168.1.4 (Unknown)
+02:57:31.258 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+02:57:31.258 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+02:57:31.258 [INFO ] SessionFilter - session初始化
+02:57:31.258 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+02:57:31.263 [INFO ] UserController - Check Current User => Session Id: 4E7797F46C5CAB3B4B56A91B7E7FE635
+02:57:31.292 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+02:58:23.284 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:58:23.284 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+02:58:26.373 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1M6.155S
+02:59:45.622 [INFO ] EbaiServiceApplication - Starting EbaiServiceApplication using Java 1.8.0_332 on DESKTOP-3KUCMR1 with PID 21736 (D:\projects\# java\ebai_cloud_service\target\classes started by yunch in D:\projects\# java\ebai_cloud_service)
+02:59:45.624 [INFO ] EbaiServiceApplication - No active profile set, falling back to 1 default profile: "default"
+02:59:46.009 [INFO ] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+02:59:46.049 [INFO ] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 5 MongoDB repository interfaces.
+02:59:46.396 [INFO ] TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
+02:59:46.402 [INFO ] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+02:59:46.402 [INFO ] StandardService - Starting service [Tomcat]
+02:59:46.403 [INFO ] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+02:59:46.466 [INFO ] [/] - Initializing Spring embedded WebApplicationContext
+02:59:46.466 [INFO ] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 811 ms
+02:59:46.613 [INFO ] client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./1.8.0_332-b08"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='xiaobai', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@6e8a9c30]}, clusterSettings={hosts=[192.168.1.5:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+02:59:46.624 [INFO ] connection - Opened connection [connectionId{localValue:2, serverValue:1176}] to 192.168.1.5:27017
+02:59:46.624 [INFO ] connection - Opened connection [connectionId{localValue:1, serverValue:1177}] to 192.168.1.5:27017
+02:59:46.624 [INFO ] cluster - Monitor thread successfully connected to server with description ServerDescription{address=192.168.1.5:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=19107000}
+02:59:47.032 [INFO ] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+02:59:47.117 [INFO ] Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+02:59:47.130 [INFO ] TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
+02:59:47.136 [INFO ] EbaiServiceApplication - Started EbaiServiceApplication in 1.812 seconds (JVM running for 2.409)
+02:59:47.138 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:59:47.138 [INFO ] InitUtil - ----- Ebai Cloud Service Is Initializing ... -----
+02:59:48.501 [INFO ] InitUtil - => 服务启动成功
+02:59:48.501 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54
+02:59:48.501 [INFO ] NetworkUtil - 邮件发送 => 2081414628@qq.com
+02:59:49.509 [INFO ] NetworkUtil - => 发送成功
+02:59:50.550 [INFO ] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+02:59:50.550 [INFO ] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+02:59:50.551 [INFO ] DispatcherServlet - Completed initialization in 1 ms
+02:59:50.554 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:59:50.554 [INFO ] ProjectFilter - 请求拦截：URL == > /startAutoDailyMail
+02:59:51.629 [WARN ] NetworkUtil - Get Location Exception
+02:59:51.629 [INFO ] ProjectFilter - 网络信息：IP == > 127.0.0.1 (Unknown)
+02:59:51.629 [INFO ] ProjectFilter - 设备信息：User-Agent == > Apache-HttpClient/4.5.13 (Java/1.8.0_332)
+02:59:51.632 [INFO ] SessionFilter - session userName => null , sessionExistTime => 2 (0分钟) , sessionLastActiveTime => 2 (0分钟) 
+02:59:51.632 [INFO ] SessionFilter - session初始化
+02:59:51.632 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+02:59:51.641 [INFO ] MailServiceImpl - 启动定时邮件任务 =>
+02:59:51.641 [INFO ] MailServiceImpl - => Sat Nov 05 06:00:00 CST 2022 第一次发送
+02:59:51.654 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+02:59:51.656 [INFO ] InitUtil - ------------ Completed initialization ------------
+03:00:04.972 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+03:00:04.973 [INFO ] ProjectFilter - 请求拦截：URL == > /api/user/currentUser
+03:00:06.036 [WARN ] NetworkUtil - Get Location Exception
+03:00:06.036 [INFO ] ProjectFilter - 网络信息：IP == > 192.168.1.4 (Unknown)
+03:00:06.036 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+03:00:06.036 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+03:00:06.036 [INFO ] SessionFilter - session初始化
+03:00:06.036 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+03:00:06.042 [INFO ] UserController - Check Current User => Session Id: DA1A67FBFE3E644BBA47F06554BC4AFF
+03:00:06.073 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+03:00:51.660 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+03:00:51.660 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+03:00:54.768 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1M6.267S
+03:01:43.269 [INFO ] EbaiServiceApplication - Starting EbaiServiceApplication using Java 1.8.0_332 on DESKTOP-3KUCMR1 with PID 22188 (D:\projects\# java\ebai_cloud_service\target\classes started by yunch in D:\projects\# java\ebai_cloud_service)
+03:01:43.271 [INFO ] EbaiServiceApplication - No active profile set, falling back to 1 default profile: "default"
+03:01:43.662 [INFO ] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+03:01:43.704 [INFO ] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 5 MongoDB repository interfaces.
+03:01:44.040 [INFO ] TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
+03:01:44.045 [INFO ] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+03:01:44.046 [INFO ] StandardService - Starting service [Tomcat]
+03:01:44.046 [INFO ] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+03:01:44.108 [INFO ] [/] - Initializing Spring embedded WebApplicationContext
+03:01:44.108 [INFO ] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 806 ms
+03:01:44.256 [INFO ] client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./1.8.0_332-b08"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='xiaobai', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@6e8a9c30]}, clusterSettings={hosts=[192.168.1.5:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+03:01:44.264 [INFO ] connection - Opened connection [connectionId{localValue:1, serverValue:1178}] to 192.168.1.5:27017
+03:01:44.264 [INFO ] connection - Opened connection [connectionId{localValue:2, serverValue:1179}] to 192.168.1.5:27017
+03:01:44.264 [INFO ] cluster - Monitor thread successfully connected to server with description ServerDescription{address=192.168.1.5:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=15473700}
+03:01:44.689 [INFO ] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+03:01:44.778 [INFO ] Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+03:01:44.792 [INFO ] TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
+03:01:44.797 [INFO ] EbaiServiceApplication - Started EbaiServiceApplication in 1.828 seconds (JVM running for 2.445)
+03:01:44.799 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+03:01:44.799 [INFO ] InitUtil - ----- Ebai Cloud Service Is Initializing ... -----
+03:01:46.159 [INFO ] InitUtil - => 服务启动成功
+03:01:46.159 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54
+03:01:46.159 [INFO ] NetworkUtil - 邮件发送 => 2081414628@qq.com
+03:01:47.045 [INFO ] NetworkUtil - => 发送成功
+03:01:48.083 [INFO ] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+03:01:48.083 [INFO ] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+03:01:48.084 [INFO ] DispatcherServlet - Completed initialization in 1 ms
+03:01:48.087 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+03:01:48.087 [INFO ] ProjectFilter - 请求拦截：URL == > /startAutoDailyMail
+03:01:48.087 [INFO ] ProjectFilter - 网络信息：IP == > 127.0.0.1 (本地访问)
+03:01:48.087 [INFO ] ProjectFilter - 设备信息：User-Agent == > Apache-HttpClient/4.5.13 (Java/1.8.0_332)
+03:01:48.089 [INFO ] SessionFilter - session userName => null , sessionExistTime => 1 (0分钟) , sessionLastActiveTime => 1 (0分钟) 
+03:01:48.089 [INFO ] SessionFilter - session初始化
+03:01:48.090 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+03:01:48.100 [INFO ] MailServiceImpl - 启动定时邮件任务 =>
+03:01:48.100 [INFO ] MailServiceImpl - => Sat Nov 05 06:00:00 CST 2022 第一次发送
+03:01:48.113 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+03:01:48.116 [INFO ] InitUtil - ------------ Completed initialization ------------
+03:02:01.044 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+03:02:01.045 [INFO ] ProjectFilter - 请求拦截：URL == > /api/user/currentUser
+03:02:01.045 [INFO ] ProjectFilter - 网络信息：IP == > 192.168.1.4 (内网访问)
+03:02:01.045 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+03:02:01.046 [INFO ] SessionFilter - session userName => null , sessionExistTime => 1 (0分钟) , sessionLastActiveTime => 1 (0分钟) 
+03:02:01.046 [INFO ] SessionFilter - session初始化
+03:02:01.046 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+03:02:01.052 [INFO ] UserController - Check Current User => Session Id: BF6A6CF6D1429831C3788F55C2A38EAF
+03:02:01.079 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+03:02:48.127 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+03:02:48.127 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+03:02:51.215 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1M5.056S
+03:05:03.234 [INFO ] EbaiServiceApplication - Starting EbaiServiceApplication using Java 1.8.0_332 on DESKTOP-3KUCMR1 with PID 16640 (D:\projects\# java\ebai_cloud_service\target\classes started by yunch in D:\projects\# java\ebai_cloud_service)
+03:05:03.236 [INFO ] EbaiServiceApplication - No active profile set, falling back to 1 default profile: "default"
+03:05:03.640 [INFO ] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+03:05:03.684 [INFO ] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 5 MongoDB repository interfaces.
+03:05:04.059 [INFO ] TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
+03:05:04.065 [INFO ] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+03:05:04.066 [INFO ] StandardService - Starting service [Tomcat]
+03:05:04.066 [INFO ] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+03:05:04.131 [INFO ] [/] - Initializing Spring embedded WebApplicationContext
+03:05:04.131 [INFO ] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 862 ms
+03:05:04.288 [INFO ] client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./1.8.0_332-b08"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='xiaobai', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@72ee5d84]}, clusterSettings={hosts=[192.168.1.5:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+03:05:04.295 [INFO ] connection - Opened connection [connectionId{localValue:1, serverValue:1180}] to 192.168.1.5:27017
+03:05:04.295 [INFO ] connection - Opened connection [connectionId{localValue:2, serverValue:1181}] to 192.168.1.5:27017
+03:05:04.295 [INFO ] cluster - Monitor thread successfully connected to server with description ServerDescription{address=192.168.1.5:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=14399900}
+03:05:04.752 [INFO ] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+03:05:04.844 [INFO ] Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+03:05:04.858 [INFO ] TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
+03:05:04.865 [INFO ] EbaiServiceApplication - Started EbaiServiceApplication in 1.927 seconds (JVM running for 2.557)
+03:05:04.867 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+03:05:04.867 [INFO ] InitUtil - ----- Ebai Cloud Service Is Initializing ... -----
+03:05:06.223 [INFO ] InitUtil - => 服务启动成功
+03:05:06.223 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54
+03:05:06.224 [INFO ] NetworkUtil - 邮件发送 => 2081414628@qq.com
+03:05:07.035 [INFO ] NetworkUtil - => 发送成功
+03:05:07.035 [INFO ] NetworkUtil - 邮件发送 => 2643372457@qq.com
+03:05:07.934 [INFO ] NetworkUtil - => 发送成功
+03:05:08.972 [INFO ] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+03:05:08.972 [INFO ] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+03:05:08.973 [INFO ] DispatcherServlet - Completed initialization in 1 ms
+03:05:08.976 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+03:05:08.976 [INFO ] ProjectFilter - 请求拦截：URL == > /startAutoDailyMail
+03:05:08.976 [INFO ] ProjectFilter - 网络信息：IP == > 127.0.0.1 (本地访问)
+03:05:08.976 [INFO ] ProjectFilter - 设备信息：User-Agent == > Apache-HttpClient/4.5.13 (Java/1.8.0_332)
+03:05:08.979 [INFO ] SessionFilter - session userName => null , sessionExistTime => 2 (0分钟) , sessionLastActiveTime => 2 (0分钟) 
+03:05:08.979 [INFO ] SessionFilter - session初始化
+03:05:08.979 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+03:05:08.988 [INFO ] MailServiceImpl - 启动定时邮件任务 =>
+03:05:08.989 [INFO ] MailServiceImpl - => Sat Nov 05 06:00:00 CST 2022 第一次发送
+03:05:09.001 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+03:05:09.005 [INFO ] InitUtil - ------------ Completed initialization ------------
+03:06:09.014 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+03:06:09.014 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+03:06:12.117 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1M5.894S
+03:16:09.016 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+03:16:09.016 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+03:16:12.111 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 11M5.888S

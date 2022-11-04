@@ -8,6 +8,8 @@ import java.util.List;
 
 public interface Network {
 
+    String getLocation(HttpServletRequest httpServletRequest);
+
     Boolean sendMail(MailRequest mail);
     Boolean sendMail(List<MailRequest> mailList);
 

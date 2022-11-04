@@ -1,5 +1,6 @@
 package com.ebai.ebai_cloud_service.controller;
 
+import com.ebai.ebai_cloud_service.common.util.Network;
 import com.ebai.ebai_cloud_service.service.MailService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -84,13 +85,21 @@ public class BaseController {
         }
     }
 
+    @Resource
+    Network network;
+
     @GetMapping(value = "/email")
-    public String email() {
-        return mailService.sendDailyMail();
+    public String email(HttpServletRequest httpServletRequest) {
+        String userAgent = httpServletRequest.getHeader("User-Agent");
+        log.info(userAgent);
+        log.info(network.getIp(httpServletRequest));
+        String result = mailService.sendDailyMail();
+        return result;
     }
 
     @GetMapping(value = "/startAutoDailyMail")
     public void startAutoDailyMail() {
         mailService.startAutoDailyMail(6);
     }
+
 }

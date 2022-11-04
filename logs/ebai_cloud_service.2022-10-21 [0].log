@@ -1,0 +1,579 @@
+00:06:45.382 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:06:45.382 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+00:06:46.466 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 26H21M4.206S
+00:16:45.386 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:16:45.386 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+00:16:46.496 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 26H31M4.236S
+00:20:11.884 [INFO ] EbaiServiceApplication - Starting EbaiServiceApplication using Java 1.8.0_332 on DESKTOP-3KUCMR1 with PID 358224 (D:\projects\# java\ebai_cloud_service\target\classes started by yunch in D:\projects\# java\ebai_cloud_service)
+00:20:11.885 [INFO ] EbaiServiceApplication - No active profile set, falling back to 1 default profile: "default"
+00:20:12.469 [INFO ] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+00:20:12.514 [INFO ] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 4 MongoDB repository interfaces.
+00:20:12.857 [INFO ] TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
+00:20:12.863 [INFO ] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+00:20:12.863 [INFO ] StandardService - Starting service [Tomcat]
+00:20:12.863 [INFO ] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+00:20:12.952 [INFO ] [/] - Initializing Spring embedded WebApplicationContext
+00:20:12.952 [INFO ] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1037 ms
+00:20:13.101 [INFO ] client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./1.8.0_332-b08"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='xiaobai', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@2875b016]}, clusterSettings={hosts=[192.168.1.5:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+00:20:13.116 [INFO ] connection - Opened connection [connectionId{localValue:1, serverValue:365}] to 192.168.1.5:27017
+00:20:13.116 [INFO ] connection - Opened connection [connectionId{localValue:2, serverValue:364}] to 192.168.1.5:27017
+00:20:13.116 [INFO ] cluster - Monitor thread successfully connected to server with description ServerDescription{address=192.168.1.5:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=22633000}
+00:20:13.513 [INFO ] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+00:20:13.594 [INFO ] Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+00:20:13.607 [INFO ] TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
+00:20:13.613 [INFO ] EbaiServiceApplication - Started EbaiServiceApplication in 2.037 seconds (JVM running for 2.691)
+00:20:13.615 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:20:13.616 [INFO ] InitUtil - ----- Ebai Cloud Service Is Initializing ... -----
+00:20:15.007 [INFO ] InitUtil - => 服务启动成功
+00:20:15.007 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54
+00:20:15.007 [INFO ] NetworkUtil - 邮件发送 => 2643372457@qq.com
+00:20:16.013 [INFO ] NetworkUtil - => 发送成功
+00:20:16.013 [INFO ] NetworkUtil - 邮件发送 => 2081414628@qq.com
+00:20:16.939 [INFO ] NetworkUtil - => 发送成功
+00:20:17.988 [INFO ] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:20:17.988 [INFO ] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:20:17.989 [INFO ] DispatcherServlet - Completed initialization in 1 ms
+00:20:17.992 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:20:17.995 [INFO ] ProjectFilter - 请求拦截：uri == > /startAutoDailyMail
+00:20:17.995 [INFO ] ProjectFilter - ------------------ Service  Log ------------------
+00:20:17.995 [INFO ] SessionFilter - session userName => null , sessionExistTime => 2 (0分钟) , sessionLastActiveTime => 2 (0分钟) 
+00:20:17.995 [INFO ] SessionFilter - session初始化
+00:20:18.004 [INFO ] MailServiceImpl - 启动定时邮件任务 =>
+00:20:18.004 [INFO ] MailServiceImpl - => Fri Oct 21 06:00:00 CST 2022 第一次发送
+00:20:18.021 [INFO ] InitUtil - ------------ Completed initialization ------------
+00:21:18.024 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:21:18.024 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+00:21:21.116 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1M6.109S
+00:31:18.027 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:31:18.027 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+00:31:21.142 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 11M6.135S
+00:41:18.041 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:41:18.041 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+00:41:21.166 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 21M6.159S
+00:51:18.046 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:51:18.046 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+00:51:21.135 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 31M6.128S
+01:01:18.059 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:01:18.059 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+01:01:21.140 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 41M6.133S
+01:11:18.060 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:11:18.060 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+01:11:21.159 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 51M6.151S
+01:21:18.060 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:21:18.060 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+01:21:21.169 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1H1M6.162S
+01:31:18.071 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:31:18.071 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+01:31:21.178 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1H11M6.171S
+01:41:18.078 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:41:18.078 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+01:41:21.172 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1H21M6.165S
+01:51:18.083 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:51:18.083 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+01:51:21.184 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1H31M6.177S
+02:01:18.090 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:01:18.090 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+02:01:21.182 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1H41M6.175S
+02:11:18.093 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:11:18.093 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+02:11:21.184 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1H51M6.177S
+02:21:18.107 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:21:18.107 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+02:21:21.189 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 2H1M6.182S
+02:31:18.117 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:31:18.117 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+02:31:21.225 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 2H11M6.218S
+02:35:20.798 [INFO ] Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x030x000x00/*0xe00x000x000x000x000x00Cookie: ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+02:41:18.118 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:41:18.118 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+02:41:21.223 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 2H21M6.216S
+02:51:18.122 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:51:18.122 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+02:51:21.234 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 2H31M6.227S
+03:01:18.126 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+03:01:18.126 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+03:01:21.224 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 2H41M6.217S
+03:11:18.137 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+03:11:18.137 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+03:11:21.225 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 2H51M6.218S
+03:21:18.138 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+03:21:18.138 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+03:21:21.242 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 3H1M6.235S
+03:31:18.140 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+03:31:18.140 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+03:31:21.244 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 3H11M6.237S
+03:41:18.140 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+03:41:18.140 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+03:41:21.243 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 3H21M6.236S
+03:51:18.154 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+03:51:18.154 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+03:51:21.245 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 3H31M6.238S
+04:01:18.157 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+04:01:18.157 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+04:01:21.269 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 3H41M6.262S
+04:11:18.172 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+04:11:18.172 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+04:11:21.278 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 3H51M6.27S
+04:21:18.173 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+04:21:18.173 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+04:21:21.275 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 4H1M6.268S
+04:31:18.186 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+04:31:18.186 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+04:31:21.284 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 4H11M6.277S
+04:41:18.189 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+04:41:18.189 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+04:41:21.294 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 4H21M6.287S
+04:51:18.191 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+04:51:18.191 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+04:51:21.297 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 4H31M6.29S
+05:01:18.203 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+05:01:18.203 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+05:01:21.307 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 4H41M6.3S
+05:11:18.206 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+05:11:18.206 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+05:11:21.303 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 4H51M6.296S
+05:21:18.209 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+05:21:18.209 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+05:21:21.304 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 5H1M6.297S
+05:30:16.534 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+05:30:16.535 [INFO ] ProjectFilter - 请求拦截：uri == > /
+05:30:16.535 [INFO ] ProjectFilter - ------------------ Service  Log ------------------
+05:30:16.535 [INFO ] SessionFilter - session userName => null , sessionExistTime => 1 (0分钟) , sessionLastActiveTime => 1 (0分钟) 
+05:30:16.535 [INFO ] SessionFilter - session初始化
+05:30:16.918 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+05:30:16.918 [INFO ] ProjectFilter - 请求拦截：uri == > /
+05:30:16.918 [INFO ] ProjectFilter - ------------------ Service  Log ------------------
+05:30:16.918 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+05:30:16.918 [INFO ] SessionFilter - session初始化
+05:30:17.652 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+05:30:17.652 [INFO ] ProjectFilter - 请求拦截：uri == > /favicon.ico
+05:30:17.652 [INFO ] ProjectFilter - ------------------ Service  Log ------------------
+05:30:17.652 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+05:30:17.652 [INFO ] SessionFilter - session初始化
+05:31:18.225 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+05:31:18.225 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+05:31:21.316 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 5H11M6.309S
+05:41:18.231 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+05:41:18.231 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+05:41:21.321 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 5H21M6.314S
+05:51:18.245 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+05:51:18.245 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+05:51:21.335 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 5H31M6.328S
+06:00:00.008 [INFO ] MailServiceImpl - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+06:00:00.008 [INFO ] MailServiceImpl - 定时任务触发：Service == > SendDailyMail
+06:00:00.008 [INFO ] MailServiceImpl - ------------------ Service  Log ------------------
+06:00:01.215 [INFO ] connection - Opened connection [connectionId{localValue:3, serverValue:376}] to 192.168.1.5:27017
+06:00:01.257 [INFO ] NetworkUtil - 邮件发送 => 2643372457@qq.com
+06:00:01.257 [INFO ] NetworkUtil - 邮件发送 => 2081414628@qq.com
+06:00:02.300 [INFO ] NetworkUtil - => 发送成功
+06:01:18.250 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+06:01:18.250 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+06:01:21.357 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 5H41M6.35S
+06:11:18.263 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+06:11:18.263 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+06:11:21.364 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 5H51M6.357S
+06:21:18.271 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+06:21:18.271 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+06:21:21.384 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 6H1M6.377S
+06:31:18.282 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+06:31:18.282 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+06:31:21.397 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 6H11M6.39S
+06:41:18.293 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+06:41:18.293 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+06:41:21.398 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 6H21M6.391S
+06:51:18.297 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+06:51:18.297 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+06:51:21.393 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 6H31M6.386S
+07:01:18.299 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+07:01:18.299 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+07:01:21.408 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 6H41M6.401S
+07:11:18.304 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+07:11:18.304 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+07:11:21.402 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 6H51M6.395S
+07:21:18.317 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+07:21:18.317 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+07:21:21.398 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 7H1M6.391S
+07:31:18.321 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+07:31:18.321 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+07:31:21.450 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 7H11M6.443S
+07:41:18.331 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+07:41:18.331 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+07:41:21.412 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 7H21M6.405S
+07:51:18.343 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+07:51:18.343 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+07:51:21.446 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 7H31M6.439S
+08:01:18.355 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+08:01:18.355 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+08:01:21.465 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 7H41M6.458S
+08:11:18.362 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+08:11:18.362 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+08:11:21.474 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 7H51M6.467S
+08:11:49.494 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+08:11:49.494 [INFO ] ProjectFilter - 请求拦截：uri == > /
+08:11:49.494 [INFO ] ProjectFilter - ------------------ Service  Log ------------------
+08:11:49.494 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+08:11:49.494 [INFO ] SessionFilter - session初始化
+08:21:18.373 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+08:21:18.373 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+08:21:21.472 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 8H1M6.465S
+08:31:18.380 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+08:31:18.380 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+08:31:21.480 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 8H11M6.473S
+08:41:18.385 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+08:41:18.385 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+08:41:21.498 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 8H21M6.491S
+08:51:18.400 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+08:51:18.400 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+08:51:21.492 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 8H31M6.485S
+09:01:18.405 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+09:01:18.405 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+09:01:21.505 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 8H41M6.498S
+09:11:18.412 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+09:11:18.412 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+09:11:21.517 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 8H51M6.51S
+09:21:18.424 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+09:21:18.424 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+09:21:21.518 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 9H1M6.511S
+09:31:18.437 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+09:31:18.437 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+09:31:21.520 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 9H11M6.513S
+09:41:18.440 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+09:41:18.440 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+09:41:21.528 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 9H21M6.521S
+09:51:18.452 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+09:51:18.452 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+09:51:21.547 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 9H31M6.539S
+10:01:18.466 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+10:01:18.466 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+10:01:21.629 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 9H41M6.622S
+10:11:18.475 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+10:11:18.475 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+10:11:21.581 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 9H51M6.574S
+10:21:18.487 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+10:21:18.487 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+10:21:21.614 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 10H1M6.607S
+10:31:18.497 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+10:31:18.497 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+10:31:21.601 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 10H11M6.594S
+10:41:18.502 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+10:41:18.502 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+10:41:21.651 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 10H21M6.644S
+10:51:18.515 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+10:51:18.515 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+10:51:21.621 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 10H31M6.614S
+11:01:18.524 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+11:01:18.524 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+11:01:21.541 [WARN ] NetworkUtil - Http Get Client Exception
+11:01:24.548 [WARN ] NetworkUtil - Http Get Client Exception
+11:01:27.549 [WARN ] NetworkUtil - Http Get Client Exception
+11:01:30.561 [WARN ] NetworkUtil - Http Get Client Exception
+11:01:33.649 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 10H41M18.642S
+11:11:18.535 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+11:11:18.535 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+11:11:21.553 [WARN ] NetworkUtil - Http Get Client Exception
+11:11:24.556 [WARN ] NetworkUtil - Http Get Client Exception
+11:11:27.567 [WARN ] NetworkUtil - Http Get Client Exception
+11:11:30.577 [WARN ] NetworkUtil - Http Get Client Exception
+11:11:33.664 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 10H51M18.657S
+11:21:18.549 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+11:21:18.549 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+11:21:21.679 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 11H1M6.672S
+11:31:18.563 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+11:31:18.563 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+11:31:21.687 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 11H11M6.68S
+11:41:18.578 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+11:41:18.578 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+11:41:21.767 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 11H21M6.76S
+11:51:18.589 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+11:51:18.589 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+11:51:21.676 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 11H31M6.669S
+12:01:18.593 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+12:01:18.593 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+12:01:21.610 [WARN ] NetworkUtil - Http Get Client Exception
+12:01:24.620 [WARN ] NetworkUtil - Http Get Client Exception
+12:01:27.633 [WARN ] NetworkUtil - Http Get Client Exception
+12:01:30.636 [WARN ] NetworkUtil - Http Get Client Exception
+12:01:33.787 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 11H41M18.78S
+12:11:18.600 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+12:11:18.600 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+12:11:21.715 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 11H51M6.708S
+12:21:18.609 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+12:21:18.609 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+12:21:21.616 [WARN ] NetworkUtil - Http Get Client Exception
+12:21:24.627 [WARN ] NetworkUtil - Http Get Client Exception
+12:21:27.634 [WARN ] NetworkUtil - Http Get Client Exception
+12:21:30.648 [WARN ] NetworkUtil - Http Get Client Exception
+12:21:33.765 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 12H1M18.758S
+12:31:18.613 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+12:31:18.613 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+12:31:21.754 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 12H11M6.747S
+12:41:18.621 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+12:41:18.621 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+12:41:21.725 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 12H21M6.718S
+12:51:18.624 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+12:51:18.624 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+12:51:21.631 [WARN ] NetworkUtil - Http Get Client Exception
+12:51:24.633 [WARN ] NetworkUtil - Http Get Client Exception
+12:51:27.643 [WARN ] NetworkUtil - Http Get Client Exception
+12:51:30.655 [WARN ] NetworkUtil - Http Get Client Exception
+12:51:33.781 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 12H31M18.774S
+13:01:18.638 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+13:01:18.638 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+13:01:21.730 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 12H41M6.723S
+13:11:18.646 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+13:11:18.646 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+13:11:21.665 [WARN ] NetworkUtil - Http Get Client Exception
+13:11:24.674 [WARN ] NetworkUtil - Http Get Client Exception
+13:11:27.687 [WARN ] NetworkUtil - Http Get Client Exception
+13:11:30.700 [WARN ] NetworkUtil - Http Get Client Exception
+13:11:33.797 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 12H51M18.79S
+13:21:18.655 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+13:21:18.655 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+13:21:21.667 [WARN ] NetworkUtil - Http Get Client Exception
+13:21:24.672 [WARN ] NetworkUtil - Http Get Client Exception
+13:21:27.681 [WARN ] NetworkUtil - Http Get Client Exception
+13:21:30.696 [WARN ] NetworkUtil - Http Get Client Exception
+13:21:33.807 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 13H1M18.8S
+13:31:18.663 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+13:31:18.663 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+13:31:21.777 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 13H11M6.77S
+13:41:18.673 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+13:41:18.673 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+13:41:21.787 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 13H21M6.78S
+13:51:18.675 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+13:51:18.675 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+13:51:21.796 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 13H31M6.789S
+14:01:18.683 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+14:01:18.683 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+14:01:21.824 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 13H41M6.817S
+14:11:18.685 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+14:11:18.685 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+14:11:21.703 [WARN ] NetworkUtil - Http Get Client Exception
+14:11:24.719 [WARN ] NetworkUtil - Http Get Client Exception
+14:11:27.724 [WARN ] NetworkUtil - Http Get Client Exception
+14:11:30.732 [WARN ] NetworkUtil - Http Get Client Exception
+14:11:33.828 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 13H51M18.821S
+14:21:18.699 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+14:21:18.699 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+14:21:21.801 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 14H1M6.794S
+14:31:18.715 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+14:31:18.715 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+14:31:21.735 [WARN ] NetworkUtil - Http Get Client Exception
+14:31:24.749 [WARN ] NetworkUtil - Http Get Client Exception
+14:31:27.755 [WARN ] NetworkUtil - Http Get Client Exception
+14:31:30.764 [WARN ] NetworkUtil - Http Get Client Exception
+14:31:33.885 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 14H11M18.878S
+14:41:18.728 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+14:41:18.728 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+14:41:21.831 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 14H21M6.824S
+14:51:18.743 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+14:51:18.743 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+14:51:21.854 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 14H31M6.847S
+15:01:18.745 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+15:01:18.745 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+15:01:21.846 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 14H41M6.839S
+15:11:18.753 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+15:11:18.753 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+15:11:21.871 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 14H51M6.864S
+15:21:18.759 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+15:21:18.759 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+15:21:21.876 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 15H1M6.869S
+15:31:18.760 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+15:31:18.760 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+15:31:21.860 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 15H11M6.853S
+15:41:18.769 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+15:41:18.769 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+15:41:21.865 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 15H21M6.858S
+15:51:18.781 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+15:51:18.781 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+15:51:21.916 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 15H31M6.909S
+16:01:18.786 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+16:01:18.786 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+16:01:21.892 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 15H41M6.885S
+16:11:18.796 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+16:11:18.796 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+16:11:21.959 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 15H51M6.952S
+16:21:18.811 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+16:21:18.811 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+16:21:21.926 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 16H1M6.919S
+16:31:18.811 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+16:31:18.811 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+16:31:22.018 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 16H11M7.011S
+16:41:18.815 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+16:41:18.815 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+16:41:22.017 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 16H21M7.01S
+16:51:18.815 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+16:51:18.815 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+16:51:21.922 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 16H31M6.915S
+17:01:18.817 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+17:01:18.817 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+17:01:21.935 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 16H41M6.928S
+17:11:18.829 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+17:11:18.829 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+17:11:21.934 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 16H51M6.927S
+17:21:18.830 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+17:21:18.830 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+17:21:21.972 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 17H1M6.965S
+17:31:18.843 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+17:31:18.843 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+17:31:22.006 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 17H11M6.999S
+17:41:18.852 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+17:41:18.852 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+17:41:21.977 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 17H21M6.97S
+17:51:18.859 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+17:51:18.859 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+17:51:21.993 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 17H31M6.986S
+18:01:18.872 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+18:01:18.872 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+18:01:21.881 [WARN ] NetworkUtil - Http Get Client Exception
+18:01:24.889 [WARN ] NetworkUtil - Http Get Client Exception
+18:01:27.892 [WARN ] NetworkUtil - Http Get Client Exception
+18:01:30.894 [WARN ] NetworkUtil - Http Get Client Exception
+18:01:34.088 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 17H41M19.081S
+18:11:18.880 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+18:11:18.880 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+18:11:21.891 [WARN ] NetworkUtil - Http Get Client Exception
+18:11:24.899 [WARN ] NetworkUtil - Http Get Client Exception
+18:11:27.907 [WARN ] NetworkUtil - Http Get Client Exception
+18:11:30.918 [WARN ] NetworkUtil - Http Get Client Exception
+18:11:34.035 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 17H51M19.028S
+18:21:18.887 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+18:21:18.887 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+18:21:22.063 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 18H1M7.056S
+18:31:18.894 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+18:31:18.894 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+18:31:22.010 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 18H11M7.003S
+18:41:18.899 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+18:41:18.899 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+18:41:22.028 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 18H21M7.021S
+18:51:18.905 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+18:51:18.905 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+18:51:22.025 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 18H31M7.017S
+19:01:18.911 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+19:01:18.911 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+19:01:22.115 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 18H41M7.108S
+19:11:18.913 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+19:11:18.913 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+19:11:22.100 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 18H51M7.093S
+19:21:18.920 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+19:21:18.920 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+19:21:22.046 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 19H1M7.039S
+19:31:18.927 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+19:31:18.927 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+19:31:22.177 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 19H11M7.17S
+19:41:18.938 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+19:41:18.938 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+19:41:22.088 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 19H21M7.081S
+19:51:18.953 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+19:51:18.953 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+19:51:21.960 [WARN ] NetworkUtil - Http Get Client Exception
+19:51:24.968 [WARN ] NetworkUtil - Http Get Client Exception
+19:51:27.979 [WARN ] NetworkUtil - Http Get Client Exception
+19:51:30.993 [WARN ] NetworkUtil - Http Get Client Exception
+19:51:34.140 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 19H31M19.133S
+20:01:18.965 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:01:18.965 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+20:01:21.985 [WARN ] NetworkUtil - Http Get Client Exception
+20:01:24.991 [WARN ] NetworkUtil - Http Get Client Exception
+20:01:27.996 [WARN ] NetworkUtil - Http Get Client Exception
+20:01:31.006 [WARN ] NetworkUtil - Http Get Client Exception
+20:01:34.119 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 19H41M19.112S
+20:11:18.974 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:11:18.974 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+20:11:21.992 [WARN ] NetworkUtil - Http Get Client Exception
+20:11:24.996 [WARN ] NetworkUtil - Http Get Client Exception
+20:11:28.010 [WARN ] NetworkUtil - Http Get Client Exception
+20:11:31.020 [WARN ] NetworkUtil - Http Get Client Exception
+20:11:34.290 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 19H51M19.283S
+20:21:18.988 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:21:18.988 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+20:21:22.006 [WARN ] NetworkUtil - Http Get Client Exception
+20:21:25.017 [WARN ] NetworkUtil - Http Get Client Exception
+20:21:28.030 [WARN ] NetworkUtil - Http Get Client Exception
+20:21:31.038 [WARN ] NetworkUtil - Http Get Client Exception
+20:21:34.150 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 20H1M19.143S
+20:31:18.997 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:31:18.997 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+20:31:22.161 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 20H11M7.153S
+20:41:18.998 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:41:18.998 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+20:41:22.103 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 20H21M7.096S
+20:51:19.002 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:51:19.002 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+20:51:22.092 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 20H31M7.085S
+21:01:19.004 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+21:01:19.004 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+21:01:22.012 [WARN ] NetworkUtil - Http Get Client Exception
+21:01:25.026 [WARN ] NetworkUtil - Http Get Client Exception
+21:01:28.031 [WARN ] NetworkUtil - Http Get Client Exception
+21:01:31.035 [WARN ] NetworkUtil - Http Get Client Exception
+21:01:34.185 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 20H41M19.178S
+21:11:19.014 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+21:11:19.014 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+21:11:22.318 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 20H51M7.311S
+21:21:19.019 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+21:21:19.019 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+21:21:22.032 [WARN ] NetworkUtil - Http Get Client Exception
+21:21:25.036 [WARN ] NetworkUtil - Http Get Client Exception
+21:21:28.038 [WARN ] NetworkUtil - Http Get Client Exception
+21:21:31.048 [WARN ] NetworkUtil - Http Get Client Exception
+21:21:34.082 [WARN ] NetworkUtil - Http Get Client Exception
+21:21:37.117 [WARN ] NetworkUtil - Http Get Client Exception
+21:21:40.224 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 21H1M25.217S
+21:31:19.021 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+21:31:19.021 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+21:31:22.237 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 21H11M7.23S
+21:41:19.036 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+21:41:19.036 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+21:41:22.145 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 21H21M7.138S
+21:51:19.042 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+21:51:19.042 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+21:51:22.141 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 21H31M7.134S
+22:01:19.051 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+22:01:19.051 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+22:01:22.188 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 21H41M7.181S
+22:11:19.057 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+22:11:19.057 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+22:11:22.165 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 21H51M7.158S
+22:21:19.067 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+22:21:19.067 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+22:21:22.197 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 22H1M7.19S
+22:31:19.071 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+22:31:19.071 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+22:31:22.267 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 22H11M7.26S
+22:41:19.083 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+22:41:19.083 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+22:41:22.194 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 22H21M7.187S
+22:51:19.091 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+22:51:19.091 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+22:51:22.210 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 22H31M7.203S
+23:01:19.093 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:01:19.093 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+23:01:22.222 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 22H41M7.215S
+23:11:19.096 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:11:19.096 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+23:11:22.212 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 22H51M7.205S
+23:21:19.096 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:21:19.096 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+23:21:22.208 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 23H1M7.201S
+23:31:19.106 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:31:19.106 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+23:31:22.201 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 23H11M7.194S
+23:41:19.114 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:41:19.114 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+23:41:22.216 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 23H21M7.209S
+23:51:19.118 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:51:19.118 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+23:51:22.245 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 23H31M7.238S

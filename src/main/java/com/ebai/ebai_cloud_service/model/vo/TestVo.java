@@ -16,6 +16,4 @@ public class TestVo {
     @MyAnnotation(value = "ABC")
     private String password;
 
-
-
 }

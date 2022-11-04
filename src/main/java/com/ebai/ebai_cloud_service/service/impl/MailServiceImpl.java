@@ -36,8 +36,8 @@ public class MailServiceImpl implements MailService {
     @Resource
     ServiceConfigRepository serviceConfigRepository;
 
-    private static final String weatherRequest = "https://api.map.baidu.com/weather/v1/?district_id=" + 310120 + "&data_type=all&ak=Tco6gfz2hZFqtoXGIzoQavlz49dLCtOS";
-    //    private static final String weatherRequest = "https://api.map.baidu.com/weather/v1/?district_id=" + 310115 + "&data_type=all&ak=Tco6gfz2hZFqtoXGIzoQavlz49dLCtOS";
+//    private static final String weatherRequest = "https://api.map.baidu.com/weather/v1/?district_id=" + 310120 + "&data_type=all&ak=Tco6gfz2hZFqtoXGIzoQavlz49dLCtOS";
+        private static final String weatherRequest = "https://api.map.baidu.com/weather/v1/?district_id=" + 310115 + "&data_type=all&ak=Tco6gfz2hZFqtoXGIzoQavlz49dLCtOS";
 
     @Override
     public String sendDailyMail() {
@@ -45,6 +45,8 @@ public class MailServiceImpl implements MailService {
         JSONObject weather = network.httpGetClient(weatherRequest);
 
         JSONObject weatherResult = JSONObject.parseObject(weather.getString("result"));
+        JSONObject locationResult = JSONObject.parseObject(weatherResult.getString("location"));
+        String locationText = locationResult.get("name").toString();
         JSONObject nowResult = JSONObject.parseObject(weatherResult.getString("now"));
         String nowText = nowResult.get("text").toString();
         String nowTemp = nowResult.get("temp").toString();
@@ -117,7 +119,7 @@ public class MailServiceImpl implements MailService {
                 "  </div>\n" +
                 "  <div style=\"color: #9aa2d7;margin-left: 20px\">\n" +
                 "    <div style=\"padding-top: 10px\">早上好！今天是" + today.getMonthValue() + "月" + today.getDayOfMonth() + "日 " + todayWeek + "</div>\n" +
-                "    <div style=\"padding-top: 10px\">今早奉贤天气：" + nowText + " " + nowTemp + "℃</div>\n" +
+                "    <div style=\"padding-top: 10px\">今早" + locationText + "天气：" + nowText + " " + nowTemp + "℃</div>\n" +
                 "    <div style=\"padding-top: 10px\">最高气温：" + todayHighTemp + "℃ 最低气温：" + todayLowTemp + "℃</div>\n" + weatherChangeMsg + classScheduleMsg +
                 "    <div style=\"padding: 10px 0\">距HYC前来探监还有：" + dayToVisit + "天</div>\n" +
                 "    <img src=\"https://img.72qq.com/file/202103/02/7fcba33957.jpg\" alt=\"\" style=\"width: 200px\">\n" +
@@ -138,7 +140,7 @@ public class MailServiceImpl implements MailService {
         mail2.setTitle(title);
         mail2.setMessage(message);
         mail2.setSender("HYC大聪明");
-        mail2.setRecipient("HMQ小宝贝");
+        mail2.setRecipient("HYC大聪明");
         mail2.setRecipientAccount("2081414628@qq.com");
         mailList.add(mail2);
 

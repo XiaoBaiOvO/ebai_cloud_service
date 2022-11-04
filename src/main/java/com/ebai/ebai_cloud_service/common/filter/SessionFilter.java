@@ -19,7 +19,7 @@ public class SessionFilter implements Filter {
         HttpServletResponse response = (HttpServletResponse) servletResponse;
 
         HttpSession session = request.getSession();
-        String userName = (String) session.getAttribute("username");
+        String userName = (String) session.getAttribute("userName");
         Date currentDate = new Date();
         long sessionExistTime = currentDate.getTime() - session.getCreationTime();
         long sessionLastActiveTime = currentDate.getTime() - session.getLastAccessedTime();
@@ -32,6 +32,7 @@ public class SessionFilter implements Filter {
             log.info("session过期");
             session.invalidate();
         }
+        log.info("------------------ Service  Log ------------------");
 
         filterChain.doFilter(servletRequest, servletResponse);
     }

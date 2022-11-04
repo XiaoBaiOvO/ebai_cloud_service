@@ -55,6 +55,8 @@ public class NetworkUtil implements Network {
                     result = doGet(url);
                 } catch (Exception e) {
                     log.warn("Http Get Client Exception");
+//                    log.warn(e.toString());
+//                    log.warn(e.getLocalizedMessage());
                 }
             }
         } else {
@@ -62,6 +64,7 @@ public class NetworkUtil implements Network {
                 result = doGet(url);
             } catch (Exception e) {
                 log.warn("Http Get Client Exception");
+                log.warn(e.getLocalizedMessage());
             }
         }
         return result;
@@ -127,6 +130,35 @@ public class NetworkUtil implements Network {
         }
         return ip;
     }
+
+    @Override
+    public String getLocation(HttpServletRequest httpServletRequest) {
+        String result = "Unknown";
+        try {
+            String ip = getIp(httpServletRequest);
+            if (ip.substring(0, 7).equals("127.0.0")) {
+                return "本地访问";
+            }
+            if (ip.substring(0, 7).equals("192.168")) {
+                return "内网访问";
+            }
+            String url = "https://api.map.baidu.com/location/ip?ak=Tco6gfz2hZFqtoXGIzoQavlz49dLCtOS&ip=" + ip + "&coor=bd09ll";
+            JSONObject resp = httpGetClient(url, true);
+
+            JSONObject contentJson = JSONObject.parseObject(resp.getString("content"));
+            JSONObject addressDetailJson = JSONObject.parseObject(contentJson.getString("address_detail"));
+            log.info("详细地址: " + resp.getString("address"));
+            log.info("省份: " + addressDetailJson.getString("province"));
+            log.info("城市: " + addressDetailJson.getString("city"));
+            log.info("城市代码: " + addressDetailJson.getString("adcode"));
+            result = resp.getString("address");
+        } catch (Exception e) {
+           log.warn("Get Location Exception");
+        }
+
+        return result;
+    }
+
 
     @Override
     public Boolean sendMail(MailRequest mail) {

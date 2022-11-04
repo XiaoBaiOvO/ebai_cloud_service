@@ -1,17 +1,15 @@
 package com.ebai.ebai_cloud_service.controller.response;
 
-import com.alibaba.fastjson.JSONObject;
-import lombok.Builder;
+import com.ebai.ebai_cloud_service.model.vo.CurrentUserVo;
 import lombok.Data;
 import lombok.ToString;
 
 @Data
-@Builder
 @ToString
 public class CurrentUserResponse {
 
     Boolean success;
 
-    JSONObject data;
+    CurrentUserVo data;
 
 }
