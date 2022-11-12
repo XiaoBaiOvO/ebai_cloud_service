@@ -3,6 +3,7 @@ package com.ebai.ebai_cloud_service.service.impl;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.ebai.ebai_cloud_service.common.util.DateTool;
+import com.ebai.ebai_cloud_service.common.util.HttpUtils;
 import com.ebai.ebai_cloud_service.common.util.Network;
 import com.ebai.ebai_cloud_service.mapper.ClassScheduleRepository;
 import com.ebai.ebai_cloud_service.mapper.ServiceConfigRepository;
@@ -11,14 +12,15 @@ import com.ebai.ebai_cloud_service.mapper.entity.ServiceConfigEntity;
 import com.ebai.ebai_cloud_service.model.dto.MailRequest;
 import com.ebai.ebai_cloud_service.service.MailService;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.http.util.EntityUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.math.BigInteger;
 import java.time.*;
 import java.util.*;
 
-import static java.util.concurrent.TimeUnit.DAYS;
+import static com.ebai.ebai_cloud_service.constants.CommonConstants.*;
+import static com.ebai.ebai_cloud_service.constants.FieldNameConstants.*;
 
 @Service
 @Slf4j
@@ -36,13 +38,14 @@ public class MailServiceImpl implements MailService {
     @Resource
     ServiceConfigRepository serviceConfigRepository;
 
-//    private static final String weatherRequest = "https://api.map.baidu.com/weather/v1/?district_id=" + 310120 + "&data_type=all&ak=Tco6gfz2hZFqtoXGIzoQavlz49dLCtOS";
-        private static final String weatherRequest = "https://api.map.baidu.com/weather/v1/?district_id=" + 310115 + "&data_type=all&ak=Tco6gfz2hZFqtoXGIzoQavlz49dLCtOS";
-
     @Override
-    public String sendDailyMail() {
+    public String sendDailyMail() throws Exception {
 
-        JSONObject weather = network.httpGetClient(weatherRequest);
+        Map<String, String> weatherQuery = new HashMap<>();
+        weatherQuery.put(DISTRICT_ID, serviceConfigRepository.findTopByName("HMQDistrict").getValue());
+        weatherQuery.put(DATA_TYPE, "all");
+        weatherQuery.put(AK, WEATHER_QUERY_API_AK);
+        JSONObject weather = JSONObject.parseObject(EntityUtils.toString(HttpUtils.doGet(WEATHER_QUERY_API_HOST, WEATHER_QUERY_API_PORT, EMPTY_HEADER, weatherQuery).getEntity()));
 
         JSONObject weatherResult = JSONObject.parseObject(weather.getString("result"));
         JSONObject locationResult = JSONObject.parseObject(weatherResult.getString("location"));
@@ -132,16 +135,16 @@ public class MailServiceImpl implements MailService {
         MailRequest mail1 = new MailRequest();
         mail1.setTitle(title);
         mail1.setMessage(message);
-        mail1.setSender("HYC大聪明");
-        mail1.setRecipient("HMQ小宝贝");
-        mail1.setRecipientAccount("2643372457@qq.com");
+        mail1.setSender(HYC_NAME);
+        mail1.setRecipient(HMQ_NAME);
+        mail1.setRecipientAccount(HMQ_MAIL_ADDRESS);
         mailList.add(mail1);
         MailRequest mail2 = new MailRequest();
         mail2.setTitle(title);
         mail2.setMessage(message);
-        mail2.setSender("HYC大聪明");
-        mail2.setRecipient("HYC大聪明");
-        mail2.setRecipientAccount("2081414628@qq.com");
+        mail2.setSender(HYC_NAME);
+        mail2.setRecipient(HYC_NAME);
+        mail2.setRecipientAccount(HYC_MAIL_ADDRESS);
         mailList.add(mail2);
 
         return network.sendMail(mailList) ? "发送成功" : "发送失败";
@@ -153,7 +156,7 @@ public class MailServiceImpl implements MailService {
         LocalDate date = LocalDate.now();
         LocalTime time = LocalTime.now();
         if (time.getHour() >= timeSet) {
-            date = LocalDate.now().plusDays(BigInteger.ONE.longValue());
+            date = LocalDate.now().plusDays(ONE);
         }
         LocalDateTime firstDateTime = LocalDateTime.of(date, LocalTime.of(timeSet, 0));
         Date firstDate = Date.from(firstDateTime.atZone(ZoneId.systemDefault()).toInstant());
@@ -163,11 +166,15 @@ public class MailServiceImpl implements MailService {
                 log.info("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
                 log.info("定时任务触发：Service == > SendDailyMail");
                 log.info("------------------ Service  Log ------------------");
-                sendDailyMail();
+                try {
+                    sendDailyMail();
+                } catch (Exception e) {
+                    log.warn("Daily Mail Send Fail");
+                }
             }
         };
         Timer timer = new Timer();
-        timer.schedule(task, firstDate, DAYS.toMillis(BigInteger.ONE.longValue()));
+        timer.schedule(task, firstDate, MILLIS_OF_ONE_DAY);
     }
 
 }

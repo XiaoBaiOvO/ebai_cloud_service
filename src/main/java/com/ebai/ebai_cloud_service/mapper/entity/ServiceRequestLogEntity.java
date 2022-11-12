@@ -6,23 +6,25 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.time.LocalDateTime;
+
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Document(collection = "request_log")
-public class RequestLogEntity {
+@Document(collection = "service_request_log")
+public class ServiceRequestLogEntity {
 
     String url;
 
-    String IP;
+    String ip;
 
-    String Location;
+    String location;
 
     String userAgent;
 
     String userName;
 
-    String date;
+    LocalDateTime date;
 
 }

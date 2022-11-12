@@ -68,7 +68,7 @@ public class InitUtil {
 
     private void startAutoDailyMail() {
         NetworkUtil networkUtil = new NetworkUtil();
-        networkUtil.httpGetClient("http://localhost:9000/startAutoDailyMail", true);
+        networkUtil.httpGetClient("http://localhost:9000/internal/mail/initAutoSending", true);
     }
 
     public void checkServiceLocalIp() {

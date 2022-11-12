@@ -1,0 +1,1188 @@
+00:00:57.088 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:00:57.089 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+00:01:00.183 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 2H1M5.891S
+00:10:57.096 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:10:57.096 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+00:11:00.198 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 2H11M5.906S
+00:20:57.109 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:20:57.109 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+00:21:00.202 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 2H21M5.91S
+00:30:57.111 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:30:57.111 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+00:31:00.228 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 2H31M5.936S
+00:40:57.122 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:40:57.122 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+00:41:00.238 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 2H41M5.946S
+00:50:57.126 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:50:57.126 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+00:51:00.217 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 2H51M5.925S
+00:56:32.085 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:56:32.085 [INFO ] ProjectFilter - 请求拦截：URL == > /console/images/%252E%252E%252Fconsole.portal
+00:56:33.164 [WARN ] NetworkUtil - Get Location Exception
+00:56:33.164 [INFO ] ProjectFilter - 网络信息：IP == > 104.236.180.75 (Unknown)
+00:56:33.164 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0
+00:56:33.164 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+00:56:33.164 [INFO ] SessionFilter - session初始化
+00:56:33.164 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+00:56:33.165 [INFO ] ProjectInterceptor - preHandle
+00:56:33.166 [INFO ] ProjectInterceptor - postHandle
+00:56:33.166 [INFO ] ProjectInterceptor - afterCompletion
+00:56:33.166 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+00:56:33.166 [INFO ] ProjectInterceptor - preHandle
+00:56:33.167 [INFO ] ProjectInterceptor - postHandle
+00:56:33.167 [INFO ] ProjectInterceptor - afterCompletion
+00:56:33.312 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:56:33.312 [INFO ] ProjectFilter - 请求拦截：URL == > /console/bea-helpsets/%252E%252E%252Fconsole.portal
+00:56:34.384 [WARN ] NetworkUtil - Get Location Exception
+00:56:34.384 [INFO ] ProjectFilter - 网络信息：IP == > 104.236.180.75 (Unknown)
+00:56:34.384 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0
+00:56:34.384 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+00:56:34.385 [INFO ] SessionFilter - session初始化
+00:56:34.385 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+00:56:34.385 [INFO ] ProjectInterceptor - preHandle
+00:56:34.386 [INFO ] ProjectInterceptor - postHandle
+00:56:34.386 [INFO ] ProjectInterceptor - afterCompletion
+00:56:34.386 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+00:56:34.387 [INFO ] ProjectInterceptor - preHandle
+00:56:34.388 [INFO ] ProjectInterceptor - postHandle
+00:56:34.388 [INFO ] ProjectInterceptor - afterCompletion
+00:56:34.533 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:56:34.533 [INFO ] ProjectFilter - 请求拦截：URL == > /_async/AsyncResponseServiceHttps
+00:56:35.596 [WARN ] NetworkUtil - Get Location Exception
+00:56:35.596 [INFO ] ProjectFilter - 网络信息：IP == > 104.236.180.75 (Unknown)
+00:56:35.596 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0
+00:56:35.596 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+00:56:35.596 [INFO ] SessionFilter - session初始化
+00:56:35.596 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+00:56:35.597 [INFO ] ProjectInterceptor - preHandle
+00:56:35.598 [INFO ] ProjectInterceptor - postHandle
+00:56:35.598 [INFO ] ProjectInterceptor - afterCompletion
+00:56:35.598 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+00:56:35.598 [INFO ] ProjectInterceptor - preHandle
+00:56:35.599 [INFO ] ProjectInterceptor - postHandle
+00:56:35.599 [INFO ] ProjectInterceptor - afterCompletion
+00:56:35.743 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:56:35.743 [INFO ] ProjectFilter - 请求拦截：URL == > /wls-wsat/CoordinatorPortType
+00:56:36.804 [WARN ] NetworkUtil - Get Location Exception
+00:56:36.804 [INFO ] ProjectFilter - 网络信息：IP == > 104.236.180.75 (Unknown)
+00:56:36.804 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0
+00:56:36.804 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+00:56:36.804 [INFO ] SessionFilter - session初始化
+00:56:36.804 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+00:56:36.805 [INFO ] ProjectInterceptor - preHandle
+00:56:36.805 [INFO ] ProjectInterceptor - postHandle
+00:56:36.805 [INFO ] ProjectInterceptor - afterCompletion
+00:56:36.806 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+00:56:36.806 [INFO ] ProjectInterceptor - preHandle
+00:56:36.807 [INFO ] ProjectInterceptor - postHandle
+00:56:36.807 [INFO ] ProjectInterceptor - afterCompletion
+00:56:36.948 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:56:36.948 [INFO ] ProjectFilter - 请求拦截：URL == > /wls-wsat/RegistrationPortTypeRPC
+00:56:38.016 [WARN ] NetworkUtil - Get Location Exception
+00:56:38.016 [INFO ] ProjectFilter - 网络信息：IP == > 104.236.180.75 (Unknown)
+00:56:38.016 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0
+00:56:38.017 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+00:56:38.017 [INFO ] SessionFilter - session初始化
+00:56:38.017 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+00:56:38.017 [INFO ] ProjectInterceptor - preHandle
+00:56:38.018 [INFO ] ProjectInterceptor - postHandle
+00:56:38.018 [INFO ] ProjectInterceptor - afterCompletion
+00:56:38.018 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+00:56:38.018 [INFO ] ProjectInterceptor - preHandle
+00:56:38.019 [INFO ] ProjectInterceptor - postHandle
+00:56:38.019 [INFO ] ProjectInterceptor - afterCompletion
+00:56:38.164 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:56:38.164 [INFO ] ProjectFilter - 请求拦截：URL == > /wls-wsat/ParticipantPortType
+00:56:39.238 [WARN ] NetworkUtil - Get Location Exception
+00:56:39.238 [INFO ] ProjectFilter - 网络信息：IP == > 104.236.180.75 (Unknown)
+00:56:39.238 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0
+00:56:39.238 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+00:56:39.238 [INFO ] SessionFilter - session初始化
+00:56:39.238 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+00:56:39.239 [INFO ] ProjectInterceptor - preHandle
+00:56:39.239 [INFO ] ProjectInterceptor - postHandle
+00:56:39.239 [INFO ] ProjectInterceptor - afterCompletion
+00:56:39.239 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+00:56:39.240 [INFO ] ProjectInterceptor - preHandle
+00:56:39.240 [INFO ] ProjectInterceptor - postHandle
+00:56:39.241 [INFO ] ProjectInterceptor - afterCompletion
+00:56:39.385 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:56:39.385 [INFO ] ProjectFilter - 请求拦截：URL == > /wls-wsat/RegistrationRequesterPortType
+00:56:40.458 [WARN ] NetworkUtil - Get Location Exception
+00:56:40.458 [INFO ] ProjectFilter - 网络信息：IP == > 104.236.180.75 (Unknown)
+00:56:40.458 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0
+00:56:40.458 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+00:56:40.458 [INFO ] SessionFilter - session初始化
+00:56:40.458 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+00:56:40.458 [INFO ] ProjectInterceptor - preHandle
+00:56:40.459 [INFO ] ProjectInterceptor - postHandle
+00:56:40.459 [INFO ] ProjectInterceptor - afterCompletion
+00:56:40.459 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+00:56:40.460 [INFO ] ProjectInterceptor - preHandle
+00:56:40.461 [INFO ] ProjectInterceptor - postHandle
+00:56:40.461 [INFO ] ProjectInterceptor - afterCompletion
+00:56:40.605 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:56:40.605 [INFO ] ProjectFilter - 请求拦截：URL == > /wls-wsat/CoordinatorPortType11
+00:56:41.679 [WARN ] NetworkUtil - Get Location Exception
+00:56:41.679 [INFO ] ProjectFilter - 网络信息：IP == > 104.236.180.75 (Unknown)
+00:56:41.679 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0
+00:56:41.679 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+00:56:41.679 [INFO ] SessionFilter - session初始化
+00:56:41.679 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+00:56:41.679 [INFO ] ProjectInterceptor - preHandle
+00:56:41.680 [INFO ] ProjectInterceptor - postHandle
+00:56:41.680 [INFO ] ProjectInterceptor - afterCompletion
+00:56:41.680 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+00:56:41.681 [INFO ] ProjectInterceptor - preHandle
+00:56:41.682 [INFO ] ProjectInterceptor - postHandle
+00:56:41.682 [INFO ] ProjectInterceptor - afterCompletion
+00:56:41.826 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:56:41.826 [INFO ] ProjectFilter - 请求拦截：URL == > /wls-wsat/RegistrationPortTypeRPC11
+00:56:42.895 [WARN ] NetworkUtil - Get Location Exception
+00:56:42.895 [INFO ] ProjectFilter - 网络信息：IP == > 104.236.180.75 (Unknown)
+00:56:42.895 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0
+00:56:42.895 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+00:56:42.895 [INFO ] SessionFilter - session初始化
+00:56:42.896 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+00:56:42.896 [INFO ] ProjectInterceptor - preHandle
+00:56:42.897 [INFO ] ProjectInterceptor - postHandle
+00:56:42.897 [INFO ] ProjectInterceptor - afterCompletion
+00:56:42.897 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+00:56:42.897 [INFO ] ProjectInterceptor - preHandle
+00:56:42.898 [INFO ] ProjectInterceptor - postHandle
+00:56:42.898 [INFO ] ProjectInterceptor - afterCompletion
+00:56:43.042 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:56:43.042 [INFO ] ProjectFilter - 请求拦截：URL == > /wls-wsat/ParticipantPortType11
+00:56:44.113 [WARN ] NetworkUtil - Get Location Exception
+00:56:44.114 [INFO ] ProjectFilter - 网络信息：IP == > 104.236.180.75 (Unknown)
+00:56:44.114 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0
+00:56:44.114 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+00:56:44.114 [INFO ] SessionFilter - session初始化
+00:56:44.114 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+00:56:44.114 [INFO ] ProjectInterceptor - preHandle
+00:56:44.128 [INFO ] ProjectInterceptor - postHandle
+00:56:44.129 [INFO ] ProjectInterceptor - afterCompletion
+00:56:44.129 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+00:56:44.131 [INFO ] ProjectInterceptor - preHandle
+00:56:44.132 [INFO ] ProjectInterceptor - postHandle
+00:56:44.132 [INFO ] ProjectInterceptor - afterCompletion
+00:56:44.276 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+00:56:44.276 [INFO ] ProjectFilter - 请求拦截：URL == > /wls-wsat/RegistrationRequesterPortType11
+00:56:45.356 [WARN ] NetworkUtil - Get Location Exception
+00:56:45.356 [INFO ] ProjectFilter - 网络信息：IP == > 104.236.180.75 (Unknown)
+00:56:45.356 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0
+00:56:45.356 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+00:56:45.356 [INFO ] SessionFilter - session初始化
+00:56:45.356 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+00:56:45.356 [INFO ] ProjectInterceptor - preHandle
+00:56:45.357 [INFO ] ProjectInterceptor - postHandle
+00:56:45.357 [INFO ] ProjectInterceptor - afterCompletion
+00:56:45.357 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+00:56:45.358 [INFO ] ProjectInterceptor - preHandle
+00:56:45.359 [INFO ] ProjectInterceptor - postHandle
+00:56:45.359 [INFO ] ProjectInterceptor - afterCompletion
+01:00:57.139 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:00:57.139 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+01:01:00.240 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 3H1M5.948S
+01:09:11.903 [INFO ] EbaiServiceApplication - Starting EbaiServiceApplication using Java 1.8.0_332 on DESKTOP-3KUCMR1 with PID 19312 (D:\projects\# java\ebai_cloud_service\target\classes started by yunch in D:\projects\# java\ebai_cloud_service)
+01:09:11.905 [INFO ] EbaiServiceApplication - No active profile set, falling back to 1 default profile: "default"
+01:09:12.398 [INFO ] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+01:09:12.442 [INFO ] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 5 MongoDB repository interfaces.
+01:09:12.830 [INFO ] TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
+01:09:12.838 [INFO ] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+01:09:12.838 [INFO ] StandardService - Starting service [Tomcat]
+01:09:12.838 [INFO ] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+01:09:12.909 [INFO ] [/] - Initializing Spring embedded WebApplicationContext
+01:09:12.909 [INFO ] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 965 ms
+01:09:13.071 [INFO ] client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./1.8.0_332-b08"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='xiaobai', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@537c8c7e]}, clusterSettings={hosts=[192.168.1.5:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+01:09:13.081 [INFO ] connection - Opened connection [connectionId{localValue:1, serverValue:1282}] to 192.168.1.5:27017
+01:09:13.081 [INFO ] connection - Opened connection [connectionId{localValue:2, serverValue:1281}] to 192.168.1.5:27017
+01:09:13.081 [INFO ] cluster - Monitor thread successfully connected to server with description ServerDescription{address=192.168.1.5:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=17629700}
+01:09:13.545 [INFO ] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+01:09:13.645 [INFO ] Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+01:09:13.661 [INFO ] TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
+01:09:13.668 [INFO ] EbaiServiceApplication - Started EbaiServiceApplication in 2.106 seconds (JVM running for 2.713)
+01:09:13.671 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:09:13.671 [INFO ] InitUtil - ----- Ebai Cloud Service Is Initializing ... -----
+01:09:15.047 [INFO ] InitUtil - => 服务启动成功
+01:09:15.047 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54
+01:09:15.047 [INFO ] NetworkUtil - 邮件发送 => 2081414628@qq.com
+01:09:15.957 [INFO ] NetworkUtil - => 发送成功
+01:09:15.957 [INFO ] NetworkUtil - 邮件发送 => 2643372457@qq.com
+01:09:16.830 [INFO ] NetworkUtil - => 发送成功
+01:09:17.877 [INFO ] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:09:17.877 [INFO ] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+01:09:17.878 [INFO ] DispatcherServlet - Completed initialization in 1 ms
+01:09:17.881 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:09:17.881 [INFO ] ProjectFilter - 请求拦截：URL == > /internal/mail/initAutoSending
+01:09:17.881 [INFO ] ProjectFilter - 网络信息：IP == > 127.0.0.1 (本地访问)
+01:09:17.881 [INFO ] ProjectFilter - 设备信息：User-Agent == > Apache-HttpClient/4.5.13 (Java/1.8.0_332)
+01:09:17.883 [INFO ] SessionFilter - session userName => null , sessionExistTime => 1 (0分钟) , sessionLastActiveTime => 1 (0分钟) 
+01:09:17.883 [INFO ] SessionFilter - session初始化
+01:09:17.883 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:09:17.893 [INFO ] MailServiceImpl - 启动定时邮件任务 =>
+01:09:17.894 [INFO ] MailServiceImpl - => Mon Nov 07 06:00:00 CST 2022 第一次发送
+01:09:17.907 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:09:17.910 [INFO ] InitUtil - ------------ Completed initialization ------------
+01:10:00.042 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:10:00.042 [INFO ] ProjectFilter - 请求拦截：URL == > /
+01:10:01.795 [INFO ] ProjectFilter - 网络信息：IP == > 61.152.208.164 (中国(CN)|上海|上海)
+01:10:01.796 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6,2 Safari/605.1.15
+01:10:01.796 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+01:10:01.796 [INFO ] SessionFilter - session初始化
+01:10:01.796 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:10:01.799 [INFO ] ProjectInterceptor - preHandle
+01:10:01.800 [INFO ] ProjectInterceptor - postHandle
+01:10:01.808 [INFO ] ProjectInterceptor - preHandle
+01:10:01.811 [INFO ] ProjectInterceptor - postHandle
+01:10:01.812 [INFO ] ProjectInterceptor - afterCompletion
+01:10:01.812 [INFO ] ProjectInterceptor - afterCompletion
+01:10:01.812 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:10:01.856 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:10:01.856 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:10:01.856 [INFO ] ProjectFilter - 请求拦截：URL == > /umi.ccf52186.js
+01:10:01.856 [INFO ] ProjectFilter - 请求拦截：URL == > /umi.78612259.css
+01:10:03.735 [WARN ] NetworkUtil - Get Location Exception
+01:10:03.735 [INFO ] ProjectFilter - 网络信息：IP == > 61.152.208.164 (Unknown)
+01:10:03.735 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6,2 Safari/605.1.15
+01:10:03.736 [INFO ] SessionFilter - session userName => null , sessionExistTime => 1 (0分钟) , sessionLastActiveTime => 1 (0分钟) 
+01:10:03.736 [INFO ] SessionFilter - session初始化
+01:10:03.736 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:10:03.736 [INFO ] ProjectInterceptor - preHandle
+01:10:03.746 [WARN ] NetworkUtil - Get Location Exception
+01:10:03.746 [INFO ] ProjectFilter - 网络信息：IP == > 61.152.208.164 (Unknown)
+01:10:03.746 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6,2 Safari/605.1.15
+01:10:03.746 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+01:10:03.746 [INFO ] SessionFilter - session初始化
+01:10:03.746 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:10:03.747 [INFO ] ProjectInterceptor - preHandle
+01:10:03.996 [INFO ] ProjectInterceptor - postHandle
+01:10:03.996 [INFO ] ProjectInterceptor - afterCompletion
+01:10:03.996 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:10:04.472 [INFO ] ProjectInterceptor - postHandle
+01:10:04.472 [INFO ] ProjectInterceptor - afterCompletion
+01:10:04.472 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:10:04.789 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:10:04.789 [INFO ] ProjectFilter - 请求拦截：URL == > /api/user/currentUser
+01:10:04.862 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:10:04.862 [INFO ] ProjectFilter - 请求拦截：URL == > /favicon.ico
+01:10:06.656 [WARN ] NetworkUtil - Get Location Exception
+01:10:06.656 [INFO ] ProjectFilter - 网络信息：IP == > 61.152.208.164 (Unknown)
+01:10:06.656 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6,2 Safari/605.1.15
+01:10:06.657 [INFO ] SessionFilter - session userName => null , sessionExistTime => 1 (0分钟) , sessionLastActiveTime => 1 (0分钟) 
+01:10:06.657 [INFO ] SessionFilter - session初始化
+01:10:06.657 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:10:06.657 [INFO ] ProjectInterceptor - preHandle
+01:10:06.707 [WARN ] NetworkUtil - Get Location Exception
+01:10:06.707 [INFO ] ProjectFilter - 网络信息：IP == > 61.152.208.164 (Unknown)
+01:10:06.707 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6,2 Safari/605.1.15
+01:10:06.707 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+01:10:06.707 [INFO ] SessionFilter - session初始化
+01:10:06.707 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:10:06.712 [INFO ] UserController - Check Current User => Session Id: D864AEC245A7245BB47EE961426C29A7
+01:10:06.737 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:10:06.820 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:10:06.820 [INFO ] ProjectFilter - 请求拦截：URL == > /390.f906b2e8.async.js
+01:10:07.252 [INFO ] ProjectInterceptor - postHandle
+01:10:07.252 [INFO ] ProjectInterceptor - afterCompletion
+01:10:07.252 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:10:08.561 [WARN ] NetworkUtil - Get Location Exception
+01:10:08.561 [INFO ] ProjectFilter - 网络信息：IP == > 61.152.208.164 (Unknown)
+01:10:08.561 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6,2 Safari/605.1.15
+01:10:08.561 [INFO ] SessionFilter - session userName => null , sessionExistTime => 1849 (0分钟) , sessionLastActiveTime => 1824 (0分钟) 
+01:10:08.561 [INFO ] SessionFilter - session初始化
+01:10:08.561 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:10:08.562 [INFO ] ProjectInterceptor - preHandle
+01:10:08.569 [INFO ] ProjectInterceptor - postHandle
+01:10:08.569 [INFO ] ProjectInterceptor - afterCompletion
+01:10:08.569 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:10:08.588 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:10:08.588 [INFO ] ProjectFilter - 请求拦截：URL == > /715.ac2181ed.async.js
+01:10:08.595 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:10:08.595 [INFO ] ProjectFilter - 请求拦截：URL == > /318.d52449df.chunk.css
+01:10:08.608 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:10:08.608 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:10:08.608 [INFO ] ProjectFilter - 请求拦截：URL == > /p__User__Login__index.cab240b2.chunk.css
+01:10:08.608 [INFO ] ProjectFilter - 请求拦截：URL == > /318.af52869e.async.js
+01:10:08.613 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:10:08.613 [INFO ] ProjectFilter - 请求拦截：URL == > /p__User__Login__index.16d328a2.async.js
+01:10:10.392 [WARN ] NetworkUtil - Get Location Exception
+01:10:10.392 [INFO ] ProjectFilter - 网络信息：IP == > 61.152.208.164 (Unknown)
+01:10:10.392 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6,2 Safari/605.1.15
+01:10:10.392 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+01:10:10.392 [INFO ] SessionFilter - session初始化
+01:10:10.392 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:10:10.393 [INFO ] ProjectInterceptor - preHandle
+01:10:10.407 [INFO ] ProjectInterceptor - postHandle
+01:10:10.407 [INFO ] ProjectInterceptor - afterCompletion
+01:10:10.407 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:10:10.481 [WARN ] NetworkUtil - Get Location Exception
+01:10:10.481 [INFO ] ProjectFilter - 网络信息：IP == > 61.152.208.164 (Unknown)
+01:10:10.481 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6,2 Safari/605.1.15
+01:10:10.481 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+01:10:10.481 [INFO ] SessionFilter - session初始化
+01:10:10.481 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:10:10.482 [INFO ] ProjectInterceptor - preHandle
+01:10:10.523 [WARN ] NetworkUtil - Get Location Exception
+01:10:10.523 [INFO ] ProjectFilter - 网络信息：IP == > 61.152.208.164 (Unknown)
+01:10:10.523 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6,2 Safari/605.1.15
+01:10:10.523 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+01:10:10.523 [INFO ] SessionFilter - session初始化
+01:10:10.523 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:10:10.523 [INFO ] ProjectInterceptor - preHandle
+01:10:10.529 [INFO ] ProjectInterceptor - postHandle
+01:10:10.529 [INFO ] ProjectInterceptor - afterCompletion
+01:10:10.529 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:10:10.530 [WARN ] NetworkUtil - Get Location Exception
+01:10:10.531 [INFO ] ProjectFilter - 网络信息：IP == > 61.152.208.164 (Unknown)
+01:10:10.531 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6,2 Safari/605.1.15
+01:10:10.531 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+01:10:10.531 [INFO ] SessionFilter - session初始化
+01:10:10.531 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:10:10.531 [INFO ] ProjectInterceptor - preHandle
+01:10:10.537 [INFO ] ProjectInterceptor - postHandle
+01:10:10.537 [INFO ] ProjectInterceptor - afterCompletion
+01:10:10.538 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:10:10.543 [WARN ] NetworkUtil - Get Location Exception
+01:10:10.543 [INFO ] ProjectFilter - 网络信息：IP == > 61.152.208.164 (Unknown)
+01:10:10.543 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6,2 Safari/605.1.15
+01:10:10.544 [INFO ] SessionFilter - session userName => null , sessionExistTime => 1 (0分钟) , sessionLastActiveTime => 1 (0分钟) 
+01:10:10.544 [INFO ] SessionFilter - session初始化
+01:10:10.544 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:10:10.544 [INFO ] ProjectInterceptor - preHandle
+01:10:10.561 [INFO ] ProjectInterceptor - postHandle
+01:10:10.561 [INFO ] ProjectInterceptor - afterCompletion
+01:10:10.561 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:10:10.817 [INFO ] ProjectInterceptor - postHandle
+01:10:10.817 [INFO ] ProjectInterceptor - afterCompletion
+01:10:10.817 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:10:10.901 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:10:10.901 [INFO ] ProjectFilter - 请求拦截：URL == > /logo.png
+01:10:12.840 [WARN ] NetworkUtil - Get Location Exception
+01:10:12.841 [INFO ] ProjectFilter - 网络信息：IP == > 61.152.208.164 (Unknown)
+01:10:12.841 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6,2 Safari/605.1.15
+01:10:12.841 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+01:10:12.841 [INFO ] SessionFilter - session初始化
+01:10:12.841 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:10:12.841 [INFO ] ProjectInterceptor - preHandle
+01:10:13.007 [INFO ] ProjectInterceptor - postHandle
+01:10:13.007 [INFO ] ProjectInterceptor - afterCompletion
+01:10:13.008 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:10:17.916 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:10:17.916 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+01:10:21.004 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1M5.957S
+01:10:22.345 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:10:22.345 [INFO ] ProjectFilter - 请求拦截：URL == > /api/user/login
+01:10:24.151 [WARN ] NetworkUtil - Get Location Exception
+01:10:24.151 [INFO ] ProjectFilter - 网络信息：IP == > 61.152.208.164 (Unknown)
+01:10:24.151 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6,2 Safari/605.1.15
+01:10:24.151 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+01:10:24.151 [INFO ] SessionFilter - session初始化
+01:10:24.151 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:10:24.176 [INFO ] UserController - Login By Account => request: LoginAccountRequest(username=xiaobai, password=123123, autoLogin=true, type=account, mobile=null, captcha=null)
+01:10:24.271 [INFO ] connection - Opened connection [connectionId{localValue:3, serverValue:1283}] to 192.168.1.5:27017
+01:10:24.302 [INFO ] UserServiceImpl - User Info: UserInfoEntity(id=62fdeee380fc4645fecd6907, userName=xiaobai, password=123123, email=xiaobai@ebai.cloud, mobileType=86, mobile=18688886666, createDate=Thu Aug 18 15:48:51 CST 2022, avatar=https://joeschmoe.io/api/v1/4, signature=海纳百川，有容乃大, title=程序猿, group=小白云开发组, tags=null, country=China, access=Admin, geographic=null, address=上海市静安区)
+01:10:24.304 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:10:24.340 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:10:24.340 [INFO ] ProjectFilter - 请求拦截：URL == > /api/user/currentUser
+01:10:26.212 [WARN ] NetworkUtil - Get Location Exception
+01:10:26.213 [INFO ] ProjectFilter - 网络信息：IP == > 61.152.208.164 (Unknown)
+01:10:26.213 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6,2 Safari/605.1.15
+01:10:26.213 [INFO ] SessionFilter - session userName => xiaobai , sessionExistTime => 1911 (0分钟) , sessionLastActiveTime => 1909 (0分钟) 
+01:10:26.213 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:10:26.213 [INFO ] UserController - Check Current User => Session Id: B3DA767AAD80E32C1C53829AF55D7B48
+01:10:26.224 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:10:26.271 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:10:26.271 [INFO ] ProjectFilter - 请求拦截：URL == > /t__plugin-layout__Layout.afd0f6cd.chunk.css
+01:10:26.271 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:10:26.271 [INFO ] ProjectFilter - 请求拦截：URL == > /t__plugin-layout__Layout.23b2b41c.async.js
+01:10:28.059 [WARN ] NetworkUtil - Get Location Exception
+01:10:28.059 [INFO ] ProjectFilter - 网络信息：IP == > 61.152.208.164 (Unknown)
+01:10:28.059 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6,2 Safari/605.1.15
+01:10:28.060 [INFO ] SessionFilter - session userName => xiaobai , sessionExistTime => 3758 (0分钟) , sessionLastActiveTime => 1836 (0分钟) 
+01:10:28.060 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:10:28.060 [INFO ] ProjectInterceptor - preHandle
+01:10:28.080 [INFO ] ProjectInterceptor - postHandle
+01:10:28.080 [INFO ] ProjectInterceptor - afterCompletion
+01:10:28.080 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:10:28.083 [WARN ] NetworkUtil - Get Location Exception
+01:10:28.084 [INFO ] ProjectFilter - 网络信息：IP == > 61.152.208.164 (Unknown)
+01:10:28.084 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6,2 Safari/605.1.15
+01:10:28.084 [INFO ] SessionFilter - session userName => xiaobai , sessionExistTime => 3782 (0分钟) , sessionLastActiveTime => 4 (0分钟) 
+01:10:28.084 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:10:28.085 [INFO ] ProjectInterceptor - preHandle
+01:10:28.092 [INFO ] ProjectInterceptor - postHandle
+01:10:28.092 [INFO ] ProjectInterceptor - afterCompletion
+01:10:28.092 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:10:28.376 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:10:28.377 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:10:28.377 [INFO ] ProjectFilter - 请求拦截：URL == > /539.418fcda6.async.js
+01:10:28.377 [INFO ] ProjectFilter - 请求拦截：URL == > /p__Welcome.cebdd9d1.chunk.css
+01:10:28.377 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:10:28.377 [INFO ] ProjectFilter - 请求拦截：URL == > /p__Welcome.a2fce01a.async.js
+01:10:28.516 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:10:28.516 [INFO ] ProjectFilter - 请求拦截：URL == > /818.f194d43c.async.js
+01:10:30.150 [WARN ] NetworkUtil - Get Location Exception
+01:10:30.150 [INFO ] ProjectFilter - 网络信息：IP == > 61.152.208.164 (Unknown)
+01:10:30.150 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6,2 Safari/605.1.15
+01:10:30.150 [INFO ] SessionFilter - session userName => xiaobai , sessionExistTime => 5848 (0分钟) , sessionLastActiveTime => 2057 (0分钟) 
+01:10:30.150 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:10:30.151 [INFO ] ProjectInterceptor - preHandle
+01:10:30.156 [INFO ] ProjectInterceptor - postHandle
+01:10:30.156 [INFO ] ProjectInterceptor - afterCompletion
+01:10:30.156 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:10:30.161 [WARN ] NetworkUtil - Get Location Exception
+01:10:30.162 [INFO ] ProjectFilter - 网络信息：IP == > 61.152.208.164 (Unknown)
+01:10:30.162 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6,2 Safari/605.1.15
+01:10:30.162 [INFO ] SessionFilter - session userName => xiaobai , sessionExistTime => 5860 (0分钟) , sessionLastActiveTime => 6 (0分钟) 
+01:10:30.162 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:10:30.162 [INFO ] ProjectInterceptor - preHandle
+01:10:30.179 [INFO ] ProjectInterceptor - postHandle
+01:10:30.179 [INFO ] ProjectInterceptor - afterCompletion
+01:10:30.179 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:10:30.180 [WARN ] NetworkUtil - Get Location Exception
+01:10:30.180 [INFO ] ProjectFilter - 网络信息：IP == > 61.152.208.164 (Unknown)
+01:10:30.181 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6,2 Safari/605.1.15
+01:10:30.181 [INFO ] SessionFilter - session userName => xiaobai , sessionExistTime => 5879 (0分钟) , sessionLastActiveTime => 2 (0分钟) 
+01:10:30.181 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:10:30.181 [INFO ] ProjectInterceptor - preHandle
+01:10:30.193 [INFO ] ProjectInterceptor - postHandle
+01:10:30.193 [INFO ] ProjectInterceptor - afterCompletion
+01:10:30.193 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:10:30.301 [WARN ] NetworkUtil - Get Location Exception
+01:10:30.301 [INFO ] ProjectFilter - 网络信息：IP == > 61.152.208.164 (Unknown)
+01:10:30.301 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6,2 Safari/605.1.15
+01:10:30.301 [INFO ] SessionFilter - session userName => xiaobai , sessionExistTime => 5999 (0分钟) , sessionLastActiveTime => 108 (0分钟) 
+01:10:30.301 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:10:30.302 [INFO ] ProjectInterceptor - preHandle
+01:10:30.314 [INFO ] ProjectInterceptor - postHandle
+01:10:30.314 [INFO ] ProjectInterceptor - afterCompletion
+01:10:30.314 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:10:30.462 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:10:30.463 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:10:30.463 [INFO ] ProjectFilter - 请求拦截：URL == > /api/getNewsList
+01:10:30.463 [INFO ] ProjectFilter - 请求拦截：URL == > /api/comment/getCommentList
+01:10:32.358 [WARN ] NetworkUtil - Get Location Exception
+01:10:32.358 [INFO ] ProjectFilter - 网络信息：IP == > 61.152.208.164 (Unknown)
+01:10:32.358 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6,2 Safari/605.1.15
+01:10:32.358 [INFO ] SessionFilter - session userName => xiaobai , sessionExistTime => 8056 (0分钟) , sessionLastActiveTime => 2044 (0分钟) 
+01:10:32.358 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:10:32.420 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:10:32.488 [WARN ] NetworkUtil - Get Location Exception
+01:10:32.488 [INFO ] ProjectFilter - 网络信息：IP == > 61.152.208.164 (Unknown)
+01:10:32.488 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6,2 Safari/605.1.15
+01:10:32.488 [INFO ] SessionFilter - session userName => xiaobai , sessionExistTime => 8186 (0分钟) , sessionLastActiveTime => 68 (0分钟) 
+01:10:32.488 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:10:32.488 [INFO ] CommentController - getCommentList
+01:10:32.505 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:20:17.930 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:20:17.930 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+01:20:21.033 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 11M5.986S
+01:30:17.932 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:30:17.932 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+01:30:21.017 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 21M5.97S
+01:38:54.080 [INFO ] Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x120x010x00^0x000x000x010x000x000x00$0x000x060x010x00*0x000x010x020x00+0x000x010x030x00,0x000x040x040x0000x000x010x050x0010x00$0x060x00U0x000x010xff0x040x070x0c0xbc0x000x000x000x000x000x000x150xd00x00p0xf7N0x9c0x030x000x000x008y0xd60x8e0xf70x7f0x000x000x000x000x000x000x000x000x000x000x000x000x000x000x000x000x000x000xfe0xff0xff0xff0x01...]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+01:40:17.941 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:40:17.941 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+01:40:21.058 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 31M6.011S
+01:42:19.487 [INFO ] EbaiServiceApplication - Starting EbaiServiceApplication using Java 1.8.0_332 on DESKTOP-3KUCMR1 with PID 21436 (D:\projects\# java\ebai_cloud_service\target\classes started by yunch in D:\projects\# java\ebai_cloud_service)
+01:42:19.489 [INFO ] EbaiServiceApplication - No active profile set, falling back to 1 default profile: "default"
+01:42:19.871 [INFO ] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+01:42:19.911 [INFO ] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 5 MongoDB repository interfaces.
+01:42:20.251 [INFO ] TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
+01:42:20.257 [INFO ] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+01:42:20.257 [INFO ] StandardService - Starting service [Tomcat]
+01:42:20.257 [INFO ] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+01:42:20.319 [INFO ] [/] - Initializing Spring embedded WebApplicationContext
+01:42:20.319 [INFO ] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 801 ms
+01:42:20.468 [INFO ] client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./1.8.0_332-b08"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='xiaobai', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@64a9d48c]}, clusterSettings={hosts=[192.168.1.5:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+01:42:20.481 [INFO ] connection - Opened connection [connectionId{localValue:2, serverValue:1284}] to 192.168.1.5:27017
+01:42:20.481 [INFO ] connection - Opened connection [connectionId{localValue:1, serverValue:1285}] to 192.168.1.5:27017
+01:42:20.482 [INFO ] cluster - Monitor thread successfully connected to server with description ServerDescription{address=192.168.1.5:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=19574800}
+01:42:20.890 [INFO ] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+01:42:20.973 [INFO ] Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+01:42:20.987 [INFO ] TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
+01:42:20.992 [INFO ] EbaiServiceApplication - Started EbaiServiceApplication in 1.808 seconds (JVM running for 2.348)
+01:42:20.994 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:42:20.994 [INFO ] InitUtil - ----- Ebai Cloud Service Is Initializing ... -----
+01:42:22.347 [INFO ] InitUtil - => 服务启动成功
+01:42:22.348 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54
+01:42:22.348 [INFO ] NetworkUtil - 邮件发送 => 2081414628@qq.com
+01:42:23.296 [INFO ] NetworkUtil - => 发送成功
+01:42:23.296 [INFO ] NetworkUtil - 邮件发送 => 2643372457@qq.com
+01:42:24.189 [INFO ] NetworkUtil - => 发送成功
+01:42:25.224 [INFO ] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:42:25.224 [INFO ] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+01:42:25.225 [INFO ] DispatcherServlet - Completed initialization in 1 ms
+01:42:25.228 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:42:25.228 [INFO ] ProjectFilter - 请求拦截：URL == > /internal/mail/initAutoSending
+01:42:25.228 [INFO ] ProjectFilter - 网络信息：IP == > 127.0.0.1 (本地访问)
+01:42:25.228 [INFO ] ProjectFilter - 设备信息：User-Agent == > Apache-HttpClient/4.5.13 (Java/1.8.0_332)
+01:42:25.230 [INFO ] SessionFilter - session userName => null , sessionExistTime => 1 (0分钟) , sessionLastActiveTime => 1 (0分钟) 
+01:42:25.230 [INFO ] SessionFilter - session初始化
+01:42:25.230 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:42:25.239 [INFO ] MailServiceImpl - 启动定时邮件任务 =>
+01:42:25.239 [INFO ] MailServiceImpl - => Mon Nov 07 06:00:00 CST 2022 第一次发送
+01:42:25.252 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:42:25.256 [INFO ] InitUtil - ------------ Completed initialization ------------
+01:43:25.263 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:43:25.263 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+01:43:28.370 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1M6.022S
+01:44:39.707 [INFO ] EbaiServiceApplication - Starting EbaiServiceApplication using Java 1.8.0_332 on DESKTOP-3KUCMR1 with PID 10604 (D:\projects\# java\ebai_cloud_service\target\classes started by yunch in D:\projects\# java\ebai_cloud_service)
+01:44:39.709 [INFO ] EbaiServiceApplication - No active profile set, falling back to 1 default profile: "default"
+01:44:40.085 [INFO ] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+01:44:40.127 [INFO ] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 5 MongoDB repository interfaces.
+01:44:40.470 [INFO ] TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
+01:44:40.476 [INFO ] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+01:44:40.476 [INFO ] StandardService - Starting service [Tomcat]
+01:44:40.476 [INFO ] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+01:44:40.537 [INFO ] [/] - Initializing Spring embedded WebApplicationContext
+01:44:40.537 [INFO ] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 798 ms
+01:44:40.687 [INFO ] client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./1.8.0_332-b08"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='xiaobai', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@64a9d48c]}, clusterSettings={hosts=[192.168.1.5:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+01:44:40.696 [INFO ] connection - Opened connection [connectionId{localValue:1, serverValue:1286}] to 192.168.1.5:27017
+01:44:40.696 [INFO ] connection - Opened connection [connectionId{localValue:2, serverValue:1287}] to 192.168.1.5:27017
+01:44:40.696 [INFO ] cluster - Monitor thread successfully connected to server with description ServerDescription{address=192.168.1.5:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=17395600}
+01:44:41.109 [INFO ] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+01:44:41.193 [INFO ] Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+01:44:41.207 [INFO ] TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
+01:44:41.212 [INFO ] EbaiServiceApplication - Started EbaiServiceApplication in 1.808 seconds (JVM running for 2.336)
+01:44:41.214 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:44:41.214 [INFO ] InitUtil - ----- Ebai Cloud Service Is Initializing ... -----
+01:44:42.560 [INFO ] InitUtil - => 服务启动成功
+01:44:42.560 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54
+01:44:42.560 [INFO ] NetworkUtil - 邮件发送 => 2081414628@qq.com
+01:44:43.437 [INFO ] NetworkUtil - => 发送成功
+01:44:43.438 [INFO ] NetworkUtil - 邮件发送 => 2643372457@qq.com
+01:44:44.321 [INFO ] NetworkUtil - => 发送成功
+01:44:45.357 [INFO ] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:44:45.357 [INFO ] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+01:44:45.358 [INFO ] DispatcherServlet - Completed initialization in 0 ms
+01:44:45.361 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:44:45.361 [INFO ] ProjectFilter - 请求拦截：URL == > /internal/mail/initAutoSending
+01:44:45.362 [INFO ] ProjectFilter - 网络信息：IP == > 127.0.0.1 (本地访问)
+01:44:45.362 [INFO ] ProjectFilter - 设备信息：User-Agent == > Apache-HttpClient/4.5.13 (Java/1.8.0_332)
+01:44:45.364 [INFO ] SessionFilter - session userName => null , sessionExistTime => 1 (0分钟) , sessionLastActiveTime => 1 (0分钟) 
+01:44:45.364 [INFO ] SessionFilter - session初始化
+01:44:45.364 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+01:44:45.373 [INFO ] MailServiceImpl - 启动定时邮件任务 =>
+01:44:45.374 [INFO ] MailServiceImpl - => Mon Nov 07 06:00:00 CST 2022 第一次发送
+01:44:45.388 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+01:44:45.392 [INFO ] InitUtil - ------------ Completed initialization ------------
+01:45:45.404 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:45:45.404 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+01:45:48.494 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1M5.934S
+01:55:45.413 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+01:55:45.413 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+01:55:48.529 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 11M5.969S
+02:05:45.417 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:05:45.417 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+02:05:48.512 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 21M5.952S
+02:15:45.432 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:15:45.432 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+02:15:48.541 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 31M5.981S
+02:25:45.438 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:25:45.438 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+02:25:48.555 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 41M5.995S
+02:34:09.513 [INFO ] Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x010x010x000x010x000x080x000x000x000x010x000x000x000x000x000x000x010x040x000x010x010xc20x060x000x0f0x12SCRIPT_FILENAME/usr/bin/phar.phar0x0f0x08SERVER_PROTOCOLHTTP/1.10x0e0x02CONTENT_LENGTH520x094PHP_VALUEauto_prepend_file ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+02:35:45.446 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:35:45.446 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+02:35:48.553 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 51M5.993S
+02:45:45.447 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:45:45.447 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+02:45:48.557 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1H1M5.997S
+02:55:45.457 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+02:55:45.457 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+02:55:48.563 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1H11M6.003S
+03:05:45.461 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+03:05:45.461 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+03:05:48.582 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1H21M6.022S
+03:15:45.476 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+03:15:45.476 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+03:15:48.598 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1H31M6.038S
+03:25:45.480 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+03:25:45.480 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+03:25:48.576 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1H41M6.016S
+03:35:45.480 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+03:35:45.480 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+03:35:48.569 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 1H51M6.009S
+03:45:45.488 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+03:45:45.488 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+03:45:48.591 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 2H1M6.031S
+03:55:45.498 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+03:55:45.498 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+03:55:48.591 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 2H11M6.03S
+04:05:45.504 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+04:05:45.504 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+04:05:48.603 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 2H21M6.043S
+04:15:45.508 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+04:15:45.508 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+04:15:48.601 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 2H31M6.041S
+04:25:45.523 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+04:25:45.523 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+04:25:48.621 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 2H41M6.061S
+04:35:45.538 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+04:35:45.538 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+04:35:48.644 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 2H51M6.084S
+04:45:45.542 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+04:45:45.542 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+04:45:48.654 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 3H1M6.094S
+04:55:45.550 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+04:55:45.550 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+04:55:48.656 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 3H11M6.096S
+05:05:45.564 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+05:05:45.564 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+05:05:48.647 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 3H21M6.087S
+05:15:45.569 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+05:15:45.569 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+05:15:48.672 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 3H31M6.112S
+05:25:45.569 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+05:25:45.569 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+05:25:48.696 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 3H41M6.136S
+05:35:45.572 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+05:35:45.572 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+05:35:48.668 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 3H51M6.108S
+05:45:45.585 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+05:45:45.585 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+05:45:48.668 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 4H1M6.108S
+05:55:45.600 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+05:55:45.600 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+05:55:48.695 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 4H11M6.135S
+06:00:00.007 [INFO ] MailServiceImpl - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+06:00:00.007 [INFO ] MailServiceImpl - 定时任务触发：Service == > SendDailyMail
+06:00:00.007 [INFO ] MailServiceImpl - ------------------ Service  Log ------------------
+06:00:01.237 [INFO ] connection - Opened connection [connectionId{localValue:3, serverValue:1289}] to 192.168.1.5:27017
+06:00:01.279 [INFO ] NetworkUtil - 邮件发送 => 2643372457@qq.com
+06:00:01.280 [INFO ] NetworkUtil - 邮件发送 => 2081414628@qq.com
+06:00:02.356 [INFO ] NetworkUtil - => 发送成功
+06:05:45.613 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+06:05:45.613 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+06:05:48.719 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 4H21M6.159S
+06:15:45.613 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+06:15:45.613 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+06:15:48.709 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 4H31M6.149S
+06:25:45.617 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+06:25:45.617 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+06:25:48.716 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 4H41M6.156S
+06:35:45.621 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+06:35:45.621 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+06:35:48.712 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 4H51M6.152S
+06:45:45.634 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+06:45:45.634 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+06:45:48.716 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 5H1M6.156S
+06:55:45.644 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+06:55:45.644 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+06:55:48.735 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 5H11M6.175S
+07:05:45.652 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+07:05:45.652 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+07:05:48.746 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 5H21M6.186S
+07:15:15.602 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+07:15:15.603 [INFO ] ProjectFilter - 请求拦截：URL == > /
+07:15:17.372 [WARN ] NetworkUtil - Get Location Exception
+07:15:17.372 [INFO ] ProjectFilter - 网络信息：IP == > 90.151.171.108 (Unknown)
+07:15:17.372 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/20100101 Firefox/16.0 (+https://best-proxies.ru/faq/#from)
+07:15:17.372 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+07:15:17.372 [INFO ] SessionFilter - session初始化
+07:15:17.372 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+07:15:17.374 [INFO ] ProjectInterceptor - preHandle
+07:15:17.374 [INFO ] ProjectInterceptor - postHandle
+07:15:17.382 [INFO ] ProjectInterceptor - preHandle
+07:15:17.390 [INFO ] ProjectInterceptor - postHandle
+07:15:17.390 [INFO ] ProjectInterceptor - afterCompletion
+07:15:17.390 [INFO ] ProjectInterceptor - afterCompletion
+07:15:17.390 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+07:15:45.653 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+07:15:45.653 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+07:15:48.767 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 5H31M6.207S
+07:25:45.664 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+07:25:45.664 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+07:25:48.761 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 5H41M6.201S
+07:35:45.665 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+07:35:45.665 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+07:35:48.784 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 5H51M6.224S
+07:45:45.674 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+07:45:45.674 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+07:45:48.771 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 6H1M6.211S
+07:55:45.689 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+07:55:45.689 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+07:55:48.788 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 6H11M6.228S
+08:05:45.699 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+08:05:45.699 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+08:05:48.793 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 6H21M6.233S
+08:15:45.711 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+08:15:45.711 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+08:15:48.810 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 6H31M6.249S
+08:25:45.724 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+08:25:45.724 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+08:25:48.820 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 6H41M6.26S
+08:35:45.727 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+08:35:45.727 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+08:35:48.831 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 6H51M6.271S
+08:45:45.733 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+08:45:45.733 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+08:45:48.829 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 7H1M6.269S
+08:55:45.737 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+08:55:45.737 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+08:55:48.842 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 7H11M6.281S
+09:05:45.742 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+09:05:45.742 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+09:05:48.837 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 7H21M6.277S
+09:15:45.742 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+09:15:45.742 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+09:15:48.848 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 7H31M6.288S
+09:25:45.743 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+09:25:45.743 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+09:25:48.758 [WARN ] NetworkUtil - Http Get Client Exception
+09:25:51.772 [WARN ] NetworkUtil - Http Get Client Exception
+09:25:54.784 [WARN ] NetworkUtil - Http Get Client Exception
+09:25:57.790 [WARN ] NetworkUtil - Http Get Client Exception
+09:26:00.900 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 7H41M18.34S
+09:35:45.749 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+09:35:45.749 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+09:35:48.757 [WARN ] NetworkUtil - Http Get Client Exception
+09:35:51.772 [WARN ] NetworkUtil - Http Get Client Exception
+09:35:54.776 [WARN ] NetworkUtil - Http Get Client Exception
+09:35:57.787 [WARN ] NetworkUtil - Http Get Client Exception
+09:36:00.881 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 7H51M18.321S
+09:45:45.753 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+09:45:45.753 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+09:45:48.761 [WARN ] NetworkUtil - Http Get Client Exception
+09:45:51.774 [WARN ] NetworkUtil - Http Get Client Exception
+09:45:54.783 [WARN ] NetworkUtil - Http Get Client Exception
+09:45:57.793 [WARN ] NetworkUtil - Http Get Client Exception
+09:46:00.892 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 8H1M18.331S
+09:55:45.760 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+09:55:45.760 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+09:55:48.856 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 8H11M6.296S
+10:05:45.761 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+10:05:45.761 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+10:05:48.895 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 8H21M6.335S
+10:15:45.771 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+10:15:45.771 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+10:15:48.881 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 8H31M6.321S
+10:25:45.772 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+10:25:45.772 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+10:25:48.874 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 8H41M6.314S
+10:35:45.785 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+10:35:45.785 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+10:35:48.881 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 8H51M6.321S
+10:45:45.791 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+10:45:45.791 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+10:45:48.911 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 9H1M6.351S
+10:55:45.802 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+10:55:45.802 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+10:55:48.933 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 9H11M6.373S
+11:05:45.808 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+11:05:45.808 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+11:05:48.905 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 9H21M6.345S
+11:09:43.898 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+11:09:43.898 [INFO ] ProjectFilter - 请求拦截：URL == > /
+11:09:45.782 [WARN ] NetworkUtil - Get Location Exception
+11:09:45.782 [INFO ] ProjectFilter - 网络信息：IP == > 192.241.209.147 (Unknown)
+11:09:45.782 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 zgrab/0.x
+11:09:45.782 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+11:09:45.783 [INFO ] SessionFilter - session初始化
+11:09:45.783 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+11:09:45.783 [INFO ] ProjectInterceptor - preHandle
+11:09:45.783 [INFO ] ProjectInterceptor - postHandle
+11:09:45.784 [INFO ] ProjectInterceptor - preHandle
+11:09:45.785 [INFO ] ProjectInterceptor - postHandle
+11:09:45.785 [INFO ] ProjectInterceptor - afterCompletion
+11:09:45.785 [INFO ] ProjectInterceptor - afterCompletion
+11:09:45.785 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+11:15:45.816 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+11:15:45.816 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+11:15:48.931 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 9H31M6.371S
+11:23:46.244 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+11:23:46.244 [INFO ] ProjectFilter - 请求拦截：URL == > /
+11:23:48.122 [WARN ] NetworkUtil - Get Location Exception
+11:23:48.122 [INFO ] ProjectFilter - 网络信息：IP == > 64.225.69.34 (Unknown)
+11:23:48.122 [INFO ] ProjectFilter - 设备信息：User-Agent == > null
+11:23:48.122 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+11:23:48.122 [INFO ] SessionFilter - session初始化
+11:23:48.122 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+11:23:48.123 [INFO ] ProjectInterceptor - preHandle
+11:23:48.123 [INFO ] ProjectInterceptor - postHandle
+11:23:48.123 [INFO ] ProjectInterceptor - preHandle
+11:23:48.124 [INFO ] ProjectInterceptor - postHandle
+11:23:48.124 [INFO ] ProjectInterceptor - afterCompletion
+11:23:48.124 [INFO ] ProjectInterceptor - afterCompletion
+11:23:48.124 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+11:25:45.820 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+11:25:45.820 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+11:25:48.828 [WARN ] NetworkUtil - Http Get Client Exception
+11:25:51.837 [WARN ] NetworkUtil - Http Get Client Exception
+11:25:54.839 [WARN ] NetworkUtil - Http Get Client Exception
+11:25:57.848 [WARN ] NetworkUtil - Http Get Client Exception
+11:26:00.960 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 9H41M18.4S
+11:35:45.822 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+11:35:45.822 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+11:35:48.965 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 9H51M6.405S
+11:45:45.836 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+11:45:45.836 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+11:45:48.945 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 10H1M6.385S
+11:55:45.840 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+11:55:45.840 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+11:55:48.948 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 10H11M6.388S
+12:05:45.849 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+12:05:45.849 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+12:05:48.945 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 10H21M6.385S
+12:15:45.858 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+12:15:45.858 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+12:15:48.877 [WARN ] NetworkUtil - Http Get Client Exception
+12:15:51.886 [WARN ] NetworkUtil - Http Get Client Exception
+12:15:54.901 [WARN ] NetworkUtil - Http Get Client Exception
+12:15:57.914 [WARN ] NetworkUtil - Http Get Client Exception
+12:16:01.002 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 10H31M18.442S
+12:25:45.871 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+12:25:45.871 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+12:25:48.986 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 10H41M6.426S
+12:35:45.880 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+12:35:45.880 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+12:35:48.981 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 10H51M6.421S
+12:45:45.882 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+12:45:45.882 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+12:45:48.971 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 11H1M6.411S
+12:55:45.883 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+12:55:45.883 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+12:55:48.901 [WARN ] NetworkUtil - Http Get Client Exception
+12:55:51.909 [WARN ] NetworkUtil - Http Get Client Exception
+12:55:54.912 [WARN ] NetworkUtil - Http Get Client Exception
+12:55:57.915 [WARN ] NetworkUtil - Http Get Client Exception
+12:56:01.021 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 11H11M18.461S
+13:05:45.892 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+13:05:45.892 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+13:05:49.019 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 11H21M6.459S
+13:15:45.899 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+13:15:45.899 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+13:15:48.997 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 11H31M6.437S
+13:25:45.906 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+13:25:45.906 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+13:25:49.009 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 11H41M6.449S
+13:35:45.915 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+13:35:45.915 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+13:35:49.004 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 11H51M6.444S
+13:45:45.930 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+13:45:45.930 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+13:45:49.056 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 12H1M6.496S
+13:55:45.936 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+13:55:45.936 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+13:55:49.070 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 12H11M6.51S
+14:05:45.944 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+14:05:45.944 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+14:05:49.049 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 12H21M6.489S
+14:15:45.955 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+14:15:45.955 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+14:15:48.973 [WARN ] NetworkUtil - Http Get Client Exception
+14:15:51.975 [WARN ] NetworkUtil - Http Get Client Exception
+14:15:54.975 [WARN ] NetworkUtil - Http Get Client Exception
+14:15:57.979 [WARN ] NetworkUtil - Http Get Client Exception
+14:16:01.101 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 12H31M18.541S
+14:25:45.967 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+14:25:45.967 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+14:25:48.977 [WARN ] NetworkUtil - Http Get Client Exception
+14:25:51.991 [WARN ] NetworkUtil - Http Get Client Exception
+14:25:54.998 [WARN ] NetworkUtil - Http Get Client Exception
+14:25:58.004 [WARN ] NetworkUtil - Http Get Client Exception
+14:26:01.118 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 12H41M18.558S
+14:35:45.975 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+14:35:45.975 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+14:35:49.080 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 12H51M6.52S
+14:45:45.982 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+14:45:45.982 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+14:45:48.993 [WARN ] NetworkUtil - Http Get Client Exception
+14:45:52.000 [WARN ] NetworkUtil - Http Get Client Exception
+14:45:55.010 [WARN ] NetworkUtil - Http Get Client Exception
+14:45:58.022 [WARN ] NetworkUtil - Http Get Client Exception
+14:46:01.112 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 13H1M18.552S
+14:55:45.995 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+14:55:45.995 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+14:55:49.005 [WARN ] NetworkUtil - Http Get Client Exception
+14:55:52.016 [WARN ] NetworkUtil - Http Get Client Exception
+14:55:55.031 [WARN ] NetworkUtil - Http Get Client Exception
+14:55:58.047 [WARN ] NetworkUtil - Http Get Client Exception
+14:56:01.155 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 13H11M18.595S
+15:05:45.999 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+15:05:45.999 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+15:05:49.106 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 13H21M6.546S
+15:15:46.005 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+15:15:46.005 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+15:15:49.117 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 13H31M6.557S
+15:25:46.010 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+15:25:46.010 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+15:25:49.138 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 13H41M6.578S
+15:35:46.017 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+15:35:46.017 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+15:35:49.169 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 13H51M6.608S
+15:45:46.023 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+15:45:46.023 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+15:45:49.165 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 14H1M6.605S
+15:55:46.030 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+15:55:46.030 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+15:55:49.122 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 14H11M6.562S
+16:05:46.033 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+16:05:46.033 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+16:05:49.166 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 14H21M6.606S
+16:15:46.037 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+16:15:46.037 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+16:15:49.162 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 14H31M6.602S
+16:25:46.047 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+16:25:46.047 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+16:25:49.053 [WARN ] NetworkUtil - Http Get Client Exception
+16:25:52.069 [WARN ] NetworkUtil - Http Get Client Exception
+16:25:55.079 [WARN ] NetworkUtil - Http Get Client Exception
+16:25:58.082 [WARN ] NetworkUtil - Http Get Client Exception
+16:26:01.225 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 14H41M18.665S
+16:29:06.316 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+16:29:06.316 [INFO ] ProjectFilter - 请求拦截：URL == > /
+16:29:08.034 [WARN ] NetworkUtil - Get Location Exception
+16:29:08.034 [INFO ] ProjectFilter - 网络信息：IP == > 167.94.138.62 (Unknown)
+16:29:08.034 [INFO ] ProjectFilter - 设备信息：User-Agent == > null
+16:29:08.034 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+16:29:08.034 [INFO ] SessionFilter - session初始化
+16:29:08.034 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+16:29:08.034 [INFO ] ProjectInterceptor - preHandle
+16:29:08.034 [INFO ] ProjectInterceptor - postHandle
+16:29:08.035 [INFO ] ProjectInterceptor - preHandle
+16:29:08.041 [INFO ] ProjectInterceptor - postHandle
+16:29:08.041 [INFO ] ProjectInterceptor - afterCompletion
+16:29:08.041 [INFO ] ProjectInterceptor - afterCompletion
+16:29:08.041 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+16:29:08.466 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+16:29:08.466 [INFO ] ProjectFilter - 请求拦截：URL == > /
+16:29:10.247 [WARN ] NetworkUtil - Get Location Exception
+16:29:10.247 [INFO ] ProjectFilter - 网络信息：IP == > 167.94.138.62 (Unknown)
+16:29:10.247 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)
+16:29:10.247 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+16:29:10.247 [INFO ] SessionFilter - session初始化
+16:29:10.247 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+16:29:10.247 [INFO ] ProjectInterceptor - preHandle
+16:29:10.247 [INFO ] ProjectInterceptor - postHandle
+16:29:10.248 [INFO ] ProjectInterceptor - preHandle
+16:29:10.249 [INFO ] ProjectInterceptor - postHandle
+16:29:10.249 [INFO ] ProjectInterceptor - afterCompletion
+16:29:10.249 [INFO ] ProjectInterceptor - afterCompletion
+16:29:10.249 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+16:29:11.087 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+16:29:11.087 [INFO ] ProjectFilter - 请求拦截：URL == > /favicon.ico
+16:29:12.794 [WARN ] NetworkUtil - Get Location Exception
+16:29:12.794 [INFO ] ProjectFilter - 网络信息：IP == > 167.94.138.62 (Unknown)
+16:29:12.794 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)
+16:29:12.794 [INFO ] SessionFilter - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+16:29:12.794 [INFO ] SessionFilter - session初始化
+16:29:12.794 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+16:29:12.795 [INFO ] ProjectInterceptor - preHandle
+16:29:14.983 [INFO ] ProjectInterceptor - afterCompletion
+16:35:46.053 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+16:35:46.053 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+16:35:49.145 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 14H51M6.585S
+16:37:50.355 [INFO ] ProjectFilter - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+16:37:50.355 [INFO ] ProjectFilter - 请求拦截：URL == > /
+16:37:52.116 [WARN ] NetworkUtil - Get Location Exception
+16:37:52.116 [INFO ] ProjectFilter - 网络信息：IP == > 87.236.176.197 (Unknown)
+16:37:52.116 [INFO ] ProjectFilter - 设备信息：User-Agent == > Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)
+16:37:52.117 [INFO ] SessionFilter - session userName => null , sessionExistTime => 1 (0分钟) , sessionLastActiveTime => 1 (0分钟) 
+16:37:52.117 [INFO ] SessionFilter - session初始化
+16:37:52.117 [INFO ] SessionFilter - ------------------ Service  Log ------------------
+16:37:52.117 [INFO ] ProjectInterceptor - preHandle
+16:37:52.117 [INFO ] ProjectInterceptor - postHandle
+16:37:52.118 [INFO ] ProjectInterceptor - preHandle
+16:37:52.119 [INFO ] ProjectInterceptor - postHandle
+16:37:52.119 [INFO ] ProjectInterceptor - afterCompletion
+16:37:52.119 [INFO ] ProjectInterceptor - afterCompletion
+16:37:52.119 [INFO ] ProjectFilter - --------------  Request  Completed  --------------
+16:45:46.058 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+16:45:46.058 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+16:45:49.235 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 15H1M6.675S
+16:55:46.072 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+16:55:46.072 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+16:55:49.202 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 15H11M6.642S
+17:05:46.073 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+17:05:46.073 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+17:05:49.195 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 15H21M6.635S
+17:15:46.086 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+17:15:46.086 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+17:15:49.243 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 15H31M6.683S
+17:25:46.097 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+17:25:46.097 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+17:25:49.193 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 15H41M6.633S
+17:35:46.109 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+17:35:46.109 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+17:35:49.118 [WARN ] NetworkUtil - Http Get Client Exception
+17:35:52.132 [WARN ] NetworkUtil - Http Get Client Exception
+17:35:55.137 [WARN ] NetworkUtil - Http Get Client Exception
+17:35:58.149 [WARN ] NetworkUtil - Http Get Client Exception
+17:36:01.273 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 15H51M18.713S
+17:45:46.115 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+17:45:46.115 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+17:45:49.126 [WARN ] NetworkUtil - Http Get Client Exception
+17:45:52.135 [WARN ] NetworkUtil - Http Get Client Exception
+17:45:55.142 [WARN ] NetworkUtil - Http Get Client Exception
+17:45:58.150 [WARN ] NetworkUtil - Http Get Client Exception
+17:46:01.287 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 16H1M18.727S
+17:55:46.130 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+17:55:46.130 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+17:55:49.217 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 16H11M6.657S
+18:05:46.145 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+18:05:46.145 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+18:05:49.163 [WARN ] NetworkUtil - Http Get Client Exception
+18:05:52.174 [WARN ] NetworkUtil - Http Get Client Exception
+18:05:55.178 [WARN ] NetworkUtil - Http Get Client Exception
+18:05:58.180 [WARN ] NetworkUtil - Http Get Client Exception
+18:06:01.269 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 16H21M18.708S
+18:15:46.159 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+18:15:46.159 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+18:15:49.286 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 16H31M6.726S
+18:25:46.163 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+18:25:46.163 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+18:25:49.277 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 16H41M6.717S
+18:35:46.173 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+18:35:46.173 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+18:35:49.180 [WARN ] NetworkUtil - Http Get Client Exception
+18:35:52.183 [WARN ] NetworkUtil - Http Get Client Exception
+18:35:55.186 [WARN ] NetworkUtil - Http Get Client Exception
+18:35:58.190 [WARN ] NetworkUtil - Http Get Client Exception
+18:36:01.319 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 16H51M18.759S
+18:45:46.176 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+18:45:46.176 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+18:45:49.289 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 17H1M6.729S
+18:55:46.176 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+18:55:46.176 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+18:55:49.357 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 17H11M6.797S
+19:05:46.177 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+19:05:46.177 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+19:05:49.339 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 17H21M6.779S
+19:15:46.182 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+19:15:46.182 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+19:15:49.197 [WARN ] NetworkUtil - Http Get Client Exception
+19:15:52.208 [WARN ] NetworkUtil - Http Get Client Exception
+19:15:55.213 [WARN ] NetworkUtil - Http Get Client Exception
+19:15:58.220 [WARN ] NetworkUtil - Http Get Client Exception
+19:16:01.349 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 17H31M18.789S
+19:25:46.193 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+19:25:46.193 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+19:25:49.385 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 17H41M6.825S
+19:35:46.198 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+19:35:46.198 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+19:35:49.288 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 17H51M6.727S
+19:45:46.209 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+19:45:46.209 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+19:45:49.221 [WARN ] NetworkUtil - Http Get Client Exception
+19:45:52.227 [WARN ] NetworkUtil - Http Get Client Exception
+19:45:55.230 [WARN ] NetworkUtil - Http Get Client Exception
+19:45:58.241 [WARN ] NetworkUtil - Http Get Client Exception
+19:46:01.471 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 18H1M18.911S
+19:55:46.213 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+19:55:46.213 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+19:55:49.350 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 18H11M6.79S
+20:05:46.225 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:05:46.225 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+20:05:49.386 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 18H21M6.826S
+20:15:46.227 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:15:46.227 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+20:15:49.242 [WARN ] NetworkUtil - Http Get Client Exception
+20:15:52.254 [WARN ] NetworkUtil - Http Get Client Exception
+20:15:55.262 [WARN ] NetworkUtil - Http Get Client Exception
+20:15:58.265 [WARN ] NetworkUtil - Http Get Client Exception
+20:16:01.398 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 18H31M18.838S
+20:25:46.233 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:25:46.233 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+20:25:49.383 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 18H41M6.823S
+20:35:46.239 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:35:46.239 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+20:35:49.387 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 18H51M6.827S
+20:45:46.248 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:45:46.248 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+20:45:49.362 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 19H1M6.802S
+20:55:46.260 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:55:46.260 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+20:55:49.376 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 19H11M6.816S
+21:05:46.265 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+21:05:46.265 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+21:05:49.381 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 19H21M6.821S
+21:15:46.271 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+21:15:46.271 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+21:15:49.392 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 19H31M6.832S
+21:25:46.280 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+21:25:46.280 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+21:25:49.434 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 19H41M6.874S
+21:35:46.281 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+21:35:46.281 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+21:35:49.383 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 19H51M6.823S
+21:45:46.288 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+21:45:46.288 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+21:45:49.382 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 20H1M6.822S
+21:55:46.291 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+21:55:46.291 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+21:55:49.377 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 20H11M6.817S
+22:05:46.293 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+22:05:46.293 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+22:05:49.306 [WARN ] NetworkUtil - Http Get Client Exception
+22:05:52.321 [WARN ] NetworkUtil - Http Get Client Exception
+22:05:55.337 [WARN ] NetworkUtil - Http Get Client Exception
+22:05:58.351 [WARN ] NetworkUtil - Http Get Client Exception
+22:06:01.552 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 20H21M18.992S
+22:15:46.301 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+22:15:46.301 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+22:15:49.469 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 20H31M6.909S
+22:25:46.302 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+22:25:46.302 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+22:25:49.420 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 20H41M6.86S
+22:35:46.305 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+22:35:46.305 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+22:35:49.404 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 20H51M6.844S
+22:45:46.305 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+22:45:46.305 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+22:45:49.443 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 21H1M6.883S
+22:55:46.316 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+22:55:46.316 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+22:55:49.336 [WARN ] NetworkUtil - Http Get Client Exception
+22:55:52.352 [WARN ] NetworkUtil - Http Get Client Exception
+22:55:55.353 [WARN ] NetworkUtil - Http Get Client Exception
+22:55:58.361 [WARN ] NetworkUtil - Http Get Client Exception
+22:56:01.463 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 21H11M18.903S
+23:05:46.322 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:05:46.322 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+23:05:49.330 [WARN ] NetworkUtil - Http Get Client Exception
+23:05:52.334 [WARN ] NetworkUtil - Http Get Client Exception
+23:05:55.344 [WARN ] NetworkUtil - Http Get Client Exception
+23:05:58.354 [WARN ] NetworkUtil - Http Get Client Exception
+23:06:01.465 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 21H21M18.905S
+23:15:46.333 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:15:46.333 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+23:15:49.434 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 21H31M6.874S
+23:25:46.346 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:25:46.346 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+23:25:49.452 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 21H41M6.892S
+23:35:46.353 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:35:46.353 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+23:35:49.449 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 21H51M6.889S
+23:45:46.362 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:45:46.362 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+23:45:49.465 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 22H1M6.905S
+23:55:46.365 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:55:46.365 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+23:55:49.460 [INFO ] InitUtil - => 本地IP地址: 116.237.65.54 => 累计运行时长: 22H11M6.9S

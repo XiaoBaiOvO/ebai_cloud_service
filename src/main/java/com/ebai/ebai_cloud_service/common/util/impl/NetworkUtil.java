@@ -1,10 +1,14 @@
 package com.ebai.ebai_cloud_service.common.util.impl;
 
 import com.alibaba.fastjson.JSONObject;
+import com.ebai.ebai_cloud_service.common.util.HttpUtils;
 import com.ebai.ebai_cloud_service.common.util.Network;
+import com.ebai.ebai_cloud_service.mapper.IpQueryLogRepository;
+import com.ebai.ebai_cloud_service.mapper.entity.IpQueryLogEntity;
 import com.ebai.ebai_cloud_service.model.dto.MailRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -13,6 +17,7 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import javax.mail.Message;
 import javax.mail.Session;
 import javax.mail.Transport;
@@ -20,14 +25,15 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-import java.util.Properties;
+import java.time.LocalDateTime;
+import java.util.*;
 
 @Service
 @Slf4j
 public class NetworkUtil implements Network {
+
+    @Resource
+    IpQueryLogRepository ipQueryLogRepository;
 
     @Override
     public JSONObject httpGetClient(String url) {
@@ -71,6 +77,7 @@ public class NetworkUtil implements Network {
     }
 
     private JSONObject doGet(String url) throws IOException {
+
         CloseableHttpClient httpClient;
         CloseableHttpResponse response;
         // 通过址默认配置创建一个httpClient实例
@@ -133,29 +140,61 @@ public class NetworkUtil implements Network {
 
     @Override
     public String getLocation(HttpServletRequest httpServletRequest) {
-        String result = "Unknown";
-        try {
-            String ip = getIp(httpServletRequest);
-            if (ip.substring(0, 7).equals("127.0.0")) {
-                return "本地访问";
-            }
-            if (ip.substring(0, 7).equals("192.168")) {
-                return "内网访问";
-            }
-            String url = "https://api.map.baidu.com/location/ip?ak=Tco6gfz2hZFqtoXGIzoQavlz49dLCtOS&ip=" + ip + "&coor=bd09ll";
-            JSONObject resp = httpGetClient(url, true);
+        return getLocationByIp(getIp(httpServletRequest));
+    }
 
-            JSONObject contentJson = JSONObject.parseObject(resp.getString("content"));
-            JSONObject addressDetailJson = JSONObject.parseObject(contentJson.getString("address_detail"));
-            log.info("详细地址: " + resp.getString("address"));
-            log.info("省份: " + addressDetailJson.getString("province"));
-            log.info("城市: " + addressDetailJson.getString("city"));
-            log.info("城市代码: " + addressDetailJson.getString("adcode"));
-            result = resp.getString("address");
-        } catch (Exception e) {
-           log.warn("Get Location Exception");
+    @Override
+    public String getLocationByIp(String ip) {
+        String result = "Unknown";
+
+        if (ip.startsWith("192.168")) {
+            result = "内网访问";
+            IpQueryLogEntity ipQueryLogEntity = new IpQueryLogEntity();
+            ipQueryLogEntity.setIp(ip);
+            ipQueryLogEntity.setSummary(result);
+            ipQueryLogEntity.setDate(LocalDateTime.now());
+            ipQueryLogRepository.save(ipQueryLogEntity);
+            return result;
         }
 
+        List<IpQueryLogEntity> ipLogList = ipQueryLogRepository.findAllByIp(ip);
+        if (ipLogList.size() > 0) {
+            result = ipLogList.get(0).getSummary();
+        } else {
+            try {
+//                百度地图查询
+//                String url = "https://api.map.baidu.com/location/ip?ak=Tco6gfz2hZFqtoXGIzoQavlz49dLCtOS&ip=" + ip + "&coor=bd09ll";
+//                JSONObject resp = httpGetClient(url, true);
+////
+//                JSONObject contentJson = JSONObject.parseObject(resp.getString("content"));
+//                JSONObject addressDetailJson = JSONObject.parseObject(contentJson.getString("address_detail"));
+//                log.info("详细地址: " + resp.getString("address"));
+//                log.info("省份: " + addressDetailJson.getString("province"));
+//                log.info("城市: " + addressDetailJson.getString("city"));
+//                log.info("城市代码: " + addressDetailJson.getString("adcode"));
+//                result = resp.getString("address");
+
+                String host = "https://ipcity.market.alicloudapi.com";
+                String path = "/ip/city/query";
+                String appcode = "6b9b3d1c9af24536a0d4aa47f1a985fc";
+                Map<String, String> headers = new HashMap<>();
+                headers.put("Authorization", "APPCODE " + appcode);
+                Map<String, String> querys = new HashMap<String, String>();
+                querys.put("ip", ip);
+                HttpResponse response = HttpUtils.doGet(host, path, headers, querys);
+                JSONObject resultJson = JSONObject.parseObject(EntityUtils.toString(response.getEntity())).getJSONObject("data").getJSONObject("result");
+                result = resultJson.getString("country") + "-" + resultJson.getString("areacode") + "|" + resultJson.getString("prov") + "|" + resultJson.getString("city") + "|" + resultJson.getString("isp");
+
+                IpQueryLogEntity ipQueryLogEntity = new IpQueryLogEntity();
+                ipQueryLogEntity.setIp(ip);
+                ipQueryLogEntity.setResult(JSONObject.toJSONString(resultJson));
+                ipQueryLogEntity.setSummary(result);
+                ipQueryLogEntity.setDate(LocalDateTime.now());
+                ipQueryLogRepository.save(ipQueryLogEntity);
+            } catch (Exception e) {
+                log.warn("Get Location Exception");
+            }
+        }
         return result;
     }
 

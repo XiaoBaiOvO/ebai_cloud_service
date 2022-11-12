@@ -10,6 +10,8 @@ public interface Network {
 
     String getLocation(HttpServletRequest httpServletRequest);
 
+    String getLocationByIp(String ip);
+
     Boolean sendMail(MailRequest mail);
     Boolean sendMail(List<MailRequest> mailList);
 
