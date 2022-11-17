@@ -1,28 +1,31 @@
 package com.ebai.ebai_cloud_service.common.util;
 
+import com.alibaba.fastjson.JSONObject;
 import org.apache.commons.lang.StringUtils;
+import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpDelete;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.client.methods.HttpPut;
+import org.apache.http.client.methods.*;
 import org.apache.http.conn.ClientConnectionManager;
 import org.apache.http.conn.scheme.Scheme;
 import org.apache.http.conn.scheme.SchemeRegistry;
 import org.apache.http.conn.ssl.SSLSocketFactory;
 import org.apache.http.entity.ByteArrayEntity;
 import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.util.EntityUtils;
 
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
 import java.security.cert.X509Certificate;
@@ -45,6 +48,26 @@ public class HttpUtils {
         }
 
         return httpClient.execute(request);
+    }
+
+    public static JSONObject doPost(String url, String jsonBody) throws Exception {
+        CloseableHttpClient httpclient = HttpClients.createDefault();
+        HttpPost httpPost = new HttpPost(url);
+        httpPost.setHeader("Accept", "application/json");
+        httpPost.setHeader("Content-Type", "application/json");
+        StringEntity entity = new StringEntity(jsonBody, StandardCharsets.UTF_8);
+        httpPost.setEntity(entity);
+        CloseableHttpResponse response = null;
+        // 执行get请求得到返回对象
+        response = httpclient.execute(httpPost);
+        // 通过返回对象获取返回数据
+        HttpEntity httpEntity = response.getEntity();
+        // 通过EntityUtils中的toString方法将结果转换为字符串
+        JSONObject result = JSONObject.parseObject(EntityUtils.toString(httpEntity));
+        // 关闭资源
+        response.close();
+        httpclient.close();
+        return result;
     }
 
     public static HttpResponse doPost(String host, String path,

@@ -35,6 +35,7 @@ public class ProjectInterceptor implements HandlerInterceptor {
         HttpSession session = request.getSession();
         String userName = (String) session.getAttribute(USER_NAME);
 
+
         Date currentDate = new Date();
         long sessionExistTime = currentDate.getTime() - session.getCreationTime();
         long sessionLastActiveTime = currentDate.getTime() - session.getLastAccessedTime();
@@ -47,11 +48,11 @@ public class ProjectInterceptor implements HandlerInterceptor {
 
         // 用户在线半小时或十分钟未操作
         if (userName == null) {
-            log.info("session初始化");
-            session.invalidate();
+//            log.info("session初始化");
+//            session.invalidate();
         } else if (sessionExistTime > 30 * 60 * 1000 || sessionLastActiveTime > 10 * 60 * 1000) {
-            log.info("session过期");
-            session.invalidate();
+//            log.info("session过期");
+//            session.invalidate();
         }
 
         Map<String, String> saveRequestQuery = new HashMap<>();

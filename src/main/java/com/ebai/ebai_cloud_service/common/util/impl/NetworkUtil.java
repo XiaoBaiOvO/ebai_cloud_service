@@ -12,6 +12,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
@@ -95,6 +96,46 @@ public class NetworkUtil implements Network {
         httpGet.setConfig(requestConfig);
         // 执行get请求得到返回对象
         response = httpClient.execute(httpGet);
+        // 通过返回对象获取返回数据
+        HttpEntity entity = response.getEntity();
+        // 通过EntityUtils中的toString方法将结果转换为字符串
+        JSONObject result = JSONObject.parseObject(EntityUtils.toString(entity));
+        // 关闭资源
+        response.close();
+        httpClient.close();
+//        try {
+//            response.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        try {
+//            httpClient.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+        return result;
+    }
+
+    @Override
+    public JSONObject doPost(String url) throws IOException {
+
+        CloseableHttpClient httpClient;
+        CloseableHttpResponse response;
+        // 通过址默认配置创建一个httpClient实例
+        httpClient = HttpClients.createDefault();
+        // 创建httpGet远程连接实例
+        HttpPost httpPost = new HttpPost(url);
+        // 设置请求头信息，鉴权
+//        httpGet.setHeader("Authorization", "Bearer da3efcbf-0845-4fe3-8aba-ee040be542c0");
+        // 设置配置请求参数
+        RequestConfig requestConfig = RequestConfig.custom().setConnectTimeout(35000)// 连接主机服务超时时间
+                .setConnectionRequestTimeout(35000)// 请求超时时间
+                .setSocketTimeout(60000)// 数据读取超时时间
+                .build();
+        // 为httpGet实例设置配置
+        httpPost.setConfig(requestConfig);
+        // 执行get请求得到返回对象
+        response = httpClient.execute(httpPost);
         // 通过返回对象获取返回数据
         HttpEntity entity = response.getEntity();
         // 通过EntityUtils中的toString方法将结果转换为字符串

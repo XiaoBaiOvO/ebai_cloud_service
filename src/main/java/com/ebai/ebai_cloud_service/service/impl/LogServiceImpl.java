@@ -9,7 +9,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.time.LocalDateTime;
+import java.util.Date;
 
 @Service
 @Slf4j
@@ -29,7 +29,7 @@ public class LogServiceImpl implements LogService {
         entity.setLocation(location);
         entity.setUserAgent(userAgent);
         entity.setUserName(userName);
-        entity.setDate(LocalDateTime.now());
+        entity.setDate(new Date());
         serviceRequestLogRepository.save(entity);
     }
 

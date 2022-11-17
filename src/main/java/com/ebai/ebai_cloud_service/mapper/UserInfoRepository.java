@@ -11,6 +11,8 @@ public interface UserInfoRepository extends MongoRepository<UserInfoEntity, Stri
 
     UserInfoEntity findTopByUserNameAndPassword(String userName, String password);
 
+    UserInfoEntity findTopByMobile(String mobile);
+
     UserInfoEntity findTopById(String id);
 
 }

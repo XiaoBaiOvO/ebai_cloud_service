@@ -12,6 +12,8 @@ public interface UserService {
 
     LoginAccountResponse login (LoginAccountRequest request, HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse);
 
+    String sendMobileCaptcha(LoginAccountRequest request, HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse);
+
     CurrentUserResponse checkCurrentUser (HttpServletResponse httpServletResponse, HttpServletRequest httpServletRequest);
 
     CurrentUserResponse outLogin (HttpServletRequest httpServletRequest);
