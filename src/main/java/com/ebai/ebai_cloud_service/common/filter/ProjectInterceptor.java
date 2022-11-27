@@ -47,13 +47,13 @@ public class ProjectInterceptor implements HandlerInterceptor {
                 userName, sessionExistTime, sessionExistTime / ( 60 * 1000 ), sessionLastActiveTime, sessionLastActiveTime / ( 60 * 1000 ));
 
         // 用户在线半小时或十分钟未操作
-        if (userName == null) {
+//        if (userName == null) {
 //            log.info("session初始化");
 //            session.invalidate();
-        } else if (sessionExistTime > 30 * 60 * 1000 || sessionLastActiveTime > 10 * 60 * 1000) {
+//        } else if (sessionExistTime > 30 * 60 * 1000 || sessionLastActiveTime > 10 * 60 * 1000) {
 //            log.info("session过期");
 //            session.invalidate();
-        }
+//        }
 
         Map<String, String> saveRequestQuery = new HashMap<>();
         saveRequestQuery.put("url", url);

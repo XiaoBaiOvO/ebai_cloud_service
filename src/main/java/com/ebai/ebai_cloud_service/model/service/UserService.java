@@ -1,4 +1,4 @@
-package com.ebai.ebai_cloud_service.service;
+package com.ebai.ebai_cloud_service.model.service;
 
 import com.ebai.ebai_cloud_service.controller.request.LoginAccountRequest;
 import com.ebai.ebai_cloud_service.controller.response.CurrentUserResponse;

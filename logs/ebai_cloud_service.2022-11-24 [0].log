@@ -1,0 +1,569 @@
+19:42:33.813 [INFO ] EbaiServiceApplication - Starting EbaiServiceApplication using Java 1.8.0_332 on DESKTOP-3KUCMR1 with PID 12240 (D:\projects\# java\ebai_cloud_service\target\classes started by yunch in D:\projects\# java\ebai_cloud_service)
+19:42:33.815 [INFO ] EbaiServiceApplication - No active profile set, falling back to 1 default profile: "default"
+19:42:34.587 [INFO ] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+19:42:34.642 [INFO ] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 7 MongoDB repository interfaces.
+19:42:35.057 [INFO ] TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
+19:42:35.065 [INFO ] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+19:42:35.065 [INFO ] StandardService - Starting service [Tomcat]
+19:42:35.065 [INFO ] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+19:42:35.506 [INFO ] [/] - Initializing Spring embedded WebApplicationContext
+19:42:35.506 [INFO ] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1659 ms
+19:42:35.669 [INFO ] client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./1.8.0_332-b08"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='xiaobai', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@7159a5cd]}, clusterSettings={hosts=[192.168.1.5:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+19:42:35.681 [INFO ] connection - Opened connection [connectionId{localValue:2, serverValue:886}] to 192.168.1.5:27017
+19:42:36.172 [INFO ] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+19:42:36.293 [INFO ] Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+19:42:36.308 [INFO ] TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
+19:42:36.314 [INFO ] EbaiServiceApplication - Started EbaiServiceApplication in 2.9 seconds (JVM running for 4.734)
+19:42:36.316 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+19:42:36.316 [INFO ] InitUtil - ----- Ebai Cloud Service Is Initializing ... -----
+19:42:36.683 [INFO ] connection - Opened connection [connectionId{localValue:1, serverValue:887}] to 192.168.1.5:27017
+19:42:36.683 [INFO ] cluster - Monitor thread successfully connected to server with description ServerDescription{address=192.168.1.5:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=7222200}
+19:42:37.873 [INFO ] InitUtil - => 服务启动成功
+19:42:37.873 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220
+19:42:37.873 [INFO ] NetworkUtil - 邮件发送 => 2081414628@qq.com
+19:42:38.783 [INFO ] NetworkUtil - => 发送成功
+19:42:38.783 [INFO ] NetworkUtil - 邮件发送 => 2643372457@qq.com
+19:42:39.636 [INFO ] NetworkUtil - => 发送成功
+19:42:40.694 [INFO ] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:42:40.694 [INFO ] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+19:42:40.694 [INFO ] DispatcherServlet - Completed initialization in 0 ms
+19:42:40.709 [INFO ] MailServiceImpl - 启动定时邮件任务 =>
+19:42:40.710 [INFO ] MailServiceImpl - => Fri Nov 25 06:00:00 CST 2022 第一次发送
+19:42:40.726 [INFO ] InitUtil - ------------ Completed initialization ------------
+19:43:40.737 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+19:43:40.737 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+19:43:43.876 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 1M6.003S
+19:53:40.752 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+19:53:40.752 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+19:53:43.850 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 11M5.977S
+20:03:40.758 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:03:40.758 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+20:03:43.876 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 21M6.003S
+20:13:40.765 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:13:40.765 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+20:13:43.928 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 31M6.054S
+20:23:40.770 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:23:40.770 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+20:23:43.790 [WARN ] NetworkUtil - Http Get Client Exception
+20:23:46.803 [WARN ] NetworkUtil - Http Get Client Exception
+20:23:49.806 [WARN ] NetworkUtil - Http Get Client Exception
+20:23:52.821 [WARN ] NetworkUtil - Http Get Client Exception
+20:23:55.941 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 41M18.068S
+20:33:40.772 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:33:40.772 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+20:33:43.853 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 51M5.98S
+20:35:58.124 [INFO ] EbaiServiceApplication - Starting EbaiServiceApplication using Java 1.8.0_332 on DESKTOP-3KUCMR1 with PID 20776 (D:\projects\# java\ebai_cloud_service\target\classes started by yunch in D:\projects\# java\ebai_cloud_service)
+20:35:58.127 [INFO ] EbaiServiceApplication - No active profile set, falling back to 1 default profile: "default"
+20:35:58.638 [INFO ] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+20:35:58.695 [INFO ] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54 ms. Found 7 MongoDB repository interfaces.
+20:35:59.098 [INFO ] TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
+20:35:59.105 [INFO ] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+20:35:59.105 [INFO ] StandardService - Starting service [Tomcat]
+20:35:59.105 [INFO ] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+20:35:59.178 [INFO ] [/] - Initializing Spring embedded WebApplicationContext
+20:35:59.179 [INFO ] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1015 ms
+20:35:59.362 [INFO ] client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./1.8.0_332-b08"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='xiaobai', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@7063686f]}, clusterSettings={hosts=[192.168.1.5:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+20:35:59.377 [INFO ] connection - Opened connection [connectionId{localValue:2, serverValue:888}] to 192.168.1.5:27017
+20:35:59.377 [INFO ] connection - Opened connection [connectionId{localValue:1, serverValue:889}] to 192.168.1.5:27017
+20:35:59.377 [INFO ] cluster - Monitor thread successfully connected to server with description ServerDescription{address=192.168.1.5:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=24125700}
+20:35:59.920 [INFO ] WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+20:36:00.047 [INFO ] Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+20:36:00.063 [INFO ] TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
+20:36:00.069 [INFO ] EbaiServiceApplication - Started EbaiServiceApplication in 2.305 seconds (JVM running for 2.961)
+20:36:00.071 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:36:00.071 [INFO ] InitUtil - ----- Ebai Cloud Service Is Initializing ... -----
+20:36:01.628 [INFO ] InitUtil - => 服务启动成功
+20:36:01.628 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220
+20:36:01.628 [INFO ] NetworkUtil - 邮件发送 => 2081414628@qq.com
+20:36:02.653 [INFO ] NetworkUtil - => 发送成功
+20:36:02.653 [INFO ] NetworkUtil - 邮件发送 => 2643372457@qq.com
+20:36:03.569 [INFO ] NetworkUtil - => 发送成功
+20:36:04.608 [INFO ] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:36:04.608 [INFO ] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+20:36:04.609 [INFO ] DispatcherServlet - Completed initialization in 1 ms
+20:36:04.624 [INFO ] MailServiceImpl - 启动定时邮件任务 =>
+20:36:04.625 [INFO ] MailServiceImpl - => Fri Nov 25 06:00:00 CST 2022 第一次发送
+20:36:04.640 [INFO ] InitUtil - ------------ Completed initialization ------------
+20:37:04.648 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:37:04.648 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+20:37:07.813 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 1M6.184S
+20:41:33.597 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:41:33.753 [INFO ] connection - Opened connection [connectionId{localValue:3, serverValue:890}] to 192.168.1.5:27017
+20:41:33.785 [INFO ] ProjectInterceptor - 请求拦截：URL == > /
+20:41:33.785 [INFO ] ProjectInterceptor - 网络信息：IP == > 192.168.1.3 (内网访问)
+20:41:33.785 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Linux; Android 12; M2011K2C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36
+20:41:33.785 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 2 (0分钟) , sessionLastActiveTime => 2 (0分钟) 
+20:41:33.799 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:41:33.808 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:41:33.817 [INFO ] ProjectInterceptor - 请求拦截：URL == > /index.html
+20:41:33.818 [INFO ] ProjectInterceptor - 网络信息：IP == > 192.168.1.3 (内网访问)
+20:41:33.818 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Linux; Android 12; M2011K2C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36
+20:41:33.818 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 34 (0分钟) , sessionLastActiveTime => 34 (0分钟) 
+20:41:33.831 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:41:33.844 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:41:33.844 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:41:33.919 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:41:33.920 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:41:33.933 [INFO ] ProjectInterceptor - 请求拦截：URL == > /umi.78612259.css
+20:41:33.933 [INFO ] ProjectInterceptor - 网络信息：IP == > 192.168.1.3 (内网访问)
+20:41:33.933 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Linux; Android 12; M2011K2C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36
+20:41:33.933 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 150 (0分钟) , sessionLastActiveTime => 89 (0分钟) 
+20:41:33.946 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:41:33.983 [INFO ] connection - Opened connection [connectionId{localValue:4, serverValue:891}] to 192.168.1.5:27017
+20:41:33.989 [INFO ] ProjectInterceptor - 请求拦截：URL == > /umi.21ec6e7e.js
+20:41:33.989 [INFO ] ProjectInterceptor - 网络信息：IP == > 192.168.1.3 (内网访问)
+20:41:33.989 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Linux; Android 12; M2011K2C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36
+20:41:33.989 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 206 (0分钟) , sessionLastActiveTime => 145 (0分钟) 
+20:41:33.998 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:41:34.076 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:41:35.722 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:41:36.033 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:41:36.040 [INFO ] ProjectInterceptor - 请求拦截：URL == > /api/user/currentUser
+20:41:36.040 [INFO ] ProjectInterceptor - 网络信息：IP == > 192.168.1.3 (内网访问)
+20:41:36.040 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Linux; Android 12; M2011K2C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36
+20:41:36.040 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 2257 (0分钟) , sessionLastActiveTime => 317 (0分钟) 
+20:41:36.048 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:41:36.049 [INFO ] UserController - Check Current User => Session Id: EA42A2A8A7556AA9FEE7D252B83D4D51
+20:41:36.076 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:41:36.128 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:41:36.128 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:41:36.132 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:41:36.132 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:41:36.136 [INFO ] ProjectInterceptor - 请求拦截：URL == > /204.111231db.chunk.css
+20:41:36.136 [INFO ] ProjectInterceptor - 请求拦截：URL == > /204.e4f8ab94.async.js
+20:41:36.137 [INFO ] ProjectInterceptor - 网络信息：IP == > 192.168.1.3 (内网访问)
+20:41:36.137 [INFO ] ProjectInterceptor - 网络信息：IP == > 192.168.1.3 (内网访问)
+20:41:36.137 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Linux; Android 12; M2011K2C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36
+20:41:36.137 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 2353 (0分钟) , sessionLastActiveTime => 60 (0分钟) 
+20:41:36.137 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Linux; Android 12; M2011K2C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36
+20:41:36.137 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 2353 (0分钟) , sessionLastActiveTime => 60 (0分钟) 
+20:41:36.138 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:41:36.138 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:41:36.147 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:41:36.147 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:41:36.152 [INFO ] ProjectInterceptor - 请求拦截：URL == > /359.5bb2f6c5.async.js
+20:41:36.152 [INFO ] ProjectInterceptor - 网络信息：IP == > 192.168.1.3 (内网访问)
+20:41:36.152 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Linux; Android 12; M2011K2C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36
+20:41:36.152 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 2369 (0分钟) , sessionLastActiveTime => 76 (0分钟) 
+20:41:36.156 [INFO ] ProjectInterceptor - 请求拦截：URL == > /p__Collection__index.5a42e99f.async.js
+20:41:36.156 [INFO ] ProjectInterceptor - 网络信息：IP == > 192.168.1.3 (内网访问)
+20:41:36.156 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Linux; Android 12; M2011K2C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36
+20:41:36.156 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 2373 (0分钟) , sessionLastActiveTime => 80 (0分钟) 
+20:41:36.162 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:41:36.164 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:41:36.175 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:41:36.179 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:41:36.183 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:41:36.200 [INFO ] connection - Opened connection [connectionId{localValue:5, serverValue:893}] to 192.168.1.5:27017
+20:41:36.204 [INFO ] ProjectInterceptor - 请求拦截：URL == > /p__Collection__index.0578db07.chunk.css
+20:41:36.204 [INFO ] ProjectInterceptor - 网络信息：IP == > 192.168.1.3 (内网访问)
+20:41:36.204 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Linux; Android 12; M2011K2C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36
+20:41:36.204 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 2421 (0分钟) , sessionLastActiveTime => 21 (0分钟) 
+20:41:36.205 [INFO ] connection - Opened connection [connectionId{localValue:6, serverValue:892}] to 192.168.1.5:27017
+20:41:36.209 [INFO ] ProjectInterceptor - 请求拦截：URL == > /715.ac2181ed.async.js
+20:41:36.210 [INFO ] ProjectInterceptor - 网络信息：IP == > 192.168.1.3 (内网访问)
+20:41:36.210 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Linux; Android 12; M2011K2C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36
+20:41:36.210 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 2426 (0分钟) , sessionLastActiveTime => 26 (0分钟) 
+20:41:36.211 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:41:36.216 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:41:36.219 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:41:36.232 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:41:36.376 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:42:02.587 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:42:02.598 [INFO ] ProjectInterceptor - 请求拦截：URL == > /collection
+20:42:02.598 [INFO ] ProjectInterceptor - 网络信息：IP == > 192.168.1.3 (内网访问)
+20:42:02.598 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Linux; Android 12; M2011K2C Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4343 MMWEBSDK/20220903 Mobile Safari/537.36 MMWEBID/8328 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+20:42:02.598 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+20:42:02.606 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:42:02.607 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:42:02.608 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:42:02.615 [INFO ] ProjectInterceptor - 请求拦截：URL == > /index.html
+20:42:02.616 [INFO ] ProjectInterceptor - 网络信息：IP == > 192.168.1.3 (内网访问)
+20:42:02.616 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Linux; Android 12; M2011K2C Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4343 MMWEBSDK/20220903 Mobile Safari/537.36 MMWEBID/8328 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+20:42:02.616 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 17 (0分钟) , sessionLastActiveTime => 17 (0分钟) 
+20:42:02.625 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:42:02.626 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:42:02.660 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:42:02.666 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:42:02.668 [INFO ] ProjectInterceptor - 请求拦截：URL == > /umi.78612259.css
+20:42:02.668 [INFO ] ProjectInterceptor - 网络信息：IP == > 192.168.1.3 (内网访问)
+20:42:02.668 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Linux; Android 12; M2011K2C Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4343 MMWEBSDK/20220903 Mobile Safari/537.36 MMWEBID/8328 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+20:42:02.668 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 70 (0分钟) , sessionLastActiveTime => 41 (0分钟) 
+20:42:02.676 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:42:02.677 [INFO ] ProjectInterceptor - 请求拦截：URL == > /umi.21ec6e7e.js
+20:42:02.677 [INFO ] ProjectInterceptor - 网络信息：IP == > 192.168.1.3 (内网访问)
+20:42:02.677 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Linux; Android 12; M2011K2C Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4343 MMWEBSDK/20220903 Mobile Safari/537.36 MMWEBID/8328 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+20:42:02.677 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 79 (0分钟) , sessionLastActiveTime => 50 (0分钟) 
+20:42:02.686 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:42:03.180 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:42:03.753 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:42:04.115 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:42:04.115 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:42:04.120 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:42:04.122 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:42:04.124 [INFO ] ProjectInterceptor - 请求拦截：URL == > /715.ac2181ed.async.js
+20:42:04.124 [INFO ] ProjectInterceptor - 请求拦截：URL == > /204.111231db.chunk.css
+20:42:04.124 [INFO ] ProjectInterceptor - 网络信息：IP == > 192.168.1.3 (内网访问)
+20:42:04.124 [INFO ] ProjectInterceptor - 网络信息：IP == > 192.168.1.3 (内网访问)
+20:42:04.124 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Linux; Android 12; M2011K2C Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4343 MMWEBSDK/20220903 Mobile Safari/537.36 MMWEBID/8328 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+20:42:04.124 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Linux; Android 12; M2011K2C Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4343 MMWEBSDK/20220903 Mobile Safari/537.36 MMWEBID/8328 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+20:42:04.124 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 1526 (0分钟) , sessionLastActiveTime => 371 (0分钟) 
+20:42:04.124 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 1526 (0分钟) , sessionLastActiveTime => 371 (0分钟) 
+20:42:04.125 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:42:04.130 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:42:04.132 [INFO ] ProjectInterceptor - 请求拦截：URL == > /204.e4f8ab94.async.js
+20:42:04.132 [INFO ] ProjectInterceptor - 网络信息：IP == > 192.168.1.3 (内网访问)
+20:42:04.132 [INFO ] ProjectInterceptor - 请求拦截：URL == > /p__Collection__index.0578db07.chunk.css
+20:42:04.132 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Linux; Android 12; M2011K2C Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4343 MMWEBSDK/20220903 Mobile Safari/537.36 MMWEBID/8328 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+20:42:04.132 [INFO ] ProjectInterceptor - 网络信息：IP == > 192.168.1.3 (内网访问)
+20:42:04.132 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 1534 (0分钟) , sessionLastActiveTime => 379 (0分钟) 
+20:42:04.132 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Linux; Android 12; M2011K2C Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4343 MMWEBSDK/20220903 Mobile Safari/537.36 MMWEBID/8328 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+20:42:04.132 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 1534 (0分钟) , sessionLastActiveTime => 379 (0分钟) 
+20:42:04.135 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:42:04.135 [INFO ] ProjectInterceptor - 请求拦截：URL == > /359.5bb2f6c5.async.js
+20:42:04.135 [INFO ] ProjectInterceptor - 网络信息：IP == > 192.168.1.3 (内网访问)
+20:42:04.135 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Linux; Android 12; M2011K2C Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4343 MMWEBSDK/20220903 Mobile Safari/537.36 MMWEBID/8328 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+20:42:04.135 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 1537 (0分钟) , sessionLastActiveTime => 382 (0分钟) 
+20:42:04.139 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:42:04.139 [INFO ] ProjectInterceptor - 请求拦截：URL == > /p__Collection__index.5a42e99f.async.js
+20:42:04.139 [INFO ] ProjectInterceptor - 网络信息：IP == > 192.168.1.3 (内网访问)
+20:42:04.139 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Linux; Android 12; M2011K2C Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4343 MMWEBSDK/20220903 Mobile Safari/537.36 MMWEBID/8328 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+20:42:04.139 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 1541 (0分钟) , sessionLastActiveTime => 386 (0分钟) 
+20:42:04.141 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:42:04.142 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:42:04.144 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:42:04.146 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:42:04.149 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:42:04.150 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:42:04.156 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:42:04.163 [INFO ] ProjectInterceptor - 请求拦截：URL == > /favicon.ico
+20:42:04.163 [INFO ] ProjectInterceptor - 网络信息：IP == > 192.168.1.3 (内网访问)
+20:42:04.163 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Linux; Android 12; M2011K2C Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4343 MMWEBSDK/20220903 Mobile Safari/537.36 MMWEBID/8328 MicroMessenger/8.0.28.2240(0x28001C57) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+20:42:04.163 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 1565 (0分钟) , sessionLastActiveTime => 12 (0分钟) 
+20:42:04.168 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:42:04.169 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:42:04.185 [INFO ] connection - Opened connection [connectionId{localValue:9, serverValue:894}] to 192.168.1.5:27017
+20:42:04.189 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:42:04.191 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:42:04.208 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:42:04.450 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:43:15.901 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:16.229 [INFO ] ProjectInterceptor - 请求拦截：URL == > /mail
+20:43:16.229 [INFO ] ProjectInterceptor - 网络信息：IP == > 61.152.197.155 (中国-CN|上海市|上海市|中国电信)
+20:43:16.229 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+20:43:16.229 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+20:43:16.238 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:43:16.239 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:43:16.241 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:16.271 [INFO ] ProjectInterceptor - 请求拦截：URL == > /index.html
+20:43:16.271 [INFO ] ProjectInterceptor - 网络信息：IP == > 61.152.197.155 (中国-CN|上海市|上海市|中国电信)
+20:43:16.271 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+20:43:16.271 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 42 (0分钟) , sessionLastActiveTime => 42 (0分钟) 
+20:43:16.281 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:43:16.282 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:43:16.315 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:16.318 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:16.326 [INFO ] ProjectInterceptor - 请求拦截：URL == > /umi.78612259.css
+20:43:16.327 [INFO ] ProjectInterceptor - 网络信息：IP == > 61.152.197.155 (中国-CN|上海市|上海市|中国电信)
+20:43:16.327 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+20:43:16.327 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 97 (0分钟) , sessionLastActiveTime => 43 (0分钟) 
+20:43:16.333 [INFO ] ProjectInterceptor - 请求拦截：URL == > /umi.21ec6e7e.js
+20:43:16.333 [INFO ] ProjectInterceptor - 网络信息：IP == > 61.152.197.155 (中国-CN|上海市|上海市|中国电信)
+20:43:16.333 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+20:43:16.333 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 104 (0分钟) , sessionLastActiveTime => 50 (0分钟) 
+20:43:16.340 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:43:16.344 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:43:16.586 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:43:16.761 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:43:17.233 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:17.244 [INFO ] ProjectInterceptor - 请求拦截：URL == > /api/user/currentUser
+20:43:17.244 [INFO ] ProjectInterceptor - 网络信息：IP == > 61.152.197.155 (中国-CN|上海市|上海市|中国电信)
+20:43:17.244 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+20:43:17.244 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 1015 (0分钟) , sessionLastActiveTime => 482 (0分钟) 
+20:43:17.255 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:43:17.255 [INFO ] UserController - Check Current User => Session Id: 29A3465120339E31146737810AB701ED
+20:43:17.256 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:43:17.277 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:17.279 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:17.286 [INFO ] ProjectInterceptor - 请求拦截：URL == > /204.111231db.chunk.css
+20:43:17.286 [INFO ] ProjectInterceptor - 网络信息：IP == > 61.152.197.155 (中国-CN|上海市|上海市|中国电信)
+20:43:17.286 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+20:43:17.286 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 1057 (0分钟) , sessionLastActiveTime => 30 (0分钟) 
+20:43:17.289 [INFO ] ProjectInterceptor - 请求拦截：URL == > /715.ac2181ed.async.js
+20:43:17.290 [INFO ] ProjectInterceptor - 网络信息：IP == > 61.152.197.155 (中国-CN|上海市|上海市|中国电信)
+20:43:17.290 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+20:43:17.290 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 1060 (0分钟) , sessionLastActiveTime => 33 (0分钟) 
+20:43:17.292 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:17.292 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:17.294 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:17.294 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:17.295 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:43:17.298 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:43:17.300 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:43:17.300 [INFO ] ProjectInterceptor - 请求拦截：URL == > /p__Collection__index.0578db07.chunk.css
+20:43:17.300 [INFO ] ProjectInterceptor - 网络信息：IP == > 61.152.197.155 (中国-CN|上海市|上海市|中国电信)
+20:43:17.300 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+20:43:17.300 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 1071 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+20:43:17.303 [INFO ] ProjectInterceptor - 请求拦截：URL == > /p__Collection__index.5a42e99f.async.js
+20:43:17.303 [INFO ] ProjectInterceptor - 请求拦截：URL == > /359.5bb2f6c5.async.js
+20:43:17.303 [INFO ] ProjectInterceptor - 网络信息：IP == > 61.152.197.155 (中国-CN|上海市|上海市|中国电信)
+20:43:17.303 [INFO ] ProjectInterceptor - 网络信息：IP == > 61.152.197.155 (中国-CN|上海市|上海市|中国电信)
+20:43:17.303 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+20:43:17.303 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+20:43:17.303 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 1074 (0分钟) , sessionLastActiveTime => 3 (0分钟) 
+20:43:17.303 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 1074 (0分钟) , sessionLastActiveTime => 3 (0分钟) 
+20:43:17.305 [INFO ] ProjectInterceptor - 请求拦截：URL == > /204.e4f8ab94.async.js
+20:43:17.305 [INFO ] ProjectInterceptor - 网络信息：IP == > 61.152.197.155 (中国-CN|上海市|上海市|中国电信)
+20:43:17.305 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+20:43:17.305 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 1076 (0分钟) , sessionLastActiveTime => 5 (0分钟) 
+20:43:17.310 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:43:17.312 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:43:17.316 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:43:17.317 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:43:17.318 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:43:17.319 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:43:17.319 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:43:17.383 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:43:17.497 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:43:19.723 [INFO ] NetworkUtil - 邮件发送 => 2643372457@qq.com
+20:43:19.723 [INFO ] NetworkUtil - 邮件发送 => 2081414628@qq.com
+20:43:20.774 [INFO ] NetworkUtil - => 发送成功
+20:43:27.100 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:27.111 [INFO ] ProjectInterceptor - 请求拦截：URL == > /mail
+20:43:27.111 [INFO ] ProjectInterceptor - 网络信息：IP == > 61.152.197.155 (中国-CN|上海市|上海市|中国电信)
+20:43:27.111 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+20:43:27.111 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 10882 (0分钟) , sessionLastActiveTime => 9614 (0分钟) 
+20:43:27.119 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:43:27.122 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:43:27.123 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:27.132 [INFO ] ProjectInterceptor - 请求拦截：URL == > /index.html
+20:43:27.132 [INFO ] ProjectInterceptor - 网络信息：IP == > 61.152.197.155 (中国-CN|上海市|上海市|中国电信)
+20:43:27.132 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+20:43:27.132 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 10903 (0分钟) , sessionLastActiveTime => 9635 (0分钟) 
+20:43:27.140 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:43:27.141 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:43:27.205 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:27.214 [INFO ] ProjectInterceptor - 请求拦截：URL == > /api/user/currentUser
+20:43:27.214 [INFO ] ProjectInterceptor - 网络信息：IP == > 61.152.197.155 (中国-CN|上海市|上海市|中国电信)
+20:43:27.214 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+20:43:27.214 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 10985 (0分钟) , sessionLastActiveTime => 73 (0分钟) 
+20:43:27.224 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:43:27.224 [INFO ] UserController - Check Current User => Session Id: 29A3465120339E31146737810AB701ED
+20:43:27.225 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:43:30.890 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:30.901 [INFO ] ProjectInterceptor - 请求拦截：URL == > /mail
+20:43:30.901 [INFO ] ProjectInterceptor - 网络信息：IP == > 61.152.197.155 (中国-CN|上海市|上海市|中国电信)
+20:43:30.901 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+20:43:30.901 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 14672 (0分钟) , sessionLastActiveTime => 3676 (0分钟) 
+20:43:30.909 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:43:30.909 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:43:30.910 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:30.919 [INFO ] ProjectInterceptor - 请求拦截：URL == > /index.html
+20:43:30.919 [INFO ] ProjectInterceptor - 网络信息：IP == > 61.152.197.155 (中国-CN|上海市|上海市|中国电信)
+20:43:30.919 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+20:43:30.919 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 14690 (0分钟) , sessionLastActiveTime => 3694 (0分钟) 
+20:43:30.926 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:43:30.927 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:43:30.983 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:30.991 [INFO ] ProjectInterceptor - 请求拦截：URL == > /api/user/currentUser
+20:43:30.991 [INFO ] ProjectInterceptor - 网络信息：IP == > 61.152.197.155 (中国-CN|上海市|上海市|中国电信)
+20:43:30.991 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+20:43:30.991 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 14762 (0分钟) , sessionLastActiveTime => 64 (0分钟) 
+20:43:31.000 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:43:31.000 [INFO ] UserController - Check Current User => Session Id: 29A3465120339E31146737810AB701ED
+20:43:31.000 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:43:38.612 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:38.621 [INFO ] ProjectInterceptor - 请求拦截：URL == > /email
+20:43:38.621 [INFO ] ProjectInterceptor - 网络信息：IP == > 61.152.197.155 (中国-CN|上海市|上海市|中国电信)
+20:43:38.621 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+20:43:38.621 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 22392 (0分钟) , sessionLastActiveTime => 7621 (0分钟) 
+20:43:38.631 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:43:38.632 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:43:38.633 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:38.641 [INFO ] ProjectInterceptor - 请求拦截：URL == > /index.html
+20:43:38.641 [INFO ] ProjectInterceptor - 网络信息：IP == > 61.152.197.155 (中国-CN|上海市|上海市|中国电信)
+20:43:38.641 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+20:43:38.641 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 22412 (0分钟) , sessionLastActiveTime => 7641 (0分钟) 
+20:43:38.648 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:43:38.649 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:43:38.695 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:43:38.703 [INFO ] ProjectInterceptor - 请求拦截：URL == > /api/user/currentUser
+20:43:38.703 [INFO ] ProjectInterceptor - 网络信息：IP == > 61.152.197.155 (中国-CN|上海市|上海市|中国电信)
+20:43:38.703 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+20:43:38.703 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 22474 (0分钟) , sessionLastActiveTime => 54 (0分钟) 
+20:43:38.714 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+20:43:38.714 [INFO ] UserController - Check Current User => Session Id: 29A3465120339E31146737810AB701ED
+20:43:38.714 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+20:47:04.655 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:47:04.655 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+20:47:07.818 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 11M6.19S
+20:57:04.662 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+20:57:04.662 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+20:57:07.672 [WARN ] NetworkUtil - Http Get Client Exception
+20:57:10.674 [WARN ] NetworkUtil - Http Get Client Exception
+20:57:13.681 [WARN ] NetworkUtil - Http Get Client Exception
+20:57:16.697 [WARN ] NetworkUtil - Http Get Client Exception
+20:57:19.899 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 21M18.271S
+21:07:04.666 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+21:07:04.666 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+21:07:07.718 [WARN ] NetworkUtil - Http Get Client Exception
+21:07:10.765 [WARN ] NetworkUtil - Http Get Client Exception
+21:07:13.893 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 31M12.265S
+21:17:04.670 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+21:17:04.670 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+21:17:07.971 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 41M6.343S
+21:27:04.686 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+21:27:04.686 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+21:27:07.730 [WARN ] NetworkUtil - Http Get Client Exception
+21:27:10.833 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 51M9.205S
+21:37:04.695 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+21:37:04.695 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+21:37:07.850 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 1H1M6.222S
+21:42:27.408 [INFO ] Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x030x000x000x130x0e0xe00x000x000x000x000x000x010x000x080x000x020x000x000x00...]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+21:47:04.705 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+21:47:04.705 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+21:47:07.868 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 1H11M6.24S
+21:57:04.709 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+21:57:04.709 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+21:57:07.753 [WARN ] NetworkUtil - Http Get Client Exception
+21:57:10.799 [WARN ] NetworkUtil - Http Get Client Exception
+21:57:13.834 [WARN ] NetworkUtil - Http Get Client Exception
+21:57:16.937 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 1H21M15.309S
+22:07:04.723 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+22:07:04.723 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+22:07:07.847 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 1H31M6.219S
+22:17:04.737 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+22:17:04.737 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+22:17:07.860 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 1H41M6.232S
+22:27:04.741 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+22:27:04.741 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+22:27:07.759 [WARN ] NetworkUtil - Http Get Client Exception
+22:27:10.767 [WARN ] NetworkUtil - Http Get Client Exception
+22:27:13.770 [WARN ] NetworkUtil - Http Get Client Exception
+22:27:16.776 [WARN ] NetworkUtil - Http Get Client Exception
+22:27:19.902 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 1H51M18.274S
+22:37:04.741 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+22:37:04.741 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+22:37:07.858 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 2H1M6.23S
+22:47:04.752 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+22:47:04.752 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+22:47:07.847 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 2H11M6.219S
+22:57:04.756 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+22:57:04.756 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+22:57:07.765 [WARN ] NetworkUtil - Http Get Client Exception
+22:57:10.775 [WARN ] NetworkUtil - Http Get Client Exception
+22:57:13.785 [WARN ] NetworkUtil - Http Get Client Exception
+22:57:16.800 [WARN ] NetworkUtil - Http Get Client Exception
+22:57:19.899 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 2H21M18.271S
+23:07:04.756 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:07:04.756 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+23:07:07.870 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 2H31M6.242S
+23:17:04.764 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:17:04.764 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+23:17:07.770 [WARN ] NetworkUtil - Http Get Client Exception
+23:17:10.775 [WARN ] NetworkUtil - Http Get Client Exception
+23:17:13.784 [WARN ] NetworkUtil - Http Get Client Exception
+23:17:16.789 [WARN ] NetworkUtil - Http Get Client Exception
+23:17:19.898 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 2H41M18.27S
+23:27:04.770 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:27:04.770 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+23:27:07.870 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 2H51M6.242S
+23:37:04.784 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:37:04.784 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+23:37:07.892 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 3H1M6.264S
+23:39:01.440 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:39:01.713 [INFO ] ProjectInterceptor - 请求拦截：URL == > /
+23:39:01.714 [INFO ] ProjectInterceptor - 网络信息：IP == > 175.6.62.138 (中国-CN|湖南省|长沙市|中国电信)
+23:39:01.714 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36
+23:39:01.714 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+23:39:01.724 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+23:39:01.725 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:39:01.733 [INFO ] ProjectInterceptor - 请求拦截：URL == > /index.html
+23:39:01.733 [INFO ] ProjectInterceptor - 网络信息：IP == > 175.6.62.138 (中国-CN|湖南省|长沙市|中国电信)
+23:39:01.733 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36
+23:39:01.733 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 20 (0分钟) , sessionLastActiveTime => 20 (0分钟) 
+23:39:01.740 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+23:39:01.747 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+23:39:01.747 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+23:39:02.022 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:39:02.030 [INFO ] ProjectInterceptor - 请求拦截：URL == > /
+23:39:02.030 [INFO ] ProjectInterceptor - 网络信息：IP == > 175.6.62.138 (中国-CN|湖南省|长沙市|中国电信)
+23:39:02.030 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36
+23:39:02.030 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+23:39:02.040 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+23:39:02.041 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:39:02.051 [INFO ] ProjectInterceptor - 请求拦截：URL == > /index.html
+23:39:02.051 [INFO ] ProjectInterceptor - 网络信息：IP == > 175.6.62.138 (中国-CN|湖南省|长沙市|中国电信)
+23:39:02.051 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36
+23:39:02.051 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 21 (0分钟) , sessionLastActiveTime => 21 (0分钟) 
+23:39:02.058 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+23:39:02.059 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+23:39:02.059 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+23:39:02.172 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:39:02.181 [INFO ] ProjectInterceptor - 请求拦截：URL == > /umi.21ec6e7e.js
+23:39:02.181 [INFO ] ProjectInterceptor - 网络信息：IP == > 175.6.62.138 (中国-CN|湖南省|长沙市|中国电信)
+23:39:02.181 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36
+23:39:02.181 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 151 (0分钟) , sessionLastActiveTime => 122 (0分钟) 
+23:39:02.189 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+23:39:03.211 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+23:39:04.589 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:39:04.597 [INFO ] ProjectInterceptor - 请求拦截：URL == > /api/user/currentUser
+23:39:04.597 [INFO ] ProjectInterceptor - 网络信息：IP == > 175.6.62.138 (中国-CN|湖南省|长沙市|中国电信)
+23:39:04.597 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36
+23:39:04.597 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 2567 (0分钟) , sessionLastActiveTime => 1386 (0分钟) 
+23:39:04.608 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+23:39:04.608 [INFO ] UserController - Check Current User => Session Id: 0D33BC8D2B4984D70B03BE8DF746513E
+23:39:04.608 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+23:39:04.681 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:39:04.689 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:39:04.690 [INFO ] ProjectInterceptor - 请求拦截：URL == > /715.ac2181ed.async.js
+23:39:04.690 [INFO ] ProjectInterceptor - 网络信息：IP == > 175.6.62.138 (中国-CN|湖南省|长沙市|中国电信)
+23:39:04.690 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36
+23:39:04.690 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 2660 (0分钟) , sessionLastActiveTime => 82 (0分钟) 
+23:39:04.691 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:39:04.692 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:39:04.701 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+23:39:04.705 [INFO ] ProjectInterceptor - 请求拦截：URL == > /204.e4f8ab94.async.js
+23:39:04.705 [INFO ] ProjectInterceptor - 网络信息：IP == > 175.6.62.138 (中国-CN|湖南省|长沙市|中国电信)
+23:39:04.705 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36
+23:39:04.705 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 2675 (0分钟) , sessionLastActiveTime => 97 (0分钟) 
+23:39:04.706 [INFO ] ProjectInterceptor - 请求拦截：URL == > /359.5bb2f6c5.async.js
+23:39:04.706 [INFO ] ProjectInterceptor - 网络信息：IP == > 175.6.62.138 (中国-CN|湖南省|长沙市|中国电信)
+23:39:04.706 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36
+23:39:04.706 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 2676 (0分钟) , sessionLastActiveTime => 98 (0分钟) 
+23:39:04.709 [INFO ] ProjectInterceptor - 请求拦截：URL == > /p__Collection__index.5a42e99f.async.js
+23:39:04.709 [INFO ] ProjectInterceptor - 网络信息：IP == > 175.6.62.138 (中国-CN|湖南省|长沙市|中国电信)
+23:39:04.709 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36
+23:39:04.709 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 2679 (0分钟) , sessionLastActiveTime => 101 (0分钟) 
+23:39:04.714 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+23:39:04.714 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+23:39:04.716 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+23:39:04.716 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+23:39:04.725 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+23:39:04.729 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+23:39:05.066 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+23:39:06.810 [INFO ] ProjectInterceptor - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:39:06.818 [INFO ] ProjectInterceptor - 请求拦截：URL == > /favicon.ico
+23:39:06.818 [INFO ] ProjectInterceptor - 网络信息：IP == > 175.6.62.138 (中国-CN|湖南省|长沙市|中国电信)
+23:39:06.818 [INFO ] ProjectInterceptor - 设备信息：User-Agent == > Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36
+23:39:06.818 [INFO ] ProjectInterceptor - session userName => null , sessionExistTime => 0 (0分钟) , sessionLastActiveTime => 0 (0分钟) 
+23:39:06.826 [INFO ] ProjectInterceptor - ------------------ Service  Log ------------------
+23:39:07.754 [INFO ] ProjectInterceptor - --------------  Request  Completed  --------------
+23:47:04.785 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:47:04.785 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+23:47:07.892 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 3H11M6.264S
+23:57:04.790 [INFO ] InitUtil - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+23:57:04.790 [INFO ] InitUtil - -------- Ebai Cloud Service Is Running .. --------
+23:57:07.896 [INFO ] InitUtil - => 本地IP地址: 61.173.79.220 => 累计运行时长: 3H21M6.268S

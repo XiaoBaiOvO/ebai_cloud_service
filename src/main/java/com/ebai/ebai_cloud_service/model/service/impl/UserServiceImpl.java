@@ -1,4 +1,4 @@
-package com.ebai.ebai_cloud_service.service.impl;
+package com.ebai.ebai_cloud_service.model.service.impl;
 
 import com.alibaba.fastjson.JSONObject;
 import com.ebai.ebai_cloud_service.common.util.HttpUtils;
@@ -10,9 +10,9 @@ import com.ebai.ebai_cloud_service.mapper.CaptchaTokenRepository;
 import com.ebai.ebai_cloud_service.mapper.UserInfoRepository;
 import com.ebai.ebai_cloud_service.mapper.entity.CaptchaTokenEntity;
 import com.ebai.ebai_cloud_service.mapper.entity.UserInfoEntity;
+import com.ebai.ebai_cloud_service.model.service.UserService;
 import com.ebai.ebai_cloud_service.model.vo.CurrentUserVo;
 import com.ebai.ebai_cloud_service.model.vo.UserInfoVo;
-import com.ebai.ebai_cloud_service.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

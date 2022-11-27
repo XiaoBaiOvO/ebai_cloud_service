@@ -1,4 +1,4 @@
-package com.ebai.ebai_cloud_service.service.impl;
+package com.ebai.ebai_cloud_service.model.service.impl;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
@@ -10,7 +10,7 @@ import com.ebai.ebai_cloud_service.mapper.ServiceConfigRepository;
 import com.ebai.ebai_cloud_service.mapper.entity.ClassScheduleEntity;
 import com.ebai.ebai_cloud_service.mapper.entity.ServiceConfigEntity;
 import com.ebai.ebai_cloud_service.model.dto.MailRequest;
-import com.ebai.ebai_cloud_service.service.MailService;
+import com.ebai.ebai_cloud_service.model.service.MailService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.util.EntityUtils;
 import org.springframework.stereotype.Service;
@@ -60,7 +60,7 @@ public class MailServiceImpl implements MailService {
         String todayLowTemp = todayForecastsResult.get("low").toString();
         String todayTextDay = todayForecastsResult.get("text_day").toString();
         String todayTextNight = todayForecastsResult.get("text_night").toString();
-        LocalDate today = dateTool.todayLocalDate();
+        LocalDateTime today = dateTool.todayLocalDateTime();
 
         String weatherChangeNotes = (Objects.equals(nowText, todayTextDay) && Objects.equals(todayTextDay, todayTextNight)) ? "" :
                 ((Objects.equals(nowText, todayTextDay) && !Objects.equals(todayTextDay, todayTextNight)) ? "下午可能" + todayTextDay + "转" + todayTextNight :
@@ -81,7 +81,6 @@ public class MailServiceImpl implements MailService {
                     "          <th style=\"border: 2px solid #9aa2d7; font-weight: bold\">教室</th>\n" +
                     "        </tr>\n");
             for (ClassScheduleEntity classes : classSchedule) {
-                System.out.println(classes.getCauses());
                 classScheduleMsg.append("" +
                         "        <tr>\n" +
                         "          <td style=\"border: 2px solid #9aa2d7\">").append(classes.getTime()).append("</td>\n" +
@@ -110,7 +109,7 @@ public class MailServiceImpl implements MailService {
             }
         }
         LocalDateTime loveDay = serviceConfigRepository.findTopByName("loveDay").getDate();
-        long lovedDay = Duration.between(loveDay, LocalDateTime.now()).toDays();
+        long lovedDay = Duration.between(loveDay, today).toDays();
 
 //        邮件内容
         String title = "小白の每日问候 - 爱你的第" + lovedDay + "天";

@@ -1,9 +1,9 @@
-package com.ebai.ebai_cloud_service.service.impl;
+package com.ebai.ebai_cloud_service.model.service.impl;
 
 import com.ebai.ebai_cloud_service.mapper.UserInfoRepository;
 import com.ebai.ebai_cloud_service.mapper.entity.UserInfoEntity;
+import com.ebai.ebai_cloud_service.model.service.BaseService;
 import com.ebai.ebai_cloud_service.model.vo.TestVo;
-import com.ebai.ebai_cloud_service.service.BaseService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

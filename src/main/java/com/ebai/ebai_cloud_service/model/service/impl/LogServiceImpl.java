@@ -1,10 +1,10 @@
-package com.ebai.ebai_cloud_service.service.impl;
+package com.ebai.ebai_cloud_service.model.service.impl;
 
 import com.ebai.ebai_cloud_service.mapper.IpQueryLogRepository;
 import com.ebai.ebai_cloud_service.mapper.ServiceRequestLogRepository;
 import com.ebai.ebai_cloud_service.mapper.entity.IpQueryLogEntity;
 import com.ebai.ebai_cloud_service.mapper.entity.ServiceRequestLogEntity;
-import com.ebai.ebai_cloud_service.service.LogService;
+import com.ebai.ebai_cloud_service.model.service.LogService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

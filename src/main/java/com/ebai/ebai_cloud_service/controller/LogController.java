@@ -1,6 +1,6 @@
 package com.ebai.ebai_cloud_service.controller;
 
-import com.ebai.ebai_cloud_service.service.LogService;
+import com.ebai.ebai_cloud_service.model.service.LogService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;

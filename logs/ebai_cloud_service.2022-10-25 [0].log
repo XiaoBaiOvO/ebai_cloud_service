@@ -73,7 +73,7 @@
 01:06:37.133 [INFO ] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
 01:06:37.201 [INFO ] [/] - Initializing Spring embedded WebApplicationContext
 01:06:37.201 [INFO ] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 839 ms
-01:06:37.253 [WARN ] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'baseController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.ebai.ebai_cloud_service.service.MailService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+01:06:37.253 [WARN ] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'baseController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'MailService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
 01:06:37.255 [INFO ] StandardService - Stopping service [Tomcat]
 01:06:37.264 [INFO ] ConditionEvaluationReportLoggingListener - 
 
@@ -86,12 +86,12 @@ APPLICATION FAILED TO START
 
 Description:
 
-A component required a bean of type 'com.ebai.ebai_cloud_service.service.MailService' that could not be found.
+A component required a bean of type 'MailService' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.ebai.ebai_cloud_service.service.MailService' in your configuration.
+Consider defining a bean of type 'MailService' in your configuration.
 
 01:07:56.034 [INFO ] EbaiServiceApplication - Starting EbaiServiceApplication using Java 1.8.0_332 on DESKTOP-3KUCMR1 with PID 419776 (D:\projects\# java\ebai_cloud_service\target\classes started by yunch in D:\projects\# java\ebai_cloud_service)
 01:07:56.038 [INFO ] EbaiServiceApplication - No active profile set, falling back to 1 default profile: "default"
@@ -102,7 +102,7 @@ Consider defining a bean of type 'com.ebai.ebai_cloud_service.service.MailServic
 01:07:56.857 [INFO ] StandardService - Starting service [Tomcat]
 01:07:56.857 [INFO ] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
 01:07:56.928 [INFO ] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 856 ms
-01:07:56.985 [WARN ] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'baseController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.ebai.ebai_cloud_service.service.MailService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+01:07:56.985 [WARN ] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'baseController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'MailService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
 01:07:59.254 [INFO ] EbaiServiceApplication - Starting EbaiServiceApplication using Java 1.8.0_332 on DESKTOP-3KUCMR1 with PID 478580 (D:\projects\# java\ebai_cloud_service\target\classes started by yunch in D:\projects\# java\ebai_cloud_service)
 01:07:59.256 [INFO ] EbaiServiceApplication - No active profile set, falling back to 1 default profile: "default"
 01:07:59.814 [INFO ] RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
@@ -113,7 +113,7 @@ Consider defining a bean of type 'com.ebai.ebai_cloud_service.service.MailServic
 01:08:00.453 [INFO ] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
 01:08:00.558 [INFO ] [/] - Initializing Spring embedded WebApplicationContext
 01:08:00.558 [INFO ] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1262 ms
-01:08:00.676 [WARN ] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'baseController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.ebai.ebai_cloud_service.service.MailService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+01:08:00.676 [WARN ] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'baseController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'MailService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
 01:08:00.679 [INFO ] StandardService - Stopping service [Tomcat]
 01:08:00.688 [INFO ] ConditionEvaluationReportLoggingListener - 
 
@@ -126,12 +126,12 @@ APPLICATION FAILED TO START
 
 Description:
 
-A component required a bean of type 'com.ebai.ebai_cloud_service.service.MailService' that could not be found.
+A component required a bean of type 'MailService' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.ebai.ebai_cloud_service.service.MailService' in your configuration.
+Consider defining a bean of type 'MailService' in your configuration.
 
 01:10:26.738 [INFO ] EbaiServiceApplication - Starting EbaiServiceApplication using Java 1.8.0_332 on DESKTOP-3KUCMR1 with PID 505696 (D:\projects\# java\ebai_cloud_service\target\classes started by yunch in D:\projects\# java\ebai_cloud_service)
 01:10:26.741 [INFO ] EbaiServiceApplication - No active profile set, falling back to 1 default profile: "default"
@@ -143,7 +143,7 @@ Consider defining a bean of type 'com.ebai.ebai_cloud_service.service.MailServic
 01:10:27.547 [INFO ] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
 01:10:27.611 [INFO ] [/] - Initializing Spring embedded WebApplicationContext
 01:10:27.611 [INFO ] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 835 ms
-01:10:27.675 [WARN ] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'baseController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.ebai.ebai_cloud_service.service.MailService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+01:10:27.675 [WARN ] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'baseController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'MailService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
 01:10:27.677 [INFO ] StandardService - Stopping service [Tomcat]
 01:10:27.685 [INFO ] ConditionEvaluationReportLoggingListener - 
 
@@ -156,12 +156,12 @@ APPLICATION FAILED TO START
 
 Description:
 
-A component required a bean of type 'com.ebai.ebai_cloud_service.service.MailService' that could not be found.
+A component required a bean of type 'MailService' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.ebai.ebai_cloud_service.service.MailService' in your configuration.
+Consider defining a bean of type 'MailService' in your configuration.
 
 01:35:51.703 [INFO ] EbaiServiceApplication - Starting EbaiServiceApplication using Java 1.8.0_332 on DESKTOP-3KUCMR1 with PID 505236 (D:\projects\# java\ebai_cloud_service\target\classes started by yunch in D:\projects\# java\ebai_cloud_service)
 01:35:51.706 [INFO ] EbaiServiceApplication - No active profile set, falling back to 1 default profile: "default"
@@ -210,7 +210,7 @@ Consider defining a bean of type 'com.ebai.ebai_cloud_service.service.MailServic
 01:38:56.784 [INFO ] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
 01:38:56.883 [INFO ] [/] - Initializing Spring embedded WebApplicationContext
 01:38:56.883 [INFO ] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1248 ms
-01:38:56.992 [WARN ] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'baseController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.ebai.ebai_cloud_service.service.MailService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+01:38:56.992 [WARN ] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'baseController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'MailService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
 01:38:56.995 [INFO ] StandardService - Stopping service [Tomcat]
 01:38:57.004 [INFO ] ConditionEvaluationReportLoggingListener - 
 
@@ -223,12 +223,12 @@ APPLICATION FAILED TO START
 
 Description:
 
-A component required a bean of type 'com.ebai.ebai_cloud_service.service.MailService' that could not be found.
+A component required a bean of type 'MailService' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.ebai.ebai_cloud_service.service.MailService' in your configuration.
+Consider defining a bean of type 'MailService' in your configuration.
 
 01:39:40.719 [INFO ] EbaiServiceApplication - Starting EbaiServiceApplication using Java 1.8.0_332 on DESKTOP-3KUCMR1 with PID 547320 (D:\projects\# java\ebai_cloud_service\target\classes started by yunch in D:\projects\# java\ebai_cloud_service)
 01:39:40.721 [INFO ] EbaiServiceApplication - No active profile set, falling back to 1 default profile: "default"
@@ -240,7 +240,7 @@ Consider defining a bean of type 'com.ebai.ebai_cloud_service.service.MailServic
 01:39:41.915 [INFO ] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
 01:39:42.017 [INFO ] [/] - Initializing Spring embedded WebApplicationContext
 01:39:42.017 [INFO ] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1257 ms
-01:39:42.128 [WARN ] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'baseController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.ebai.ebai_cloud_service.service.MailService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+01:39:42.128 [WARN ] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'baseController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'MailService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
 01:39:42.131 [INFO ] StandardService - Stopping service [Tomcat]
 01:39:42.141 [INFO ] ConditionEvaluationReportLoggingListener - 
 
@@ -253,12 +253,12 @@ APPLICATION FAILED TO START
 
 Description:
 
-A component required a bean of type 'com.ebai.ebai_cloud_service.service.MailService' that could not be found.
+A component required a bean of type 'MailService' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.ebai.ebai_cloud_service.service.MailService' in your configuration.
+Consider defining a bean of type 'MailService' in your configuration.
 
 01:46:38.269 [INFO ] EbaiServiceApplication - Starting EbaiServiceApplication using Java 1.8.0_332 on DESKTOP-3KUCMR1 with PID 436288 (D:\projects\# java\ebai_cloud_service\target\classes started by yunch in D:\projects\# java\ebai_cloud_service)
 01:46:38.271 [INFO ] EbaiServiceApplication - No active profile set, falling back to 1 default profile: "default"

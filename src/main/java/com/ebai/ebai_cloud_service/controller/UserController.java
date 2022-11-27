@@ -3,8 +3,8 @@ package com.ebai.ebai_cloud_service.controller;
 import com.ebai.ebai_cloud_service.controller.request.LoginAccountRequest;
 import com.ebai.ebai_cloud_service.controller.response.CurrentUserResponse;
 import com.ebai.ebai_cloud_service.controller.response.LoginAccountResponse;
+import com.ebai.ebai_cloud_service.model.service.UserService;
 import com.ebai.ebai_cloud_service.model.vo.UserInfoVo;
-import com.ebai.ebai_cloud_service.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 

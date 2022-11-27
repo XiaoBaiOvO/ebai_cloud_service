@@ -1,6 +1,6 @@
 package com.ebai.ebai_cloud_service.controller;
 
-import com.ebai.ebai_cloud_service.service.MailService;
+import com.ebai.ebai_cloud_service.model.service.MailService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,7 +18,7 @@ public class MailController {
     @Resource
     MailService mailService;
 
-    @RequestMapping(value = "/manualSending")
+    @GetMapping(value = "/manualSending")
     public String manualSending() throws Exception {
         return mailService.sendDailyMail();
     }

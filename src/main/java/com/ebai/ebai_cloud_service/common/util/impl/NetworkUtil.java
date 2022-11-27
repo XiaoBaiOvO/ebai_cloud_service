@@ -158,19 +158,40 @@ public class NetworkUtil implements Network {
 
     @Override
     public String getIp(HttpServletRequest httpServletRequest) {
-        String ip = httpServletRequest.getHeader("X-Real-IP");
-        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
-            ip = httpServletRequest.getHeader("X-Forwarded-For");
-        }
-        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+//        v1
+//        String ip = httpServletRequest.getHeader("X-Real-IP");
+//        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+//            ip = httpServletRequest.getHeader("X-Forwarded-For");
+//        }
+//        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+//            ip = httpServletRequest.getHeader("Proxy-Client-IP");
+//        }
+//        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+//            ip = httpServletRequest.getHeader("WL-Proxy-Client-IP");
+//        }
+//        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+//            ip = httpServletRequest.getRemoteAddr();
+//        }
+
+//        v2
+        String ip = httpServletRequest.getHeader("x-forwarded-for");
+        String unknown = "unknown";
+        if (ip == null || ip.length() == 0 || unknown.equalsIgnoreCase(ip)) {
             ip = httpServletRequest.getHeader("Proxy-Client-IP");
         }
-        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+        if (ip == null || ip.length() == 0 || unknown.equalsIgnoreCase(ip)) {
             ip = httpServletRequest.getHeader("WL-Proxy-Client-IP");
         }
-        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+        if (ip == null || ip.length() == 0 || unknown.equalsIgnoreCase(ip)) {
+            ip = httpServletRequest.getHeader("HTTP_CLIENT_IP");
+        }
+        if (ip == null || ip.length() == 0 || unknown.equalsIgnoreCase(ip)) {
+            ip = httpServletRequest.getHeader("HTTP_X_FORWARDED_FOR");
+        }
+        if (ip == null || ip.length() == 0 || unknown.equalsIgnoreCase(ip)) {
             ip = httpServletRequest.getRemoteAddr();
         }
+
         // 处理多IP的情况（只取第一个IP）
         if (ip != null && ip.contains(",")) {
             String[] ipArray = ip.split(",");
@@ -188,7 +209,7 @@ public class NetworkUtil implements Network {
     public String getLocationByIp(String ip) {
         String result = "Unknown";
 
-        if (ip.startsWith("192.168")) {
+        if (ip.startsWith("192.168") && ipQueryLogRepository.findAllByIp(ip).isEmpty()) {
             result = "内网访问";
             IpQueryLogEntity ipQueryLogEntity = new IpQueryLogEntity();
             ipQueryLogEntity.setIp(ip);
@@ -200,6 +221,7 @@ public class NetworkUtil implements Network {
 
         List<IpQueryLogEntity> ipLogList = ipQueryLogRepository.findAllByIp(ip);
         if (ipLogList.size() > 0) {
+
             result = ipLogList.get(0).getSummary();
         } else {
             try {
@@ -224,7 +246,12 @@ public class NetworkUtil implements Network {
                 querys.put("ip", ip);
                 HttpResponse response = HttpUtils.doGet(host, path, headers, querys);
                 JSONObject resultJson = JSONObject.parseObject(EntityUtils.toString(response.getEntity())).getJSONObject("data").getJSONObject("result");
-                result = resultJson.getString("country") + "-" + resultJson.getString("areacode") + "|" + resultJson.getString("prov") + "|" + resultJson.getString("city") + "|" + resultJson.getString("isp");
+                result = resultJson.getString("country") + "-" +
+                        resultJson.getString("areacode") + "|" +
+                        resultJson.getString("prov") + "|" +
+                        resultJson.getString("city") + "|" +
+                        resultJson.getString("isp")+ "|" +
+                        resultJson.getString("owner");
 
                 IpQueryLogEntity ipQueryLogEntity = new IpQueryLogEntity();
                 ipQueryLogEntity.setIp(ip);
