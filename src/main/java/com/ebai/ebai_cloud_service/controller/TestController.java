@@ -1,10 +1,8 @@
 package com.ebai.ebai_cloud_service.controller;
 
 import com.alibaba.fastjson.JSONObject;
-import com.ebai.ebai_cloud_service.common.util.impl.NetworkUtil;
-import com.ebai.ebai_cloud_service.controller.response.NewsListResponse;
+import com.ebai.ebai_cloud_service.common.util.HttpUtils;
 import com.ebai.ebai_cloud_service.mapper.ClassScheduleRepository;
-import com.ebai.ebai_cloud_service.mapper.entity.ClassScheduleEntity;
 import com.ebai.ebai_cloud_service.model.service.BaseService;
 import com.ebai.ebai_cloud_service.model.vo.NewsDetailVo;
 import com.ebai.ebai_cloud_service.model.vo.RouterVo;
@@ -16,12 +14,15 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletResponse;
+import java.io.File;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,30 +37,25 @@ public class TestController {
     @Resource
     BaseService baseService;
 
-    @Resource
-    NetworkUtil networkUtil;
-
-    @GetMapping(value = "/test")
-    public String test() {
-        log.info("test success");
-        return "success";
-    }
-
-    @PostMapping(value = "/api/test")
-    public String testLogin() {
-        List<String> aa = new ArrayList<>();
-        List<ClassScheduleEntity> result1 = classScheduleRepository.findByDateIn(null);
-        log.info(String.valueOf(result1.size()));
+    @RequestMapping(value = "/api/currentUser")
+    public String currentUser() {
         return "Success Login";
     }
 
-    @GetMapping(value = "/insert")
-    public String insert() {
-        log.info("insert");
-
-        baseService.insert();
-
-        return "Success !";
+    @GetMapping(value = "/api/test")
+    public void test() {
+        log.info("test");
+        try {
+            String jsonBody = "{\n" +
+                    "    \"username\": \"admin\",\n" +
+                    "    \"password\": \"Optical@1cli\",\n" +
+                    "    \"token\": \"jj\"\n" +
+                    "}";
+            JSONObject result = HttpUtils.doPost("http://47.102.195.212:40443/api/login/account", jsonBody);
+            log.info(result.toString());
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @GetMapping(value = "/getMenuList")
@@ -99,7 +95,7 @@ public class TestController {
     }
 
     @PostMapping(value = "/api/getNewsList")
-    public NewsListResponse getNewsList() {
+    public List<NewsDetailVo> getNewsList() {
         try {
             CloseableHttpClient httpClient;
             CloseableHttpResponse response;
@@ -118,13 +114,49 @@ public class TestController {
             JSONObject result = JSONObject.parseObject(news.substring(5, news.length()-1));
             JSONObject data = result.getJSONObject("data");
             List<NewsDetailVo> list = (List<NewsDetailVo>) data.get("list");
-            NewsListResponse newsListResponse = new NewsListResponse();
-            newsListResponse.setNewsList(list.subList(0,5));
-            return newsListResponse;
+//            NewsListResponse newsListResponse = new NewsListResponse();
+//            newsListResponse.setNewsList(list.subList(0,5));
+//            return newsListResponse;
+            return list.subList(0,5);
         } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
+    }
+
+    @GetMapping(value = "/download")
+    public void download(HttpServletResponse response) {
+        String fileName = "19042.1469.220115-2112.20H2_RELEASE_SVC_IM_CLIENTPRO_OEMRET_A64FRE_ZH-CN.ISO";
+        response.reset();
+        response.setContentType("binary/octet-stream");
+        response.addHeader("Content-Disposition", "attachment; filename=" + new String(fileName.getBytes(StandardCharsets.UTF_8), StandardCharsets.ISO_8859_1));
+        String baseFilePath = "D:\\Download\\" + fileName;
+        System.out.println(baseFilePath);
+        File file = new File(baseFilePath);
+        try (
+                InputStream in = Files.newInputStream(file.toPath());
+                OutputStream os = response.getOutputStream();
+        ) {
+            Integer fileSize = in.available();
+            response.addHeader("content-length", String.valueOf(fileSize));
+            response.addHeader("accept-ranges", "bytes");
+            byte[] buffer = new byte[1024];
+            int length;
+            int finished = 0;
+            int round = 0;
+            while ((length = in.read(buffer)) > 0) {
+                os.write(in.available());
+                os.write(buffer, 0, length);
+                finished ++;
+                if (finished >= round * fileSize / 1024 / 10) {
+                    log.info(round * 10+"%");round ++;
+                }
+            }
+            os.flush();
+            log.info("成功");
+        } catch (Exception e) {
+            log.warn("失败");
+        }
     }
 
 }

@@ -13,5 +13,4 @@ public interface DateTool {
     LocalDateTime todayLocalDateTime();
 
     Date setDate(int year, int month, int date, int hourOfDay, int minute, int second);
-
 }

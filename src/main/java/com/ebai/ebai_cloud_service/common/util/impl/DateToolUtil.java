@@ -42,5 +42,9 @@ public class DateToolUtil implements DateTool {
         return cal.getTime();
     }
 
+    public static String getDateString(Date date) {
+        return date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate().toString();
+    }
+
 
 }

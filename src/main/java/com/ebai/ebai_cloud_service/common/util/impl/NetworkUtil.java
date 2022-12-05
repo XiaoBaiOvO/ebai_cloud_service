@@ -177,19 +177,19 @@ public class NetworkUtil implements Network {
         String ip = httpServletRequest.getHeader("x-forwarded-for");
         String unknown = "unknown";
 
-        try {
-            log.info("Proxy-Client-IP: " + httpServletRequest.getHeader("Proxy-Client-IP"));
-            log.info("WL-Proxy-Client-IP: " + httpServletRequest.getHeader("WL-Proxy-Client-IP"));
-            log.info("HTTP_CLIENT_IP: " + httpServletRequest.getHeader("HTTP_CLIENT_IP"));
-            log.info("HTTP_X_FORWARDED_FOR: " + httpServletRequest.getHeader("HTTP_X_FORWARDED_FOR"));
-            log.info("HTTP_CLIENT_IP: " + httpServletRequest.getHeader("HTTP_CLIENT_IP"));
-            log.info("getRemoteAddr: " + httpServletRequest.getRemoteAddr());
-            log.info("X-Real-IP: " + httpServletRequest.getHeader("X-Real-IP"));
-            log.info("X-Forwarded-For: " + httpServletRequest.getHeader("X-Forwarded-For"));
-            log.info("x-forwarded-for: " + httpServletRequest.getHeader("x-forwarded-for"));
-        } catch (Exception e) {
-            log.warn(e.getMessage());
-        }
+//        try {
+//            log.info("Proxy-Client-IP: " + httpServletRequest.getHeader("Proxy-Client-IP"));
+//            log.info("WL-Proxy-Client-IP: " + httpServletRequest.getHeader("WL-Proxy-Client-IP"));
+//            log.info("HTTP_CLIENT_IP: " + httpServletRequest.getHeader("HTTP_CLIENT_IP"));
+//            log.info("HTTP_X_FORWARDED_FOR: " + httpServletRequest.getHeader("HTTP_X_FORWARDED_FOR"));
+//            log.info("HTTP_CLIENT_IP: " + httpServletRequest.getHeader("HTTP_CLIENT_IP"));
+//            log.info("getRemoteAddr: " + httpServletRequest.getRemoteAddr());
+//            log.info("X-Real-IP: " + httpServletRequest.getHeader("X-Real-IP"));
+//            log.info("X-Forwarded-For: " + httpServletRequest.getHeader("X-Forwarded-For"));
+//            log.info("x-forwarded-for: " + httpServletRequest.getHeader("x-forwarded-for"));
+//        } catch (Exception e) {
+//            log.warn(e.getMessage());
+//        }
 
         if (ip == null || ip.length() == 0 || unknown.equalsIgnoreCase(ip)) {
             ip = httpServletRequest.getHeader("Proxy-Client-IP");

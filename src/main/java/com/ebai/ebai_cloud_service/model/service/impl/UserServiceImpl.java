@@ -3,7 +3,7 @@ package com.ebai.ebai_cloud_service.model.service.impl;
 import com.alibaba.fastjson.JSONObject;
 import com.ebai.ebai_cloud_service.common.util.HttpUtils;
 import com.ebai.ebai_cloud_service.common.util.Network;
-import com.ebai.ebai_cloud_service.controller.request.LoginAccountRequest;
+import com.ebai.ebai_cloud_service.controller.request.LoginRequest;
 import com.ebai.ebai_cloud_service.controller.response.CurrentUserResponse;
 import com.ebai.ebai_cloud_service.controller.response.LoginAccountResponse;
 import com.ebai.ebai_cloud_service.mapper.CaptchaTokenRepository;
@@ -37,17 +37,17 @@ public class UserServiceImpl implements UserService {
     Network network;
 
     @Override
-    public LoginAccountResponse login(LoginAccountRequest request, HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
-        if (Objects.equals(request.getType(), "account")) {
+    public LoginAccountResponse login(LoginRequest request, HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
+        if (Objects.equals(request.getLoginType(), "account")) {
             return loginByAccount(request, httpServletRequest, httpServletResponse);
-        } else if (Objects.equals(request.getType(), "mobile")) {
+        } else if (Objects.equals(request.getLoginType(), "mobile")) {
             return loginByMobile(request, httpServletRequest, httpServletResponse);
         } else {
             return loginFailed(httpServletResponse);
         }
     }
 
-    private LoginAccountResponse loginByAccount(LoginAccountRequest request, HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
+    private LoginAccountResponse loginByAccount(LoginRequest request, HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
         UserInfoEntity userInfo = userDetailRepository.findTopByUserNameAndPassword(request.getUsername(), request.getPassword());
         if (Objects.equals(userInfo, null)) {
             return loginFailed(httpServletResponse);
@@ -65,7 +65,7 @@ public class UserServiceImpl implements UserService {
         return LoginAccountResponse.builder().status("fail").build();
     }
 
-    private LoginAccountResponse loginByMobile(LoginAccountRequest request, HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
+    private LoginAccountResponse loginByMobile(LoginRequest request, HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
         CaptchaTokenEntity captchaTokenEntity = captchaTokenRepository.findTopByMobileOrderByCreateDateDesc(request.getMobile());
         try {
             String jsonBody = "{\"name\": \"TEST\",\"company\": \"TEST\",\"phoneNo\": \""
@@ -109,7 +109,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public String sendMobileCaptcha(LoginAccountRequest request, HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
+    public String sendMobileCaptcha(LoginRequest request, HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
         try {
             String url = "https://www.cz88.net/api/cz88/sms/get?countryCode=%2B86&phone=" + request.getMobile() + "&type=register";
             JSONObject result = network.doPost(url);
@@ -156,42 +156,23 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public CurrentUserResponse checkCurrentUser (HttpServletResponse httpServletResponse, HttpServletRequest httpServletRequest) {
-        CurrentUserResponse response = new CurrentUserResponse();
+//        CurrentUserResponse response = new CurrentUserResponse();
         //        Exception
         if (Objects.equals(httpServletRequest.getSession().getAttribute("id"), null)) {
             httpServletResponse.setStatus(401);
-            response.setSuccess(false);
-            return response;
+//            response.setSuccess(false);
+            return null;
         }
 
-        UserInfoEntity userInfo = userDetailRepository.findTopById(httpServletRequest.getSession().getAttribute("id").toString());
-        CurrentUserVo currentUserVo = new CurrentUserVo();
-        currentUserVo.setName(userInfo.getUserName());
-        currentUserVo.setAvatar(userInfo.getAvatar());
-        currentUserVo.setUserid(userInfo.getId());
-        currentUserVo.setEmail(userInfo.getEmail());
-        currentUserVo.setSignature(userInfo.getSignature());
-        currentUserVo.setTitle(userInfo.getTitle());
-        currentUserVo.setGroup(userInfo.getGroup());
-        currentUserVo.setTags(null);
-        currentUserVo.setNotifyCount(5);
-        currentUserVo.setUnreadCount(5);
-        currentUserVo.setCountry(userInfo.getCountry());
-        currentUserVo.setAccess(userInfo.getAccess());
-        currentUserVo.setGeographic(null);
-        currentUserVo.setAddress(userInfo.getAddress());
-        currentUserVo.setPhone(userInfo.getMobile());
-        response.setData(currentUserVo);
-        response.setSuccess(true);
-        return response;
+//        UserInfoEntity userInfo = userDetailRepository.findTopById(httpServletRequest.getSession().getAttribute("id").toString());
+//        return response;
+        return null;
     }
 
     @Override
     public CurrentUserResponse outLogin (HttpServletRequest httpServletRequest) {
         httpServletRequest.getSession().invalidate();
-        CurrentUserResponse response = new CurrentUserResponse();
-        response.setSuccess(true);
-        return response;
+        return null;
     }
 
     @Override
@@ -207,6 +188,55 @@ public class UserServiceImpl implements UserService {
                 .build();
         userDetailRepository.save(entity);
         return true;
+    }
+
+    @Override
+    public Boolean isLoginSuccess(LoginRequest request) {
+        if (request.getLoginType().equals("account")) {
+            log.info("Login By Account");
+            return loginByAccount(request);
+        } else if (request.getLoginType().equals("mobile")) {
+//            return loginByMobile(request);
+            return null;
+        }
+        return false;
+    }
+
+    private Boolean loginByAccount(LoginRequest request) {
+        UserInfoEntity userInfo = userDetailRepository.findTopByUserNameAndPassword(request.getUsername(), request.getPassword());
+        Boolean result = !Objects.isNull(userInfo);
+        log.info("Login " + (result ? "Success" : "Fail"));
+        return result;
+    }
+
+    @Override
+    public CurrentUserVo logCurrentUser(LoginRequest request, HttpServletRequest httpServletRequest) {
+        UserInfoEntity userInfo = userDetailRepository.findTopByUserNameAndPassword(request.getUsername(), request.getPassword());
+        HttpSession session = httpServletRequest.getSession();
+        session.setAttribute("userId", userInfo.getId());
+        session.setAttribute("userName", userInfo.getUserName());
+        session.setAttribute("userAvatar", userInfo.getAvatar());
+        return setCurrentUserResponse(userInfo);
+    }
+
+    private CurrentUserVo setCurrentUserResponse(UserInfoEntity userInfo) {
+        CurrentUserVo currentUserVo = new CurrentUserVo();
+        currentUserVo.setUserName(userInfo.getUserName());
+        currentUserVo.setUserAvatar(userInfo.getAvatar());
+        currentUserVo.setUserId(userInfo.getId());
+        currentUserVo.setEmail(userInfo.getEmail());
+        currentUserVo.setSignature(userInfo.getSignature());
+        currentUserVo.setTitle(userInfo.getTitle());
+        currentUserVo.setGroup(userInfo.getGroup());
+        currentUserVo.setTags(null);
+        currentUserVo.setNotifyCount(5);
+        currentUserVo.setUnreadCount(5);
+        currentUserVo.setCountry(userInfo.getCountry());
+        currentUserVo.setAccess(userInfo.getAccess());
+        currentUserVo.setGeographic(null);
+        currentUserVo.setAddress(userInfo.getAddress());
+        currentUserVo.setPhone(userInfo.getMobile());
+        return currentUserVo;
     }
 
 }

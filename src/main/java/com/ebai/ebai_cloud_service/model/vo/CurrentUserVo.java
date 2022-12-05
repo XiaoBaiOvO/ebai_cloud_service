@@ -6,9 +6,9 @@ import java.util.List;
 
 @Data
 public class CurrentUserVo {
-    String name;
-    String avatar;
-    String userid;
+    String userName;
+    String userAvatar;
+    String userId;
     String email;
     String signature;
     String title;
